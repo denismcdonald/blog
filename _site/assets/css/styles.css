@@ -145,10 +145,6 @@ Breakpoint 2 (Table of contents appears)
     top: 0.25rem;
     width: 10rem; }
 
-  .toc ul li {
-    list-style: none;
-    list-style-position: inside; }
-
   .toc a {
     display: block;
     margin-bottom: 0.25rem; }
@@ -160,7 +156,17 @@ Breakpoint 2 (Table of contents appears)
     text-align: right; }
 
   .toc-heading span {
-    display: none; } }
+    display: none; }
+
+  .toc ul li {
+    list-style: none; }
+
+  .toc ul li::before {
+    content: "\200B"; }
+
+  .toc ul ul li {
+    list-style: circle;
+    list-style-position: inside; } }
 /*
 =================================================================
 Breakpoint 3 (Left margin increases to retain site ratio, roughly)
