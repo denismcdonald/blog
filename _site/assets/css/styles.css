@@ -105,7 +105,7 @@ MEDIA QUERIES (x3) FOR DESKTOP STYLES
 Breakpoint 1 (Dispense with critical mobile styles)
 ==================================================
 */
-@media (min-width: 500px) {
+@media (min-width: 540px) {
   :root {
     font-size: calc(1.2em + 1vw); }
 
