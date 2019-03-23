@@ -1,0 +1,199 @@
+/*
+===========================================================
+MOBILE STYLES (See media queries below for desktop styles)
+===========================================================
+*/
+
+
+:root {
+    font-size: calc(1.2em + 1vw);
+}
+
+
+html {
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+body {
+    background-color: #fff;
+    font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+.content-container {
+    margin: 1rem;
+    padding-top: 2rem;
+}
+
+
+.current {
+    color: green;
+}
+
+
+.edit {
+    display: block;
+    text-align: center;
+}
+
+
+.highlight {
+    margin: 0;
+    width: 100%;
+}
+
+
+nav {
+    position: relative;
+    right: 1rem;
+    text-align: right;
+    top: 1rem;
+}
+
+
+nav a {
+    display: inline-block;
+    margin-bottom: 0.45rem;
+}
+
+
+p {
+    line-height: 1.5rem;
+}
+
+
+pre {
+    border-radius: 8px;
+    padding: 1rem;
+    white-space: pre-wrap;
+}
+
+
+pre,
+code {
+    font-size: 0.9rem;
+}
+
+
+.scroll {
+    display: block;
+    margin: 1rem 0 2rem;
+    text-align: center;
+}
+
+
+.toc {
+    margin: 4.5rem 1rem 1.5rem;
+    text-align: left;
+}
+
+
+.toc a {
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+
+.toc-heading {
+    margin: 1rem 0 0.25rem 0;
+}
+
+
+
+/*
+============================================================
+MEDIA QUERIES (x3) FOR DESKTOP STYLES
+============================================================
+==================================================
+Breakpoint 1 (Dispense with critical mobile styles)
+==================================================
+*/
+
+@media (min-width: 500px) {
+    
+    .scroll,
+    .edit {
+        font-size: 1rem;
+    }
+
+    .edit {
+        float: left;
+        margin: 1rem 0 2rem 1rem;
+    }
+
+    .scroll {
+        float: right;
+        margin: 1rem 1rem 2rem 0;
+    }
+
+}
+
+
+/*
+=======================================
+Breakpoint 2 (Table of contents appears)
+=======================================
+*/
+@media (min-width: 950px) {
+
+
+    .content-container {
+        max-width: 680px;
+    }
+
+    nav a {
+        margin-bottom: 0.25rem;
+    }
+
+
+    .toc {
+        border-left: none;
+        float: right;
+        height: 300px;
+        margin: 3rem 1rem 1rem 1rem;
+        padding-top: 1rem;
+        position: -webkit-sticky;
+        position: sticky;
+        text-align: right;
+        top: 1px;
+        width: 250px;
+    }
+    
+
+    .toc a {
+        display: block;
+        margin-bottom: 0.25rem;
+    }
+
+
+    .toc-heading span {
+        display: block;
+    }
+
+}
+
+
+/*
+=================================================================
+Breakpoint 3 (Left margin increases to retain site ratio, roughly)
+=================================================================
+*/
+@media (min-width: 1400px) {
+
+
+    .content-container {
+        max-width: 870px;
+    }
+
+
+    .wrapper {
+        margin-left: calc((100% - 1800px) / 2 + 232px);
+        margin-right: 1rem;
+    }
+
+}

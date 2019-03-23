@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Personal website of Denis McDonald">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      {% include navigation.html %}
+      
+      {%- if page.toc == true -%}
+        {% include toctest.html %}
+      {%- endif -%}
+
+      <div class="content-container">
+        {{ content }}
+      </div>   
+
+      {%- if page.edit == true -%}
+        {% include edit.html %}
+      {%- endif -%}
+
+      {%- if page.scroll == true -%}
+        {% include scroll.html %}
+      {%- endif -%}
+    </div>
+  </body>
+</html>
