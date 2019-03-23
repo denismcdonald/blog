@@ -40,8 +40,29 @@ nav {
 
 nav a {
   display: inline-block;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin-bottom: 0.45rem; }
+
+nav a.home {
+  color: #000;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none; }
+
+nav a.home span {
+  font-size: 1.25rem;
+  line-height: 1rem;
+  position: relative;
+  text-decoration-style: solid;
+  text-decoration-color: #000;
+  text-decoration-line: underline;
+  -webkit-text-decoration-style: solid;
+  -webkit-text-decoration-color: #000;
+  -webkit-text-decoration-line: underline;
+  top: 0.15rem;
+  vertical-align: super; }
 
 p {
   line-height: 1.5rem; }
@@ -61,7 +82,7 @@ code {
   text-align: center; }
 
 .toc {
-  background-color: #efefef;
+  background: linear-gradient(90deg, #efefef, #fff);
   border-radius: 8px;
   margin: 4.5rem 0.5rem 0;
   padding: 1rem; }
@@ -93,6 +114,9 @@ Breakpoint 1 (Dispense with critical mobile styles)
     font-size: 1rem;
     margin: 1rem 0 2rem 1rem; }
 
+  nav a {
+    font-size: 1rem; }
+
   .scroll {
     float: right;
     font-size: 1rem;
@@ -102,7 +126,7 @@ Breakpoint 1 (Dispense with critical mobile styles)
 Breakpoint 2 (Table of contents appears)
 =======================================
 */
-@media (min-width: 1050px) {
+@media (min-width: 1120px) {
   .content-container {
     max-width: 680px; }
 
@@ -110,17 +134,16 @@ Breakpoint 2 (Table of contents appears)
     margin-bottom: 0.25rem; }
 
   .toc {
-    background-color: transparent;
-    border-left: none;
+    background: linear-gradient(transparent, transparent);
     float: right;
     font-size: 0.8rem;
-    margin: 3rem 1rem 0 0;
-    padding: 1rem 0 0 0;
+    margin: 4rem 1rem 0 0;
+    padding: 0;
     position: -webkit-sticky;
     position: sticky;
     text-align: right;
-    top: 1px;
-    max-width: 250px; }
+    top: 0.25rem;
+    width: 10rem; }
 
   .toc ul li {
     list-style: none;
@@ -130,8 +153,14 @@ Breakpoint 2 (Table of contents appears)
     display: block;
     margin-bottom: 0.25rem; }
 
+  .toc-heading {
+    font-size: 1.25rem;
+    margin: 0 0 -0.35rem 0;
+    padding: 0;
+    text-align: right; }
+
   .toc-heading span {
-    display: block; } }
+    display: none; } }
 /*
 =================================================================
 Breakpoint 3 (Left margin increases to retain site ratio, roughly)
@@ -142,11 +171,10 @@ Breakpoint 3 (Left margin increases to retain site ratio, roughly)
     max-width: 870px; }
 
   .toc {
-    max-width: 350px; }
+    width: 12rem; }
 
   .wrapper {
-    margin-left: calc((100% - 1800px) / 2 + 232px);
-    margin-right: 1rem; } }
+    margin-left: calc((100% - 1800px) / 2 + 232px); } }
 .highlight pre {
   background-color: #333; }
 

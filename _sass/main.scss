@@ -58,8 +58,33 @@ nav {
 
 nav a {
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin-bottom: 0.45rem;
+}
+
+
+nav a.home {
+    color: #000;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+nav a.home span {
+    font-size: 1.25rem;
+    line-height: 1rem;
+    position: relative;
+    text-decoration-style: solid;
+    text-decoration-color: #000;
+    text-decoration-line: underline;
+    -webkit-text-decoration-style: solid;
+    -webkit-text-decoration-color: #000;
+    -webkit-text-decoration-line: underline;
+    top: 0.15rem;
+    vertical-align: super;
 }
 
 
@@ -89,7 +114,8 @@ code {
 
 
 .toc {
-    background-color: #efefef;
+    // background-color: #efefef;
+    background: linear-gradient(90deg, #efefef, #fff);
     border-radius: 8px;
     margin: 4.5rem 0.5rem 0;
     padding: 1rem;
@@ -134,6 +160,11 @@ Breakpoint 1 (Dispense with critical mobile styles)
     }
 
 
+    nav a {
+        font-size: 1rem;
+    }
+
+
     .scroll {
         float: right;
         font-size: 1rem;
@@ -148,7 +179,7 @@ Breakpoint 1 (Dispense with critical mobile styles)
 Breakpoint 2 (Table of contents appears)
 =======================================
 */
-@media (min-width: 1050px) {
+@media (min-width: 1120px) {
 
 
     .content-container {
@@ -162,17 +193,16 @@ Breakpoint 2 (Table of contents appears)
 
 
     .toc {
-        background-color: transparent;
-        border-left: none;
+        background: linear-gradient(transparent, transparent);
         float: right;
         font-size: 0.8rem;
-        margin: 3rem 1rem 0 0;
-        padding: 1rem 0 0 0;
+        margin: 4rem 1rem 0 0;
+        padding: 0;
         position: -webkit-sticky;
         position: sticky;
         text-align: right;
-        top: 1px;
-        max-width: 250px;
+        top: 0.25rem;
+        width: 10rem;
     }
     
 
@@ -188,9 +218,18 @@ Breakpoint 2 (Table of contents appears)
     }
 
 
-    .toc-heading span {
-        display: block;
+    .toc-heading {
+        font-size: 1.25rem;
+        margin: 0 0 -0.35rem 0;
+        padding: 0;
+        text-align: right;
     }
+
+ 
+    .toc-heading span {
+        display: none;
+    }
+    
 
 }
 
@@ -209,13 +248,13 @@ Breakpoint 3 (Left margin increases to retain site ratio, roughly)
 
     
     .toc {
-        max-width: 350px;
+        width: 12rem;
     }
 
 
     .wrapper {
         margin-left: calc((100% - 1800px) / 2 + 232px);
-        margin-right: 1rem;
+        // margin-right: 1rem;
     }
 
 }

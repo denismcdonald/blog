@@ -1,12 +1,15 @@
   <nav>
+    <a href="/" class="home" name="dmcd">DM<span>c</span>D</a><br>
+    <!-- <a href="/" class="home" name="dmcd">DMcD</a><br> -->
+
     {%- for item in site.data.navigation -%}
-      {%- if item.name == "Home" -%}
+      <!-- {%- if item.name == "Home" -%}
         <a href="{{ item.link }}" name="{{ item.name }}" {% if page.url == item.link -%}class="current"{% endif %}>
           {{ item.name }}
         </a>
       {%- endif -%}
 
-      {%- if item.name != "Home" -%}
+      {%- if item.name != "Home" -%} -->
         <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
           {{ item.name }}
         </a>
