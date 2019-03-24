@@ -245,8 +245,14 @@ Breakpoint 2 (Table of contents appears)
     }
 
 
+    .toc-heading {
+        margin: 0 0 0 0.25rem;
+        padding: 0;
+    } 
+
+
     .toc ul {
-        padding-left: 1rem;
+        padding-left: 1.25rem;
     }
     
     
@@ -254,10 +260,9 @@ Breakpoint 2 (Table of contents appears)
         list-style-position: outside;
     }
    
-    
-     .toc-heading {
-        margin: 0;
-        padding: 0;
+
+    .toc ul ul {
+        padding-left: 0.25rem;
     } 
 
 }
