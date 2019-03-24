@@ -176,7 +176,7 @@ Breakpoint 2 (Table of contents appears)
     width: 10rem; }
 
   .toc ul {
-    padding-left: 0.5rem; }
+    padding-left: 1rem; }
 
   .toc ul li {
     list-style-position: outside; }
