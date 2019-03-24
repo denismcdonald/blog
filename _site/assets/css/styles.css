@@ -159,7 +159,7 @@ Breakpoint 1 (Dispense with critical mobile styles)
 Breakpoint 2 (Table of contents appears)
 =======================================
 */
-@media (min-width: 1120px) {
+@media (min-width: 1100px) {
   .content-container {
     max-width: 680px; }
 
