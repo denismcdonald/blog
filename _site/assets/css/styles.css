@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 ===========================================================
 MOBILE STYLES (See media queries below for desktop styles)
@@ -16,6 +17,15 @@ body {
   font-size: 100%;
   padding: 0;
   margin: 0; }
+
+a {
+  padding: 0 3px; }
+
+a:hover {
+  background: #000;
+  border-radius: 3px;
+  color: #fff;
+  text-decoration: none; }
 
 .content-container {
   margin: 0 1rem 1rem 1rem;
@@ -41,7 +51,7 @@ nav {
 nav a {
   display: inline-block;
   font-size: 1.25rem;
-  margin-bottom: 0.45rem; }
+  margin-bottom: 0.25rem; }
 
 nav a.home {
   color: #000;
@@ -50,6 +60,14 @@ nav a.home {
   font-weight: bold;
   text-align: center;
   text-decoration: none; }
+
+nav a.home:hover {
+  background: #000;
+  color: #fff; }
+
+nav a.home:hover span {
+  text-decoration-color: lightblue;
+  -webkit-text-decoration-color: lightblue; }
 
 nav a.home span {
   font-size: 1.25rem;
@@ -82,12 +100,17 @@ code {
   text-align: center; }
 
 .toc {
-  background: linear-gradient(90deg, #efefef, #fff);
   border-radius: 8px;
-  margin: 4.5rem 0.5rem 0;
-  padding: 1rem; }
+  margin: 4.5rem 0 0 0.25rem; }
+
+.toc-heading {
+  background-color: #fff;
+  border-radius: 8px;
+  margin: 0.5rem 0 0 0.5rem;
+  padding: 0.25rem 0.5rem 0 0.75rem; }
 
 .toc ul {
+  counter-reset: item;
   margin-bottom: 0.5rem; }
 
 .toc ul li {
@@ -99,14 +122,16 @@ code {
   margin-top: 0.5rem; }
 
 .toc ul ul li {
-  list-style: lower-latin;
+  list-style: none;
   list-style-position: inside; }
 
-.toc-heading {
-  background-color: #fff;
-  border-radius: 8px;
-  margin: 1rem 0 0.25rem 0.5rem;
-  padding: 0.5rem 0.5rem 0.5rem 1rem; }
+/*
+NB:  The following is a workaround to add parentheses around list sub-items; eg, 1(a), 2(b), etc. 
+The zero-width space ("\200B") addresses the following accessibility concern: https://developer.mozilla.org/en-US/docs/Web/CSS/list-style#Accessibility_concerns
+*/
+.toc ul ul li:before {
+  content: "(" counter(item,lower-latin) ")​ ";
+  counter-increment: item; }
 
 /*
 ============================================================
@@ -117,9 +142,6 @@ Breakpoint 1 (Dispense with critical mobile styles)
 ==================================================
 */
 @media (min-width: 540px) {
-  :root {
-    font-size: calc(1.2em + 1vw); }
-
   .edit {
     float: left;
     font-size: 1rem;
@@ -141,9 +163,6 @@ Breakpoint 2 (Table of contents appears)
   .content-container {
     max-width: 680px; }
 
-  nav a {
-    margin-bottom: 0.25rem; }
-
   .toc {
     background: linear-gradient(transparent, transparent);
     float: right;
@@ -152,18 +171,19 @@ Breakpoint 2 (Table of contents appears)
     padding: 0;
     position: -webkit-sticky;
     position: sticky;
-    text-align: right;
+    text-align: left;
     top: 0.25rem;
     width: 10rem; }
 
-  .toc-heading {
-    font-size: 1.25rem;
-    margin: 0 0 -0.35rem 0;
-    padding: 0;
-    text-align: right; }
+  .toc ul {
+    padding-left: 0.5rem; }
 
-  .toc-heading span {
-    display: none; } }
+  .toc ul li {
+    list-style-position: outside; }
+
+  .toc-heading {
+    margin: 0;
+    padding: 0; } }
 /*
 =================================================================
 Breakpoint 3 (Left margin increases to retain site ratio, roughly)
@@ -172,9 +192,6 @@ Breakpoint 3 (Left margin increases to retain site ratio, roughly)
 @media (min-width: 1400px) {
   .content-container {
     max-width: 870px; }
-
-  .toc {
-    width: 12rem; }
 
   .wrapper {
     margin-left: calc((100% - 1800px) / 2 + 232px); } }
