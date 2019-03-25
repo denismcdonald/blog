@@ -1,5 +1,3 @@
-console.log("Hello!");
-
 var body = document.body;
 var links = document.getElementsByTagName("a");
 var lightSwitch = document.querySelector(".light-switch");
