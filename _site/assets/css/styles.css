@@ -18,8 +18,15 @@ body {
   padding: 0;
   margin: 0; }
 
+.body-dark {
+  background-color: #4B525A;
+  color: #FFEFF4; }
+
 a {
   padding: 0 3px; }
+
+.a-dark {
+  color: #FFFFBC; }
 
 a:hover {
   background: #000;
@@ -31,8 +38,8 @@ a:hover {
   margin: 0 1rem 1rem 1rem;
   padding-top: 2rem; }
 
-.current {
-  color: green; }
+.current:before {
+  content: "\003e"; }
 
 .edit {
   display: block;
@@ -42,45 +49,25 @@ a:hover {
   margin: 0;
   width: 100%; }
 
-nav {
-  position: relative;
+.light-switch {
+  cursor: pointer;
+  position: absolute;
+  top: 1.5rem;
   right: 1rem;
+  width: 4.5rem; }
+
+nav {
+  clear: both;
+  margin-bottom: 2rem;
+  position: relative;
+  right: 5.75rem;
   text-align: right;
-  top: 1rem; }
+  top: 1.5rem; }
 
 nav a {
   display: inline-block;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   margin-bottom: 0.25rem; }
-
-nav a.home {
-  color: #000;
-  display: inline-block;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none; }
-
-nav a.home:hover {
-  background: #000;
-  color: #fff; }
-
-nav a.home:hover span {
-  text-decoration-color: lightblue;
-  -webkit-text-decoration-color: lightblue; }
-
-nav a.home span {
-  font-size: 1.25rem;
-  line-height: 1rem;
-  position: relative;
-  text-decoration-style: solid;
-  text-decoration-color: #000;
-  text-decoration-line: underline;
-  -webkit-text-decoration-style: solid;
-  -webkit-text-decoration-color: #000;
-  -webkit-text-decoration-line: underline;
-  top: 0.15rem;
-  vertical-align: super; }
 
 p {
   line-height: 1.5rem; }
@@ -101,10 +88,9 @@ code {
 
 .toc {
   border-radius: 8px;
-  margin: 4.5rem 0 0 0; }
+  margin: 5rem 0 0 0; }
 
 .toc-heading {
-  background-color: #fff;
   border-radius: 8px;
   margin: 0.5rem 0 0 0.25rem;
   padding: 0.25rem 0.5rem 0 0.75rem; }
@@ -147,6 +133,9 @@ Breakpoint 1 (Dispense with critical mobile styles)
     font-size: 1rem;
     margin: 1rem 0 2rem 1rem; }
 
+  .github {
+    clear: both; }
+
   nav a {
     font-size: 1rem; }
 
@@ -161,13 +150,17 @@ Breakpoint 2 (Table of contents appears)
 */
 @media (min-width: 1100px) {
   .content-container {
-    max-width: 680px; }
+    max-width: 680px;
+    padding-top: 4rem; }
+
+  .light-off {
+    width: 50px; }
 
   .toc {
     background: linear-gradient(transparent, transparent);
     float: right;
     font-size: 0.8rem;
-    margin: 4rem 1rem 0 0;
+    margin: 9rem 1rem 0 0;
     padding: 0;
     position: -webkit-sticky;
     position: sticky;

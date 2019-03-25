@@ -1,19 +1,12 @@
-  <nav>
-    <a href="/" class="home" name="dmcd">DM<span>c</span>D</a><br>
-    <!-- <a href="/" class="home" name="dmcd">DMcD</a><br> -->
+<!-- <a href="/" class="home" name="dmcd">DM<span>c</span>D</a><br> -->
 
-    {%- for item in site.data.navigation -%}
-      <!-- {%- if item.name == "Home" -%}
-        <a href="{{ item.link }}" name="{{ item.name }}" {% if page.url == item.link -%}class="current"{% endif %}>
-          {{ item.name }}
-        </a>
-      {%- endif -%}
+<img src="/assets/images/light-on.svg" class="light-switch" alt="light switched on image" title="Toggle dark mode">
 
-      {%- if item.name != "Home" -%} -->
-        <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
-          {{ item.name }}
-        </a>
-      {%- endif -%}
-        <br>
-    {%- endfor -%}
-  </nav>
+<nav>
+  {%- for item in site.data.navigation -%}
+    <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
+      {{ item.name }}
+    </a>
+    <br>
+  {%- endfor -%}
+</nav>

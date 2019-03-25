@@ -1,8 +1,8 @@
+- name: Home
+  link: /
 - name: Blog
   link: #
 - name: Folio
   link: #
 - name: Links
-  link: #
-- name: About
   link: /about.html
