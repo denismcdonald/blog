@@ -17,26 +17,30 @@ html {
 
 
 body {
-    background-color: #fff;
+    // background-color: #fff;
+    background-color: #4B525A;
+    color: #FFEFF4;
     font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
     font-size: 100%;
     padding: 0;
     margin: 0;
 }
 
-.body-dark {
-    background-color: #4B525A;
-    color: #FFEFF4;
+
+.body-light {
+    background-color: #fff;
+    color: #000;
 }
 
 
 a {
+    color: #FFFFBC;
     padding: 0 3px;
 }
 
 
-.a-dark {
-    color: #FFFFBC;
+.a-light {
+    color: blue;
 }
 
 
@@ -79,6 +83,7 @@ a:hover {
     right: 1rem;
     width: 4.5rem;
 }
+
 
 
 nav {
