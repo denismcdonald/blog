@@ -39,8 +39,30 @@ a {
 }
 
 
+a:focus {
+    outline: #000 dotted medium;
+    outline: 5px solid black;
+}
+
+
+a:visited {
+    // color: #FEF0DB;
+    color: #FEF5DE;
+}
+
+
 .a-light {
-    color: blue;
+    color: #0000EE;
+}
+
+
+.a-light:visited {
+    color: #551A8B;
+}
+
+
+.a-light:visited:hover {
+    color: #fff;
 }
 
 
@@ -50,6 +72,27 @@ a:hover {
     color: #fff;
     text-decoration: none;
 }
+
+
+.light-switch {
+// button[aria-pressed="false"] {
+    background-image: url(/assets/images/light-off.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    height: 6.25rem;
+    width: 4.5rem;
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+}
+
+
+// .light-switch:focus {
+//     border-radius: 3px;
+//     outline: 5px dashed #000;
+// }
 
 
 .content-container {
@@ -76,13 +119,13 @@ a:hover {
 }
 
 
-.light-switch {
-    cursor: pointer;
-    position: absolute;
-    top: 1.5rem;
-    right: 1rem;
-    width: 4.5rem;
-}
+// .light-switch {
+//     cursor: pointer;
+//     position: absolute;
+//     top: 1.5rem;
+//     right: 1rem;
+//     width: 4.5rem;
+// }
 
 
 

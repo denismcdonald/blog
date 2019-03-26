@@ -1,38 +1,43 @@
-var body = document.body;
-var links = document.getElementsByTagName("a");
-var lightSwitch = document.querySelector(".light-switch");
-var lightSrc = lightSwitch.getAttribute("src");
+// Check to see if a colour theme (light or dark) has been selected previously
+if (localStorage.getItem("themePreference") === null) {
 
-if (localStorage.getItem("themePreference") == "1") {
- 
-  lightSwitch.setAttribute("src", "/assets/images/light-on.svg");
-        lightSwitch.setAttribute("title", "Turn on dark colour theme");
-        body.classList.toggle("body-light");
-        for (i = 0; i < links.length; i++) {
-            links[i].classList.add("a-light");
-          }
-        lightSrc = lightSwitch.getAttribute("src");
+  document.querySelector(".light-switch").addEventListener("click", lightsOn);
+}
+if (localStorage.getItem("themePreference") === "0") {
+  lightsOff();
+}
+if (localStorage.getItem("themePreference") === "1") {
+  lightsOn();
+}
 
-};
 
-lightSwitch.addEventListener("click", function changeTheme() {
-    if (lightSrc == "/assets/images/light-off.svg") {
-        lightSwitch.setAttribute("src", "/assets/images/light-on.svg");
-        lightSwitch.setAttribute("title", "Turn on dark colour theme");
-        body.classList.toggle("body-light");
-        for (i = 0; i < links.length; i++) {
-            links[i].classList.add("a-light");
-          }
-        lightSrc = lightSwitch.getAttribute("src");
-        localStorage.setItem("themePreference", "1");
-    } else {
-        lightSwitch.setAttribute("src", "/assets/images/light-off.svg");
-        body.classList.toggle("body-light");
-        lightSwitch.setAttribute("title", "Turn on light colour theme");
-        for (i = 0; i < links.length; i++) {
-            links[i].classList.remove("a-light");
-          }
-        lightSrc = lightSwitch.getAttribute("src");
-        localStorage.setItem("themePreference", "0");
-    } 
-});
+// Apply light theme and set user preference to light them
+function lightsOn() {
+  var lightSwitch = document.querySelector(".light-switch");
+  localStorage.setItem("themePreference", "1");
+  lightSwitch.removeEventListener("click", lightsOn);
+  lightSwitch.addEventListener("click", lightsOff);
+  lightSwitch.style.backgroundImage = "url('/assets/images/light-on.svg')";
+  document.body.classList.add("body-light");
+  for (i = 0; i < document.getElementsByTagName("a").length; i++) {
+    document.getElementsByTagName("a")[i].classList.add("a-light");
+  }
+  lightSwitch.setAttribute("title", "Turn on dark colour theme");
+  lightSwitch.setAttribute("aria-pressed", true);
+}
+
+
+// Apply dark theme and set user preference to light them
+function lightsOff() {
+  var lightSwitch = document.querySelector(".light-switch");
+  localStorage.setItem("themePreference", "0");
+  lightSwitch.removeEventListener("click", lightsOff);
+  lightSwitch.addEventListener("click", lightsOn);
+  lightSwitch.style.backgroundImage = "url('/assets/images/light-off.svg')";
+  document.body.classList.remove("body-light");
+  for (i = 0; i < document.getElementsByTagName("a").length; i++) {
+    document.getElementsByTagName("a")[i].classList.remove("a-light");
+  }
+  lightSwitch.setAttribute("title", "Turn on light colour theme");
+  lightSwitch.setAttribute("aria-pressed", false);
+}
