@@ -62,9 +62,8 @@ a:hover {
   right: 1rem; }
 
 .light-switch:focus {
-  outline: 4px dotted #88b8ff;
-  border-radius: 8px;
-  outline-offset: 1px; }
+  outline: 5px dotted #88b8ff;
+  outline-offset: 2px; }
 
 .content-container {
   margin: 0 1rem 1rem 1rem;
