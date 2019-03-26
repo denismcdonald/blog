@@ -17,7 +17,6 @@ html {
 
 
 body {
-    // background-color: #fff;
     background-color: #4B525A;
     color: #FFEFF4;
     font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
@@ -40,13 +39,12 @@ a {
 
 
 a:focus {
-    outline: #000 dotted medium;
-    outline: 5px solid black;
+     box-shadow: 0 0 0 3px #88b8ff;
+     border-radius: 2px;
 }
 
 
 a:visited {
-    // color: #FEF0DB;
     color: #FEF5DE;
 }
 
@@ -68,31 +66,30 @@ a:visited {
 
 a:hover {
     background: #000;
-    border-radius: 3px;
+    border-radius: 4px;
     color: #fff;
     text-decoration: none;
 }
 
 
 .light-switch {
-// button[aria-pressed="false"] {
-    background-image: url(/assets/images/light-off.svg);
+    background-image: url("/assets/images/light-off.svg");
     background-color: transparent;
     background-repeat: no-repeat;
     border: none;
     cursor: pointer;
     height: 6.25rem;
-    width: 4.5rem;
+    width: 4.4rem;
     position: absolute;
     top: 1.5rem;
     right: 1rem;
 }
 
 
-// .light-switch:focus {
-//     border-radius: 3px;
-//     outline: 5px dashed #000;
-// }
+.light-switch:focus {
+    box-shadow: 0 0 0 3px #88b8ff;
+    border-radius: 2px;
+}
 
 
 .content-container {
@@ -102,8 +99,12 @@ a:hover {
 
 
 .current:before {
-    content: "\003e";
-    // display: inline-block;
+    // content: "\003e";
+    // content: "\25b6";
+    content: "\203A"
+    // content: "\2605";
+    // content: "\21d2";
+    // content: "\2192";
 }
 
 
@@ -117,16 +118,6 @@ a:hover {
     margin: 0;
     width: 100%;
 }
-
-
-// .light-switch {
-//     cursor: pointer;
-//     position: absolute;
-//     top: 1.5rem;
-//     right: 1rem;
-//     width: 4.5rem;
-// }
-
 
 
 nav {

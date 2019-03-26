@@ -28,8 +28,8 @@ a {
   padding: 0 3px; }
 
 a:focus {
-  outline: #000 dotted medium;
-  outline: 5px solid black; }
+  box-shadow: 0 0 0 3px #88b8ff;
+  border-radius: 2px; }
 
 a:visited {
   color: #FEF5DE; }
@@ -45,28 +45,32 @@ a:visited {
 
 a:hover {
   background: #000;
-  border-radius: 3px;
+  border-radius: 4px;
   color: #fff;
   text-decoration: none; }
 
 .light-switch {
-  background-image: url(/assets/images/light-off.svg);
+  background-image: url("/assets/images/light-off.svg");
   background-color: transparent;
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
   height: 6.25rem;
-  width: 4.5rem;
+  width: 4.4rem;
   position: absolute;
   top: 1.5rem;
   right: 1rem; }
+
+.light-switch:focus {
+  box-shadow: 0 0 0 3px #88b8ff;
+  border-radius: 2px; }
 
 .content-container {
   margin: 0 1rem 1rem 1rem;
   padding-top: 2rem; }
 
 .current:before {
-  content: "\003e"; }
+  content: "›"; }
 
 .edit {
   display: block;
