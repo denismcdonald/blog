@@ -1,6 +1,5 @@
 // Check to see if a colour theme (light or dark) has been selected previously
 if (localStorage.getItem("themePreference") === null) {
-
   document.querySelector(".light-switch").addEventListener("click", lightsOn);
 }
 if (localStorage.getItem("themePreference") === "0") {
@@ -11,7 +10,7 @@ if (localStorage.getItem("themePreference") === "1") {
 }
 
 
-// Apply light theme and set user preference to light them
+// Apply light theme and set user preference to light theme
 function lightsOn() {
   var lightSwitch = document.querySelector(".light-switch");
   localStorage.setItem("themePreference", "1");
@@ -27,7 +26,7 @@ function lightsOn() {
 }
 
 
-// Apply dark theme and set user preference to light them
+// Apply dark theme and set user preference to light theme
 function lightsOff() {
   var lightSwitch = document.querySelector(".light-switch");
   localStorage.setItem("themePreference", "0");

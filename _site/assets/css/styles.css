@@ -62,8 +62,9 @@ a:hover {
   right: 1rem; }
 
 .light-switch:focus {
-  box-shadow: 0 0 0 3px #88b8ff;
-  border-radius: 2px; }
+  outline: 4px dotted #88b8ff;
+  border-radius: 8px;
+  outline-offset: 1px; }
 
 .content-container {
   margin: 0 1rem 1rem 1rem;
@@ -73,7 +74,9 @@ a:hover {
   content: "›"; }
 
 .edit {
-  display: block;
+  display: inline-block; }
+
+.edit-container {
   text-align: center; }
 
 .highlight {
@@ -106,8 +109,10 @@ code {
   font-size: 0.9rem; }
 
 .scroll {
-  display: block;
-  margin: 1rem 0 2rem;
+  display: inline-block;
+  margin: 1rem 0 2rem; }
+
+.scroll-container {
   text-align: center; }
 
 .toc {

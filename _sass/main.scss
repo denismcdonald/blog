@@ -87,8 +87,10 @@ a:hover {
 
 
 .light-switch:focus {
-    box-shadow: 0 0 0 3px #88b8ff;
-    border-radius: 2px;
+    outline: 4px dotted #88b8ff;
+    // box-shadow: 0 0 0 5px #88b8ff;
+    border-radius: 8px;
+    outline-offset: 1px;
 }
 
 
@@ -100,16 +102,16 @@ a:hover {
 
 .current:before {
     // content: "\003e";
-    // content: "\25b6";
     content: "\203A"
-    // content: "\2605";
-    // content: "\21d2";
-    // content: "\2192";
 }
 
 
 .edit {
-    display: block;
+    display: inline-block;
+}
+
+
+.edit-container {
     text-align: center;
 }
 
@@ -156,8 +158,12 @@ code {
 
 
 .scroll {
-    display: block;
+    display: inline-block;
     margin: 1rem 0 2rem;
+}
+
+
+.scroll-container {
     text-align: center;
 }
 
