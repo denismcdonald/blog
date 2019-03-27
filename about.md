@@ -1,5 +1,4 @@
 ---
-layout: default
 title: About
 toc: true
 edit: true
