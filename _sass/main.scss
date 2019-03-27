@@ -10,6 +10,12 @@ MOBILE STYLES (See media queries below for desktop styles)
 }
 
 
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
 html {
     box-sizing: border-box;
     position: relative;
@@ -87,7 +93,7 @@ a:hover {
 
 
 .light-switch:focus {
-    outline: 5px dotted #88b8ff;
+    outline: 3px dotted #88b8ff;
     outline-offset: 2px;
 }
 
@@ -263,13 +269,6 @@ Breakpoint 2 (Table of contents appears)
         max-width: 680px;
         padding-top: 4rem;
     }
-
-
-    // .content-container {
-    //     margin: 0 1rem 1rem 1rem;
-    //     padding-top: 4rem;
-    // }
-
 
 
     .light-off {

@@ -7,6 +7,10 @@ MOBILE STYLES (See media queries below for desktop styles)
 :root {
   font-size: calc(1em + 1vw); }
 
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
 html {
   box-sizing: border-box;
   position: relative; }
@@ -62,7 +66,7 @@ a:hover {
   right: 1rem; }
 
 .light-switch:focus {
-  outline: 5px dotted #88b8ff;
+  outline: 3px dotted #88b8ff;
   outline-offset: 2px; }
 
 .content-container {
