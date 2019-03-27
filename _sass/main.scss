@@ -45,8 +45,10 @@ a {
 
 
 a:focus {
-     box-shadow: 0 0 0 3px #88b8ff;
-     border-radius: 2px;
+    background-color: #000;
+    box-shadow: 0 0 0 3px #88b8ff;
+    border-radius: 2px;
+    text-decoration: none;
 }
 
 
@@ -60,8 +62,20 @@ a:visited {
 }
 
 
+.a-light:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+
 .a-light:visited {
     color: #551A8B;
+}
+
+
+.a-light:visited:focus {
+    color: #fff;
+    text-decoration: none;
 }
 
 
@@ -93,7 +107,7 @@ a:hover {
 
 
 .light-switch:focus {
-    outline: 3px dotted #88b8ff;
+    outline: 4px dotted #88b8ff;
     outline-offset: 2px;
 }
 
@@ -105,8 +119,8 @@ a:hover {
 
 
 .current:before {
-    // content: "\003e";
-    content: "\203A"
+    content: "\003e";
+    // content: "\203A";
 }
 
 
