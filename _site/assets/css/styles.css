@@ -4,7 +4,7 @@
 MOBILE STYLES (See media queries below for desktop styles)
 ===========================================================
 */
-:root { font-size: calc(1em + 1vw); }
+:root { font-size: calc(0.75em + 1vw); }
 
 * { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
@@ -32,11 +32,7 @@ a:visited { color: #FEF5DE; }
 
 a:hover { background: #000; border-radius: 4px; color: #fff; text-decoration: none; }
 
-.light-switch { background-image: url("/assets/images/light-off.svg"); background-color: transparent; background-repeat: no-repeat; border: none; cursor: pointer; height: 6.25rem; width: 4.4rem; position: absolute; top: 1.5rem; right: 1rem; }
-
-.light-switch:focus { outline: 4px dotted #88b8ff; outline-offset: 2px; }
-
-.content-container { margin: 0 1rem 1rem 1rem; padding-top: 2rem; }
+.content-container { margin: 0 1rem 1rem 1rem; padding-top: 2rem; max-width: 680px; }
 
 .current:before { content: "\003e"; }
 
@@ -45,6 +41,10 @@ a:hover { background: #000; border-radius: 4px; color: #fff; text-decoration: no
 .edit-container { text-align: center; }
 
 .highlight { margin: 0; width: 100%; }
+
+.light-switch { background-image: url("/assets/images/light-off.svg"); background-color: transparent; background-repeat: no-repeat; border: none; cursor: pointer; height: 6.25rem; width: 4.4rem; position: absolute; top: 1.5rem; right: 1rem; }
+
+.light-switch:focus { outline: 4px dotted #88b8ff; outline-offset: 2px; }
 
 nav { clear: both; margin-bottom: 2rem; position: relative; right: 5.75rem; text-align: right; top: 1.5rem; }
 
@@ -95,8 +95,8 @@ Breakpoint 1 (Dispense with critical mobile styles)
 Breakpoint 2 (Table of contents appears)
 =======================================
 */
-@media (min-width: 1100px) { .content-container { max-width: 680px; padding-top: 2rem; }
-  .light-off { width: 50px; }
+@media (min-width: 1100px) { .content-container { margin: 0 1rem 1rem 2rem; padding-top: 2rem; }
+  .edit { margin: 1rem 0 2rem 2rem; }
   .toc { background: linear-gradient(transparent, transparent); float: right; font-size: 0.8rem; margin: 7rem 1rem 0 0; padding: 0; position: -webkit-sticky; position: sticky; text-align: left; top: 1rem; width: 10rem; }
   .toc-heading { margin: 0 0 0 0.25rem; padding: 0; }
   .toc ul { padding-left: 1.25rem; }

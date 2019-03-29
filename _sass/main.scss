@@ -6,7 +6,7 @@ MOBILE STYLES (See media queries below for desktop styles)
 
 
 :root {
-    font-size: calc(1em + 1vw);
+    font-size: calc(0.75em + 1vw);
 }
 
 
@@ -92,6 +92,34 @@ a:hover {
 }
 
 
+.content-container {
+    margin: 0 1rem 1rem 1rem;
+    padding-top: 2rem;
+    max-width: 680px;
+}
+
+
+.current:before {
+    content: "\003e";
+}
+
+
+.edit {
+    display: inline-block;
+}
+
+
+.edit-container {
+    text-align: center;
+}
+
+
+.highlight {
+    margin: 0;
+    width: 100%;
+}
+
+
 .light-switch {
     background-image: url("/assets/images/light-off.svg");
     background-color: transparent;
@@ -112,34 +140,6 @@ a:hover {
 }
 
 
-.content-container {
-    margin: 0 1rem 1rem 1rem;
-    padding-top: 2rem;
-}
-
-
-.current:before {
-    content: "\003e";
-    // content: "\203A";
-}
-
-
-.edit {
-    display: inline-block;
-}
-
-
-.edit-container {
-    text-align: center;
-}
-
-
-.highlight {
-    margin: 0;
-    width: 100%;
-}
-
-
 nav {
     clear: both;
     margin-bottom: 2rem;
@@ -155,6 +155,11 @@ nav a {
     font-size: 1.15rem;
     margin-bottom: 0.25rem;
 }
+
+
+// nav br {
+//     display: none;
+// }
 
 
 p {
@@ -262,6 +267,11 @@ Breakpoint 1 (Dispense with critical mobile styles)
     }
 
 
+    // nav br {
+    //     display: block;
+    // }
+
+
     .scroll {
         float: right;
         font-size: 1rem;
@@ -280,13 +290,13 @@ Breakpoint 2 (Table of contents appears)
 
 
     .content-container {
-        max-width: 680px;
+        margin: 0 1rem 1rem 2rem;
         padding-top: 2rem;
     }
 
 
-    .light-off {
-        width: 50px;
+    .edit {
+        margin: 1rem 0 2rem 2rem;
     }
 
 

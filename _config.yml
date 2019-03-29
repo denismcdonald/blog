@@ -13,6 +13,8 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      edit: "true"
+      toc: "true"
   - scope:
       path: ""
     values:
