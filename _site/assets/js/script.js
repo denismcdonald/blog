@@ -16,7 +16,7 @@ function lightsOn() {
   localStorage.setItem("themePreference", "1");
   lightSwitch.removeEventListener("click", lightsOn);
   lightSwitch.addEventListener("click", lightsOff);
-  lightSwitch.style.backgroundImage = "url('/assets/images/light-on.svg')";
+  lightSwitch.style.backgroundImage = "url('assets/images/light-on.svg')";
   document.body.classList.add("body-light");
   for (i = 0; i < document.getElementsByTagName("a").length; i++) {
     document.getElementsByTagName("a")[i].classList.add("a-light");
@@ -32,7 +32,7 @@ function lightsOff() {
   localStorage.setItem("themePreference", "0");
   lightSwitch.removeEventListener("click", lightsOff);
   lightSwitch.addEventListener("click", lightsOn);
-  lightSwitch.style.backgroundImage = "url('/assets/images/light-off.svg')";
+  lightSwitch.style.backgroundImage = "url('assets/images/light-off.svg')";
   document.body.classList.remove("body-light");
   for (i = 0; i < document.getElementsByTagName("a").length; i++) {
     document.getElementsByTagName("a")[i].classList.remove("a-light");
