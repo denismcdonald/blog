@@ -66,7 +66,7 @@ pre, code { font-size: 0.9rem; }
 
 .toc { border-radius: 8px; margin: 5rem 0 0 0.5rem; }
 
-.toc:before { content: "Table of contents"; font-size: 1.75rem; font-weight: bold; line-height: 3rem; }
+.toc:before { content: "Table of contents"; font-size: 1.75rem; font-weight: bold; line-height: 3rem; margin-left: -1rem; }
 
 .toc-heading { border-radius: 8px; float: right; margin: 0.5rem 0 0 0.25rem; padding: 0.25rem 0.5rem 0 0.75rem; position: sticky; top: 1rem; right: 0rem; }
 
@@ -108,7 +108,7 @@ Breakpoint 2 (Table of contents appears)
 @media (min-width: 1100px) { .content-container { margin: 0 1rem 1rem 2rem; padding-top: 2rem; }
   .edit { margin: 1rem 0 2rem 2rem; }
   .toc { background: linear-gradient(transparent, transparent); float: right; font-size: 0.8rem; margin: 8.5rem 1rem 0 0; padding: 0; position: -webkit-sticky; position: sticky; text-align: left; top: 1rem; width: 10rem; clear: both; }
-  .toc:before { content: "Table of contents"; font-size: 1rem; font-weight: bold; line-height: 2rem; }
+  .toc:before { content: "Table of contents"; font-size: 1rem; font-weight: bold; line-height: 2rem; margin-left: -1rem; }
   .toc ul { padding-left: 1.25rem; }
   .toc ul li { list-style-position: outside; }
   .toc ul ul { padding-left: 0.25rem; } }

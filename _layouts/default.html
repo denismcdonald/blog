@@ -24,7 +24,9 @@
       {% include navigation.html %}
       
       {%- if page.toc == true -%}
+      <aside>
       {% include toc.html html=content class="toc" %}
+      </aside>
       {%- endif -%}
       
       <div class="content-container">
