@@ -24,10 +24,11 @@
       {% include navigation.html %}
       
       {%- if page.toc == true -%}
-      <aside>
-      {% include toc.html html=content class="toc" %}
+        <aside>
+          {% include toc.html html=content class="toc" %}
+        </aside>
       {%- endif -%}
-    </aside>
+
 
       <div class="content-container">
         {{ content }}
