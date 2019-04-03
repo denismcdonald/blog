@@ -1,4 +1,3 @@
-<!-- <h2 class="toc-heading"><span>Table of contents</h2> -->
 {% capture tocWorkspace %}
     {% comment %}
         Version 1.0.6
@@ -28,7 +27,7 @@
             generate the table of contents and will NOT output the markdown given to it
     {% endcomment %}
 
-    <aside class="toc">
+<!-- <aside class="toc"> -->
 
     {% capture my_toc %}{% endcapture %}
     {% assign orderedList = include.ordered | default: false %}
@@ -76,4 +75,4 @@
     {% endif %}
 {% endcapture %}{% assign tocWorkspace = '' %}{{ my_toc | markdownify | strip }}
 
-        </aside>
+<!-- </aside> -->

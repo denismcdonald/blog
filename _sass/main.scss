@@ -210,6 +210,7 @@ code {
     line-height: 3rem;
 }
 
+
 .toc-heading {
     border-radius: 8px;
     float: right;
@@ -221,6 +222,11 @@ code {
 }
 
 
+ul {
+    list-style: decimal;
+}
+
+
 .toc ul {
     counter-reset: item;
     margin-bottom: 0.5rem;
@@ -228,14 +234,15 @@ code {
 
 
 .toc ul li {
-    list-style: decimal;
+    list-style: none;
     list-style-position: inside;
     margin-bottom: 0.5rem;
 }
 
 
-.toc ul li ul {
-    margin-top: 0.5rem;
+.toc ul li:before {
+    content: "("counter(item, lower-latin)")\200B\00a0";  
+    counter-increment: item;
 }
 
 
@@ -250,13 +257,12 @@ code {
 }
 
 
-
 /*
 NB:  The following is a workaround to add parentheses around list sub-items; eg, 1(a), 2(b), etc. 
 The zero-width space ("\200B") addresses the following accessibility concern: https://developer.mozilla.org/en-US/docs/Web/CSS/list-style#Accessibility_concerns
 */
 .toc ul ul li:before        {
-    content: "("counter(item, lower-latin)")\200B\00a0";  
+    content: "("counter(item, lower-roman)")\200B\00a0";  
     counter-increment: item;
 }
 
@@ -332,18 +338,13 @@ Breakpoint 2 (Table of contents appears)
         clear: both;
     }
 
+    
     .toc:before {
         content: "Table of contents";
         font-size: 1rem;
         font-weight: bold;
         line-height: 2rem;
     }
-
-
-    // .toc-heading {
-    //     margin: 0 0 0 0.25rem;
-    //     padding: 0;
-    // } 
 
 
     .toc ul {
