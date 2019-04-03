@@ -27,8 +27,6 @@
             generate the table of contents and will NOT output the markdown given to it
     {% endcomment %}
 
-<!-- <aside class="toc"> -->
-
     {% capture my_toc %}{% endcapture %}
     {% assign orderedList = include.ordered | default: false %}
     {% assign minHeader = include.h_min | default: 1 %}
@@ -74,5 +72,3 @@
 {{ my_toc | lstrip }}{% endcapture %}
     {% endif %}
 {% endcapture %}{% assign tocWorkspace = '' %}{{ my_toc | markdownify | strip }}
-
-<!-- </aside> -->
