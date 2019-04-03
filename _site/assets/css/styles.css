@@ -46,7 +46,7 @@ h1 { font-size: 2.5rem; }
 
 .highlight { margin: 0; width: 100%; }
 
-.light-switch { background-image: url("/assets/images/light-off.svg"); background-color: transparent; background-repeat: no-repeat; border: none; cursor: pointer; height: 6.25rem; width: 4.4rem; position: absolute; top: 1.5rem; right: 1rem; }
+.light-switch { background-color: transparent; background-repeat: no-repeat; border: none; cursor: pointer; height: 6.25rem; width: 4.4rem; position: absolute; top: 1.5rem; right: 1rem; }
 
 .light-switch:focus { outline: 4px dotted #88b8ff; outline-offset: 2px; }
 
