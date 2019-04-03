@@ -92,6 +92,12 @@ a:hover {
 }
 
 
+aside {
+    margin: 0;
+    padding: 0;
+}
+
+
 .content-container {
     margin: 0 1rem 1rem 1rem;
     padding-top: 2rem;
@@ -111,6 +117,11 @@ a:hover {
 
 .edit-container {
     text-align: center;
+}
+
+
+h1 {
+    font-size: 2.5rem;
 }
 
 
@@ -157,11 +168,6 @@ nav a {
 }
 
 
-// nav br {
-//     display: none;
-// }
-
-
 p {
     line-height: 1.5rem;
 }
@@ -193,14 +199,25 @@ code {
 
 .toc {
     border-radius: 8px;
-    margin: 5rem 0 0 0;
+    margin: 5rem 0 0 0.5rem;
 }
 
 
+.toc:before {
+    content: "Table of contents";
+    font-size: 1.75rem;
+    font-weight: bold;
+    line-height: 3rem;
+}
+
 .toc-heading {
     border-radius: 8px;
+    float: right;
     margin: 0.5rem 0 0 0.25rem;
     padding: 0.25rem 0.5rem 0 0.75rem;
+    position: sticky;
+    top: 1rem;
+    right: 0rem;
 }
 
 
@@ -226,6 +243,12 @@ code {
     list-style: none;
     list-style-position: inside;
 }
+
+
+.top-toc {
+    margin-left: 2rem;
+}
+
 
 
 /*
@@ -267,11 +290,6 @@ Breakpoint 1 (Dispense with critical mobile styles)
     }
 
 
-    // nav br {
-    //     display: block;
-    // }
-
-
     .scroll {
         float: right;
         font-size: 1rem;
@@ -304,20 +322,28 @@ Breakpoint 2 (Table of contents appears)
         background: linear-gradient(transparent, transparent);
         float: right;
         font-size: 0.8rem;
-        margin: 7rem 1rem 0 0;
+        margin: 8.5rem 1rem 0 0;
         padding: 0;
         position: -webkit-sticky;
         position: sticky;
         text-align: left;
         top: 1rem;
         width: 10rem;
+        clear: both;
+    }
+
+    .toc:before {
+        content: "Table of contents";
+        font-size: 1rem;
+        font-weight: bold;
+        line-height: 2rem;
     }
 
 
-    .toc-heading {
-        margin: 0 0 0 0.25rem;
-        padding: 0;
-    } 
+    // .toc-heading {
+    //     margin: 0 0 0 0.25rem;
+    //     padding: 0;
+    // } 
 
 
     .toc ul {

@@ -32,6 +32,8 @@ a:visited { color: #FEF5DE; }
 
 a:hover { background: #000; border-radius: 4px; color: #fff; text-decoration: none; }
 
+aside { margin: 0; padding: 0; }
+
 .content-container { margin: 0 1rem 1rem 1rem; padding-top: 2rem; max-width: 680px; }
 
 .current:before { content: "\003e"; }
@@ -39,6 +41,8 @@ a:hover { background: #000; border-radius: 4px; color: #fff; text-decoration: no
 .edit { display: inline-block; }
 
 .edit-container { text-align: center; }
+
+h1 { font-size: 2.5rem; }
 
 .highlight { margin: 0; width: 100%; }
 
@@ -60,9 +64,11 @@ pre, code { font-size: 0.9rem; }
 
 .scroll-container { text-align: center; }
 
-.toc { border-radius: 8px; margin: 5rem 0 0 0; }
+.toc { border-radius: 8px; margin: 5rem 0 0 0.5rem; }
 
-.toc-heading { border-radius: 8px; margin: 0.5rem 0 0 0.25rem; padding: 0.25rem 0.5rem 0 0.75rem; }
+.toc:before { content: "Table of contents"; font-size: 1.75rem; font-weight: bold; line-height: 3rem; }
+
+.toc-heading { border-radius: 8px; float: right; margin: 0.5rem 0 0 0.25rem; padding: 0.25rem 0.5rem 0 0.75rem; position: sticky; top: 1rem; right: 0rem; }
 
 .toc ul { counter-reset: item; margin-bottom: 0.5rem; }
 
@@ -71,6 +77,8 @@ pre, code { font-size: 0.9rem; }
 .toc ul li ul { margin-top: 0.5rem; }
 
 .toc ul ul li { list-style: none; list-style-position: inside; }
+
+.top-toc { margin-left: 2rem; }
 
 /*
 NB:  The following is a workaround to add parentheses around list sub-items; eg, 1(a), 2(b), etc. 
@@ -97,8 +105,8 @@ Breakpoint 2 (Table of contents appears)
 */
 @media (min-width: 1100px) { .content-container { margin: 0 1rem 1rem 2rem; padding-top: 2rem; }
   .edit { margin: 1rem 0 2rem 2rem; }
-  .toc { background: linear-gradient(transparent, transparent); float: right; font-size: 0.8rem; margin: 7rem 1rem 0 0; padding: 0; position: -webkit-sticky; position: sticky; text-align: left; top: 1rem; width: 10rem; }
-  .toc-heading { margin: 0 0 0 0.25rem; padding: 0; }
+  .toc { background: linear-gradient(transparent, transparent); float: right; font-size: 0.8rem; margin: 8.5rem 1rem 0 0; padding: 0; position: -webkit-sticky; position: sticky; text-align: left; top: 1rem; width: 10rem; clear: both; }
+  .toc:before { content: "Table of contents"; font-size: 1rem; font-weight: bold; line-height: 2rem; }
   .toc ul { padding-left: 1.25rem; }
   .toc ul li { list-style-position: outside; }
   .toc ul ul { padding-left: 0.25rem; } }
