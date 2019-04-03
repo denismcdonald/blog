@@ -4,4 +4,4 @@ name: Denis McDonald
 position: Chief Editor
 ---
 
-Denis is a rash-ridden steaming French nit.
+"Bring me the hydrospanner!"
