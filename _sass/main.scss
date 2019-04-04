@@ -25,6 +25,9 @@ body {
     background-color: #4B525A;
     color: #FFEFF4;
     font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+    font-family: 'IM Fell Double Pica', serif;
+    font-family: 'IM Fell Great Primer', serif;
+    font-family: 'EB Garamond', serif;
     font-size: 100%;
     padding: 0;
     margin: 0;
@@ -39,7 +42,7 @@ body {
 
 a {
     color: #FFFFBC;
-    padding: 0 3px;
+    // padding: 0 4px;
 }
 
 
@@ -98,14 +101,25 @@ aside {
 
 
 .content-container {
+    clear: left;
     margin: 0 1rem 1rem 1rem;
-    padding-top: 2rem;
+    padding-top: 4rem;
     max-width: 680px;
 }
 
 
 .current:before {
     content: "\003e";
+}
+
+
+.d {
+    border-radius: 4px;
+    margin: 1.5rem 1rem 1rem 2rem;
+    padding: 0;
+    float: left;
+    // width: 120px;
+    // height: 117px;
 }
 
 
@@ -130,18 +144,18 @@ h1 {
 }
 
 
-.light-switch {
-    background-image: url("../images/light-off.svg");
-    background-color: transparent;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    height: 6.25rem;
-    width: 4.4rem;
-    position: absolute;
-    top: 1.5rem;
-    right: 1rem;
-}
+// .light-switch {
+//     background-image: url($baseurl + "/assets/images/light-on.svg");
+//     background-color: transparent;
+//     background-repeat: no-repeat;
+//     border: none;
+//     cursor: pointer;
+//     height: 6.25rem;
+//     width: 4.4rem;
+//     position: absolute;
+//     top: 1.5rem;
+//     right: 1rem;
+// }
 
 
 .light-switch:focus {
@@ -151,10 +165,11 @@ h1 {
 
 
 nav {
-    clear: both;
     margin-bottom: 2rem;
-    position: relative;
-    right: 5.75rem;
+    // position: relative;
+    float: right;
+    // right: 5.75rem;
+    margin: 1rem;
     text-align: right;
     top: 1.5rem;
 }
@@ -164,6 +179,7 @@ nav a {
     display: inline-block;
     font-size: 1.15rem;
     margin-bottom: 0.25rem;
+    // padding: 0 4px;
 }
 
 
@@ -202,6 +218,7 @@ code {
 
 
 .toc {
+    clear: both;
     border-radius: 8px;
     margin: 5rem 0 0 0.5rem;
 }
@@ -224,11 +241,6 @@ code {
     position: sticky;
     top: 1rem;
     right: 0rem;
-}
-
-
-ul {
-    list-style: decimal;
 }
 
 
@@ -269,6 +281,16 @@ The zero-width space ("\200B") addresses the following accessibility concern: ht
 .toc ul ul li:before        {
     content: "("counter(item, lower-roman)")\200B\00a0";  
     counter-increment: item;
+}
+
+
+.toggle-theme {
+    cursor: pointer;
+}
+
+
+ul {
+    list-style: decimal;
 }
 
 
@@ -320,7 +342,7 @@ Breakpoint 2 (Table of contents appears)
 
     .content-container {
         margin: 0 1rem 1rem 2rem;
-        padding-top: 2rem;
+        padding-top: 4rem;
     }
 
 
@@ -334,13 +356,14 @@ Breakpoint 2 (Table of contents appears)
         position: sticky;
         top: 1rem;
         margin-top: 8rem;
+        clear: right;
     }
 
 
     .toc {
         background: linear-gradient(transparent, transparent);
         float: right;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         margin: 0 1rem 0 0;
         padding: 0;
         text-align: left;
