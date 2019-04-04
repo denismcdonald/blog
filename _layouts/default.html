@@ -29,7 +29,6 @@
         </aside>
       {%- endif -%}
 
-
       <div class="content-container">
         {{ content }}
       </div>   
@@ -42,12 +41,19 @@
       {% include scroll.html %}
       {%- endif -%}
     </div>
+    
     <noscript>
       <style>
         .light-switch{display: none;}
         nav{right: 1rem;}
         </style>
     </noscript>
+
+    <div class="preload">
+      <img src="{{ site.baseurl }}/assets/images/light-off.svg" alt="light-off switch">
+      <img src="{{ site.baseurl }}/assets/images/light-off.svg" alt="light-on switch">
+    </div>
+
     <script src="{{ site.baseurl }}/assets/js/script.js"></script>
   </body>
 </html>

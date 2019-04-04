@@ -4,7 +4,6 @@ MOBILE STYLES (See media queries below for desktop styles)
 ===========================================================
 */
 
-
 :root {
     font-size: calc(0.75em + 1vw);
 }
@@ -132,7 +131,7 @@ h1 {
 
 
 .light-switch {
-    // background-image: url("/assets/images/light-off.svg");
+    background-image: url("../images/light-off.svg");
     background-color: transparent;
     background-repeat: no-repeat;
     border: none;
@@ -183,6 +182,11 @@ pre {
 pre,
 code {
     font-size: 0.9rem;
+}
+
+
+.preload {
+    display: none;
 }
 
 
