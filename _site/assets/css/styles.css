@@ -4,7 +4,7 @@
 MOBILE STYLES (See media queries below for desktop styles)
 ===========================================================
 */
-:root { font-size: calc(0.75em + 1vw); }
+:root { font-size: calc(0.8em + 1vw); }
 
 * { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
@@ -17,8 +17,6 @@ body { background-color: #4B525A; color: #FFEFF4; font-family: "Segoe UI", Canda
 a { color: #FFFFBC; }
 
 a:focus { background-color: #000; box-shadow: 0 0 0 3px #88b8ff; border-radius: 2px; text-decoration: none; }
-
-a:visited { color: #FEF5DE; }
 
 .a-light { color: #0000EE; }
 
@@ -34,11 +32,17 @@ a:hover { background: #000; border-radius: 4px; color: #fff; text-decoration: no
 
 aside { margin: 0; padding: 0; }
 
+.center { display: block; margin-left: auto; margin-right: auto; width: 50%; }
+
+.off-center { margin: 0 1rem 1rem 2rem; }
+
 .content-container { clear: left; margin: 0 1rem 1rem 1rem; padding-top: 4rem; max-width: 680px; }
+
+.content-container-off { clear: left; margin: 0 1rem 1rem 1rem; padding-top: 4rem; max-width: 680px; }
 
 .current:before { content: "\003e"; }
 
-.d { border-radius: 4px; margin: 1.5rem 1rem 1rem 2rem; padding: 0; float: left; }
+.d { border-radius: 4px; box-shadow: 10px 10px 30px rgba(7, 7, 7, 0.3); margin: 1.5rem 1rem 1rem 6rem; padding: 0; float: left; }
 
 .edit { display: inline-block; }
 
@@ -50,11 +54,15 @@ h1 { font-size: 2.5rem; }
 
 .light-switch:focus { outline: 4px dotted #88b8ff; outline-offset: 2px; }
 
-nav { margin-bottom: 2rem; float: right; margin: 1rem; text-align: right; top: 1.5rem; }
+nav { margin-bottom: 2rem; text-align: center; top: 1.5rem; }
 
-nav a { display: inline-block; font-size: 1.15rem; margin-bottom: 0.25rem; }
+nav a { color: inherit; display: inline-block; font-size: 1.15rem; margin-bottom: 0.25rem; padding: 0 4px; text-decoration: none; }
+
+.nav-dark { color: #000; }
 
 p { line-height: 1.5rem; }
+
+p a, h1 a, h2 a, h3 a, h4 a { padding: 0 4px; }
 
 pre { border-radius: 8px; padding: 1rem; white-space: pre-wrap; }
 
@@ -109,7 +117,8 @@ Breakpoint 1 (Dispense with critical mobile styles)
 Breakpoint 2 (Table of contents appears)
 =======================================
 */
-@media (min-width: 1100px) { .content-container { margin: 0 1rem 1rem 2rem; padding-top: 4rem; }
+@media (min-width: 1100px) { .content-container { margin: 0 auto; padding-top: 2rem; }
+  .content-container-off { margin: 0 1rem 1rem 2rem; padding-top: 2rem; }
   .edit { margin: 1rem 0 2rem 2rem; }
   aside { float: right; position: -webkit-sticky; position: sticky; top: 1rem; margin-top: 8rem; clear: right; }
   .toc { background: linear-gradient(transparent, transparent); float: right; font-size: 0.9rem; margin: 0 1rem 0 0; padding: 0; text-align: left; width: 10rem; clear: both; }

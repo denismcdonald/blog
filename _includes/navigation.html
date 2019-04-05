@@ -1,10 +1,9 @@
-<nav>
+<nav> 
   {%- for item in site.data.navigation -%}
   <a href="{{ site.baseurl }}/{{ item.link }}" {% if page.url == item.link %}class="current" {% endif %} name="{{ item.name }}">
     {{ item.name }}
   </a>
-  <br>
   {%- endfor -%}
-  <button class="toggle-theme">Lights</button>
+  <!-- <button class="toggle-theme">Lights</button> -->
 </nav>
 <!-- <button aria-pressed="false" class="light-switch" alt="Button to toggle colour theme" title="Turn on light colour theme" tabindex="0"></button> -->

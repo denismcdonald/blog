@@ -21,22 +21,29 @@
   
   </head>
   <body>
-
-    <div class="wrapper">
-
-        <a class="imgAnchor" href="{{ site.baseurl }}/index.html"><img src="{{ site.baseurl }}/assets/images/d4.jpg" class="d" alt="Logo icon"></a>
-
+    
+    <!-- <a href="{{ site.baseurl }}/index.html"><img src="{{ site.baseurl }}/assets/images/d.jpg" class="d" alt="Logo icon"></a> -->
+    
+    <div class="wrapper">       
+      <img src="{{ site.baseurl }}/assets/images/lighthouse-inverted.png" class="lighthouse center" alt="lighthouse">
+      
       {% include navigation.html %}
       
       {%- if page.toc == true -%}
         <aside>
           {% include toc.html html=content class="toc" %}
         </aside>
+        <div class="content-container-off">
+            {{ content }}
+        </div>  
+        {%- else -%}
+        <div class="content-container">
+            {{ content }}
+        </div> 
       {%- endif -%}
 
-      <div class="content-container">
-        {{ content }}
-      </div>   
+      
+       
       
       {%- if page.edit == true -%}
       {% include edit.html %}
@@ -54,6 +61,5 @@
         </style>
     </noscript>
 
-    <script src="{{ site.baseurl }}/assets/js/script.js"></script>
   </body>
 </html>

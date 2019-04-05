@@ -5,7 +5,7 @@ MOBILE STYLES (See media queries below for desktop styles)
 */
 
 :root {
-    font-size: calc(0.75em + 1vw);
+    font-size: calc(0.8em + 1vw);
 }
 
 
@@ -34,6 +34,20 @@ body {
 }
 
 
+.background {
+    // background-color: #fff;
+    // background-image:  url($baseurl + "/assets/images/mountains1.jpg");
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // min-height: 1000px;
+}
+
+
+.lighthouse {
+    // margin: 0 auto;
+}
+
+
 .body-light {
     background-color: #fff;
     color: #000;
@@ -54,9 +68,9 @@ a:focus {
 }
 
 
-a:visited {
-    color: #FEF5DE;
-}
+// a:visited {
+//     color: #FEF5DE;
+// }
 
 
 .a-light {
@@ -100,7 +114,28 @@ aside {
 }
 
 
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+
+.off-center {
+    margin: 0 1rem 1rem 2rem;
+}
+
+
 .content-container {
+    clear: left;
+    margin: 0 1rem 1rem 1rem;
+    padding-top: 4rem;
+    max-width: 680px;
+}
+
+
+.content-container-off {
     clear: left;
     margin: 0 1rem 1rem 1rem;
     padding-top: 4rem;
@@ -115,7 +150,8 @@ aside {
 
 .d {
     border-radius: 4px;
-    margin: 1.5rem 1rem 1rem 2rem;
+    box-shadow: 10px 10px 30px rgba(7, 7, 7, 0.3);
+    margin: 1.5rem 1rem 1rem 6rem;
     padding: 0;
     float: left;
     // width: 120px;
@@ -167,25 +203,44 @@ h1 {
 nav {
     margin-bottom: 2rem;
     // position: relative;
-    float: right;
+    // float: right;
     // right: 5.75rem;
-    margin: 1rem;
-    text-align: right;
+    // margin: 1rem;
+    text-align: center;
     top: 1.5rem;
 }
 
 
 nav a {
+    color: inherit;
     display: inline-block;
     font-size: 1.15rem;
     margin-bottom: 0.25rem;
-    // padding: 0 4px;
+    padding: 0 4px;
+    text-decoration: none;
+}
+
+
+.nav-dark {
+    color: #000;
 }
 
 
 p {
     line-height: 1.5rem;
 }
+
+
+p a,
+h1 a,
+h2 a,
+h3 a,
+h4 a {
+    padding: 0 4px;
+}
+
+
+
 
 
 pre {
@@ -341,10 +396,17 @@ Breakpoint 2 (Table of contents appears)
 
 
     .content-container {
-        margin: 0 1rem 1rem 2rem;
-        padding-top: 4rem;
+        // margin: 0 1rem 1rem 2rem;
+        margin: 0 auto;
+        padding-top: 2rem;
     }
 
+    .content-container-off {
+        margin: 0 1rem 1rem 2rem;
+        // margin: 0 auto;
+        padding-top: 2rem;
+    }
+ 
 
     .edit {
         margin: 1rem 0 2rem 2rem;
