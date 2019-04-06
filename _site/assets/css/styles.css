@@ -50,6 +50,8 @@ nav a { display: inline-block; font-size: 1.15rem; margin: 0 1rem 0 0; padding: 
 
 p { line-height: 1.5rem; }
 
+.post-date { font-style: italic; margin-bottom: -1.5rem; }
+
 pre { border-radius: 8px; padding: 1rem; white-space: pre-wrap; }
 
 pre, code { font-size: 0.9rem; }

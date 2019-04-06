@@ -2,7 +2,7 @@
   link: index.html
 - name: Blog
   link: blog.html
-- name: Folio
-  link: staff.html
+- name: Archive
+  link: archive.html
 - name: Links
   link: about.html

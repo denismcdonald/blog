@@ -131,6 +131,7 @@ aside {
 
 h1 {
     font-size: 2.5rem;
+    // margin: 0;
 }
 
 
@@ -164,6 +165,12 @@ nav a {
 
 p {
     line-height: 1.5rem;
+}
+
+
+.post-date {
+    font-style: italic;
+    margin-bottom: -1.5rem;
 }
 
 
