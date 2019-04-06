@@ -43,10 +43,10 @@ body {
 }
 
 
-.body-light {
-    background-color: #fff;
-    color: #000;
-}
+// .body-light {
+//     background-color: #fff;
+//     color: #000;
+// }
 
 
 a {
@@ -67,38 +67,23 @@ a:visited {
 }
 
 
-.a-light {
-    color: #0000EE;
-}
-
-
-.a-light:focus {
-    color: #fff;
-    text-decoration: none;
-}
-
-
-.a-light:visited {
-    color: #551A8B;
-}
-
-
-.a-light:visited:focus {
-    color: #fff;
-    text-decoration: none;
-}
-
-
-.a-light:visited:hover {
-    color: #fff;
-}
-
-
 a:hover {
     background: #000;
     border-radius: 4px;
     color: #fff;
     text-decoration: none;
+}
+
+
+p a,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+a.edit,
+a.scroll,
+li a {
+    padding: 0 4px;
 }
 
 
@@ -115,13 +100,10 @@ aside {
 }
 
 
-.content-container-off {
-    clear: left;
-    margin: 0 1rem 1rem 1rem;
-    padding-top: 4rem;
-    max-width: 680px;
+.current {
+    border: 5px solid yellow;
+    color: yellow;
 }
-
 
 .current:before {
     content: "\003e";
@@ -182,18 +164,6 @@ nav a {
 
 p {
     line-height: 1.5rem;
-}
-
-
-p a,
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-a.edit,
-a.scroll,
-li a {
-    padding: 0 4px;
 }
 
 
@@ -344,11 +314,6 @@ Breakpoint 2 (Table of contents appears)
         padding-top: 8rem;
     }
 
-    .content-container-off {
-        margin: 0 1rem 1rem 2rem;
-        padding-top: 2rem;
-    }
- 
 
     .edit {
         margin: 1rem 0 2rem 2rem;

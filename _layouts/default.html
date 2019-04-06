@@ -21,45 +21,27 @@
   
   </head>
   <body>
-    
-    <!-- <a href="{{ site.baseurl }}/index.html"><img src="{{ site.baseurl }}/assets/images/d.jpg" class="d" alt="Logo icon"></a> -->
-    
     <div class="wrapper">       
-      <!-- <img src="{{ site.baseurl }}/assets/images/d-inverted.jpg" alt="Site icon"> -->
-      <!-- <img src="{{ site.baseurl }}/assets/images/thistle.jpg" alt="Site icon"> -->
       
-      <!-- <img src="{{ site.baseurl }}/assets/images/lighthouse-inverted1.png" class="lighthouse" alt="lighthouse"> -->
       {% include navigation.html %}
       
       {%- if page.toc == true -%}
         <aside>
           {% include toc.html html=content class="toc" %}
         </aside>
-    
-        {%- endif -%}
-        <div class="content-container">
-            {{ content }}
-        </div> 
-    
+      {%- endif -%}
 
-      
-       
-      
+      <div class="content-container">
+          {{ content }}
+      </div> 
+
       {%- if page.edit == true -%}
-      {% include edit.html %}
+        {% include edit.html %}
       {%- endif -%}
       
       {%- if page.scroll == true -%}
-      {% include scroll.html %}
+        {% include scroll.html %}
       {%- endif -%}
     </div>
-    
-    <noscript>
-      <style>
-        .light-switch{display: none;}
-        nav{right: 1rem;}
-        </style>
-    </noscript>
-
   </body>
 </html>
