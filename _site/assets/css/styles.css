@@ -12,13 +12,15 @@ html { box-sizing: border-box; position: relative; }
 
 body { background-color: #4B525A; color: #FFEFF4; font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif; font-family: 'IM Fell Double Pica', serif; font-family: 'IM Fell Great Primer', serif; font-family: 'EB Garamond', serif; font-size: 100%; padding: 0; margin: 0; }
 
-.lighthouse { margin: 0; max-width: 500px; display: block; }
+.lighthouse { width: 100%; margin: 0; float: right; max-width: 500px; display: block; }
 
 .body-light { background-color: #fff; color: #000; }
 
 a { color: #FFFFBC; }
 
 a:focus { background-color: #000; box-shadow: 0 0 0 3px #88b8ff; border-radius: 2px; text-decoration: none; }
+
+a:visited { color: #FEF5DE; }
 
 .a-light { color: #0000EE; }
 
@@ -34,8 +36,6 @@ a:hover { background: #000; border-radius: 4px; color: #fff; text-decoration: no
 
 aside { margin: 0; padding: 0; }
 
-.off-center { margin: 0 1rem 1rem 2rem; }
-
 .content-container { margin: 0 1rem 1rem 1rem; padding-top: 3rem; max-width: 680px; }
 
 .content-container-off { clear: left; margin: 0 1rem 1rem 1rem; padding-top: 4rem; max-width: 680px; }
@@ -50,23 +50,21 @@ aside { margin: 0; padding: 0; }
 
 h1 { font-size: 2.5rem; }
 
-.light-switch:focus { outline: 4px dotted #88b8ff; outline-offset: 2px; }
+.highlight { margin: 0; width: 100%; }
+
+.indent { text-indent: 2.5rem; }
 
 nav { position: absolute; right: 1rem; top: 1rem; }
 
 nav a { color: inherit; display: inline-block; font-size: 1.15rem; margin: 0 1rem 0 0; padding: 0 4px; text-decoration: none; }
 
-.nav-dark { color: #000; }
-
 p { line-height: 1.5rem; }
 
-p a, h1 a, h2 a, h3 a, h4 a { padding: 0 4px; }
+p a, h1 a, h2 a, h3 a, h4 a, a.edit, a.scroll, li a { padding: 0 4px; }
 
 pre { border-radius: 8px; padding: 1rem; white-space: pre-wrap; }
 
 pre, code { font-size: 0.9rem; }
-
-.preload { display: none; }
 
 .scroll { display: inline-block; margin: 1rem 0 2rem; }
 
@@ -93,8 +91,6 @@ NB:  The following is a workaround to add parentheses around list sub-items; eg,
 The zero-width space ("\200B") addresses the following accessibility concern: https://developer.mozilla.org/en-US/docs/Web/CSS/list-style#Accessibility_concerns
 */
 .toc ul ul li:before { content: "(" counter(item,lower-roman) ")​ "; counter-increment: item; }
-
-.toggle-theme { cursor: pointer; }
 
 ul { list-style: decimal; }
 
