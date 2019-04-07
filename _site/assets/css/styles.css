@@ -4,15 +4,13 @@
 MOBILE STYLES (See media queries below for desktop styles)
 ===========================================================
 */
-:root { font-size: calc(0.9em + 1vw); }
+:root { font-size: calc(1.1em + 1vw); }
 
 * { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
-html { box-sizing: border-box; position: relative; }
+html { box-sizing: border-box; }
 
-body { background-color: #4B525A; color: #FFEFF4; font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif; font-family: 'IM Fell Double Pica', serif; font-family: 'IM Fell Great Primer', serif; font-family: 'EB Garamond', serif; font-size: 100%; padding: 0; margin: 0; }
-
-.lighthouse { width: 100%; margin: 0; float: right; max-width: 500px; display: block; }
+body { background-color: #4B525A; color: #FFEFF4; font-family: 'Cormorant Garamond', serif; font-size: 100%; padding: 0; margin: 0; }
 
 a { color: #FFFFBC; }
 
@@ -30,13 +28,11 @@ aside { margin: 0; padding: 0; }
 
 .blog-list-date { font-style: italic; margin-top: -1rem; }
 
-.content-container { margin: 0 1rem 1rem 1rem; padding-top: 6rem; max-width: 680px; }
+.content-container { margin: 0 1rem 1rem 1rem; padding-top: 3rem; max-width: 680px; }
 
 .current { border: 5px solid yellow; color: yellow; }
 
 .current:before { content: "\003e"; }
-
-.d { border-radius: 4px; box-shadow: 10px 10px 30px rgba(7, 7, 7, 0.3); margin: 1.5rem 1rem 1rem 6rem; padding: 0; float: left; }
 
 .edit { display: inline-block; }
 
@@ -50,9 +46,11 @@ h1 { font-size: 2.5rem; }
 
 .indent-content { margin-left: 1rem; }
 
-nav { display: flex; justify-content: space-between; position: absolute; right: 1rem; top: 1rem; }
+.lighthouse { width: 100%; margin: 0; float: right; max-width: 500px; display: block; }
 
-nav a { font-size: 1.15rem; margin: 0 0.5rem 0 0.5rem; padding: 0 4px; text-decoration: none; }
+nav { display: flex; justify-content: space-between; text-align: center; margin: 2rem 1rem 1rem 1rem; }
+
+nav a { margin: 0 0.25rem 0 0.25rem; padding: 0 4px; text-decoration: none; }
 
 p { line-height: 1.5rem; }
 
@@ -70,11 +68,11 @@ pre, code { font-size: 0.9rem; }
 
 .tag-list { list-style: circle; }
 
-.toc { clear: both; border-radius: 8px; margin: 7rem 0 -3rem 1.5rem; }
+.toc { clear: both; margin: 4rem 0 -1rem 1rem; }
 
 .toc:before { content: "Table of contents"; font-size: 1.75rem; font-weight: bold; line-height: 3rem; margin-left: -1.5rem; }
 
-.toc-heading { border-radius: 8px; float: right; margin: 0.5rem 0 0 0.25rem; padding: 0.25rem 0.5rem 0 0.75rem; position: sticky; top: 1rem; right: 0rem; }
+.toc-heading { float: right; margin: 0.5rem 0 0 0.25rem; padding: 0.25rem 0.5rem 0 0.75rem; position: sticky; top: 1rem; right: 0rem; }
 
 .toc ul { counter-reset: item; margin-bottom: 0.5rem; }
 
@@ -102,10 +100,14 @@ MEDIA QUERIES (x3) FOR DESKTOP STYLES
 Breakpoint 1 (Dispense with critical mobile styles)
 ==================================================
 */
-@media (min-width: 540px) { .edit { float: left; font-size: 1rem; margin: 1rem 0 2rem 1rem; }
+@media (min-width: 540px) { :root { font-size: calc(1em + 1vw); }
+  .content-container { margin: 0 1rem 1rem 2rem; padding-top: 6rem; }
+  .edit { float: left; font-size: 1rem; margin: 1rem 0 2rem 2rem; }
   .github { clear: both; }
-  nav a { font-size: 1rem; }
-  .scroll { float: right; font-size: 1rem; margin: 1rem 2rem 2rem 0; } }
+  nav { margin: 1rem; position: absolute; right: 1rem; top: 1rem; }
+  nav a { font-size: 1rem; margin: 0 0.5rem 0 0.5rem; }
+  .scroll { float: right; font-size: 1rem; margin: 1rem 2rem 2rem 0; }
+  .toc { margin: 7rem 0 -3rem 1.5rem; } }
 /*
 =======================================
 Breakpoint 2 (Table of contents appears)

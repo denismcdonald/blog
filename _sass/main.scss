@@ -5,7 +5,7 @@ MOBILE STYLES (See media queries below for desktop styles)
 */
 
 :root {
-    font-size: calc(0.9em + 1vw);
+    font-size: calc(1.1em + 1vw);
 }
 
 
@@ -17,36 +17,18 @@ MOBILE STYLES (See media queries below for desktop styles)
 
 html {
     box-sizing: border-box;
-    position: relative;
 }
 
 
 body {
     background-color: #4B525A;
     color: #FFEFF4;
-    font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
-    font-family: 'IM Fell Double Pica', serif;
-    font-family: 'IM Fell Great Primer', serif;
-    font-family: 'EB Garamond', serif;
+    // font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 100%;
     padding: 0;
     margin: 0;
 }
-
-
-.lighthouse {
-    width: 100%;
-    margin: 0;
-    float: right;
-    max-width: 500px;
-    display: block;
-}
-
-
-// .body-light {
-//     background-color: #fff;
-//     color: #000;
-// }
 
 
 a {
@@ -106,7 +88,7 @@ aside {
 
 .content-container {
     margin: 0 1rem 1rem 1rem;
-    padding-top: 6rem;
+    padding-top: 3rem;
     max-width: 680px;
 }
 
@@ -118,15 +100,6 @@ aside {
 
 .current:before {
     content: "\003e";
-}
-
-
-.d {
-    border-radius: 4px;
-    box-shadow: 10px 10px 30px rgba(7, 7, 7, 0.3);
-    margin: 1.5rem 1rem 1rem 6rem;
-    padding: 0;
-    float: left;
 }
 
 
@@ -142,7 +115,6 @@ aside {
 
 h1 {
     font-size: 2.5rem;
-    // margin: 0;
 }
 
 
@@ -162,18 +134,26 @@ h1 {
 }
 
 
+.lighthouse {
+    width: 100%;
+    margin: 0;
+    float: right;
+    max-width: 500px;
+    display: block;
+}
+
+
 nav {
     display: flex;
     justify-content: space-between;
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
+    text-align: center;
+    margin: 2rem 1rem 1rem 1rem;
 }
 
 
 nav a {
-    font-size: 1.15rem;
-    margin: 0 0.5rem 0 0.5rem;
+    // font-size: 1rem;
+    margin: 0 0.25rem 0 0.25rem;
     padding: 0 4px;
     text-decoration: none;
 }
@@ -226,8 +206,7 @@ code {
 
 .toc {
     clear: both;
-    border-radius: 8px;
-    margin: 7rem 0 -3rem 1.5rem;
+    margin: 4rem 0 -1rem 1rem;
 }
 
 
@@ -241,7 +220,6 @@ code {
 
 
 .toc-heading {
-    border-radius: 8px;
     float: right;
     margin: 0.5rem 0 0 0.25rem;
     padding: 0.25rem 0.5rem 0 0.75rem;
@@ -307,11 +285,21 @@ Breakpoint 1 (Dispense with critical mobile styles)
 
 @media (min-width: 540px) {
     
+    :root {
+        font-size: calc(1em + 1vw);
+    }
+    
+
+    .content-container {
+        margin: 0 1rem 1rem 2rem;
+        padding-top: 6rem;
+    }
+
 
     .edit {
         float: left;
         font-size: 1rem;
-        margin: 1rem 0 2rem 1rem;
+        margin: 1rem 0 2rem 2rem;
     }
 
 
@@ -320,8 +308,17 @@ Breakpoint 1 (Dispense with critical mobile styles)
     }
 
 
+    nav {
+        margin: 1rem;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+    }
+
+
     nav a {
         font-size: 1rem;
+        margin: 0 0.5rem 0 0.5rem;
     }
 
 
@@ -330,6 +327,12 @@ Breakpoint 1 (Dispense with critical mobile styles)
         font-size: 1rem;
         margin: 1rem 2rem 2rem 0;
     }
+
+
+    .toc {
+        margin: 7rem 0 -3rem 1.5rem;
+    }
+
 
 }
 
