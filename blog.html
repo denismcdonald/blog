@@ -6,11 +6,13 @@ scroll: true
 ---
 <h1>Latest Posts</h1>
 
-<ul>
+<ul class="blog-list">
   {% for post in site.posts %}
     <li>
       <h2><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></h2>
+      <p class="blog-list-date">{{ post.date | date: "%d %B %Y" }}</p>
       <p>{{ post.excerpt }}</p>
     </li>
   {% endfor %}
+  <br>
 </ul>

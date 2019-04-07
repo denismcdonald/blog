@@ -93,9 +93,20 @@ aside {
 }
 
 
+.blog-list {
+    list-style: circle;
+}
+
+
+.blog-list-date {
+    font-style: italic;
+    margin-top: -1rem;
+}
+
+
 .content-container {
     margin: 0 1rem 1rem 1rem;
-    padding-top: 3rem;
+    padding-top: 6rem;
     max-width: 680px;
 }
 
@@ -146,7 +157,14 @@ h1 {
 }
 
 
+.indent-content {
+    margin-left: 1rem;
+}
+
+
 nav {
+    display: flex;
+    justify-content: space-between;
     position: absolute;
     right: 1rem;
     top: 1rem;
@@ -154,10 +172,8 @@ nav {
 
 
 nav a {
-    // color: inherit;
-    display: inline-block;
     font-size: 1.15rem;
-    margin: 0 1rem 0 0;
+    margin: 0 0.5rem 0 0.5rem;
     padding: 0 4px;
     text-decoration: none;
 }
@@ -170,7 +186,12 @@ p {
 
 .post-date {
     font-style: italic;
-    margin-bottom: -1.5rem;
+    margin: -1.75rem 0 2rem 0;
+}
+
+
+.post-tags {
+    margin: 3rem 0 3rem 0;
 }
 
 
@@ -198,10 +219,15 @@ code {
 }
 
 
+.tag-list {
+    list-style: circle;
+}
+
+
 .toc {
     clear: both;
     border-radius: 8px;
-    margin: 7rem 0 0 0.5rem;
+    margin: 7rem 0 -3rem 1.5rem;
 }
 
 
@@ -317,13 +343,13 @@ Breakpoint 2 (Table of contents appears)
 
 
     .content-container {
-        margin: 0 1rem 1rem 2rem;
+        margin: 0 1rem 1rem 3rem;
         padding-top: 8rem;
     }
 
 
     .edit {
-        margin: 1rem 0 2rem 2rem;
+        margin: 1rem 0 2rem 3rem;
     }
 
 
@@ -341,7 +367,7 @@ Breakpoint 2 (Table of contents appears)
         background: linear-gradient(transparent, transparent);
         float: right;
         font-size: 0.9rem;
-        margin: 0 1rem 0 0;
+        margin: 0 0 0 0;
         padding: 0;
         text-align: left;
         width: 10rem;
