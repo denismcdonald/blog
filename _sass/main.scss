@@ -299,7 +299,8 @@ Breakpoint 1 (Dispense with critical mobile styles)
     .edit {
         float: left;
         font-size: 1rem;
-        margin: 1rem 0 2rem 2rem;
+        // margin: 1rem 0 2rem 2rem;
+        margin: 1rem 0 2rem 0;
     }
 
 
@@ -346,13 +347,23 @@ Breakpoint 2 (Table of contents appears)
 
 
     .content-container {
-        margin: 0 1rem 1rem 3rem;
+        margin: 0 auto;
         padding-top: 8rem;
     }
 
 
+    .toc-content {
+        margin: 0 1rem 1rem 3rem;
+    }
+
+
     .edit {
-        margin: 1rem 0 2rem 3rem;
+        margin: 1rem 0 2rem 0;
+    }
+
+
+    .edit-toc {
+        margin: 2rem 0 2rem 0;
     }
 
 
@@ -416,9 +427,13 @@ Breakpoint 3 (Left margin increases to retain site ratio, roughly)
         max-width: 870px;
     }
 
-    
-    .wrapper {
+
+    .toc-content {
         margin-left: calc((100% - 1800px) / 2 + 232px);
     }
+
+    // .wrapper {
+    //     margin-left: calc((100% - 1800px) / 2 + 232px);
+    // }
 
 }

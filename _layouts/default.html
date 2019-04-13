@@ -33,16 +33,28 @@
         <aside>
           {% include toc.html html=content class="toc" %}
         </aside>
-      {%- endif -%}
 
-      <div class="content-container">
+        <div class="content-container toc-content">
           {{ content }}
-      </div> 
+        
+          {%- if page.edit == true -%}
+          <div class="edit-toc">
+            {% include edit.html %}
+          </div>
+          {%- endif -%}
+        
+        </div> 
 
-      {%- if page.edit == true -%}
-        {% include edit.html %}
+      {%- else -%}
+        <div class="content-container">
+          {{ content }}
+          
+          {%- if page.edit == true -%}
+            {% include edit.html %}
+          {%- endif -%}
+        </div> 
       {%- endif -%}
-      
+          
       {%- if page.scroll == true -%}
         {% include scroll.html %}
       {%- endif -%}
