@@ -46,6 +46,8 @@ h1 { font-size: 2.5rem; }
 
 .indent-content { margin-left: 1rem; }
 
+li { padding-top: 0.25rem; }
+
 .lighthouse { width: 100%; margin: 0; float: right; max-width: 500px; display: block; }
 
 nav { display: flex; justify-content: space-between; text-align: center; margin: 2rem 1rem 1rem 1rem; }
