@@ -5,7 +5,7 @@ MOBILE STYLES (See media queries below for desktop styles)
 */
 
 :root {
-    font-size: calc(1.1em + 1vw);
+    font-size: calc(0.85em + 1vw);
 }
 
 
@@ -23,8 +23,7 @@ html {
 body {
     background-color: #4B525A;
     color: #FFEFF4;
-    // font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Lora', serif;
     font-size: 100%;
     padding: 0;
     margin: 0;
@@ -160,7 +159,7 @@ nav a {
 
 
 p {
-    line-height: 1.5rem;
+    line-height: 1.65rem;
 }
 
 
@@ -286,7 +285,7 @@ Breakpoint 1 (Dispense with critical mobile styles)
 @media (min-width: 540px) {
     
     :root {
-        font-size: calc(1em + 1vw);
+        font-size: calc(0.8em + 1vw);
     }
     
 
@@ -380,8 +379,8 @@ Breakpoint 2 (Table of contents appears)
     .toc {
         background: linear-gradient(transparent, transparent);
         float: right;
-        font-size: 0.9rem;
-        margin: 0 0 0 0;
+        font-size: 0.8rem;
+        margin: 0 0.5rem 0 0;
         padding: 0;
         text-align: left;
         width: 10rem;
