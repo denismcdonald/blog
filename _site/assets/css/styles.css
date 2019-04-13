@@ -117,7 +117,7 @@ Breakpoint 2 (Table of contents appears)
   .toc-content { margin: 0 1rem 1rem 3rem; }
   .edit { margin: 1rem 0 2rem 0; }
   .edit-toc { margin: 2rem 0 2rem 0; }
-  aside { float: right; position: -webkit-sticky; position: sticky; top: 1rem; margin-top: 14.25rem; clear: right; }
+  aside { float: right; position: -webkit-sticky; position: sticky; top: 1rem; margin-top: 16rem; clear: right; }
   .toc { background: linear-gradient(transparent, transparent); float: right; font-size: 0.8rem; margin: 0 0.5rem 0 0; padding: 0; text-align: left; width: 10rem; clear: both; }
   .toc:before { content: "Table of contents"; font-size: 1rem; font-weight: bold; line-height: 2rem; margin-left: -1rem; }
   .toc ul { padding-left: 1.25rem; }
@@ -125,10 +125,10 @@ Breakpoint 2 (Table of contents appears)
   .toc ul ul { padding-left: 0.25rem; } }
 /*
 =================================================================
-Breakpoint 3 (Left margin increases to retain site ratio, roughly)
+Breakpoint 3
 =================================================================
 */
-@media (min-width: 1400px) { .content-container { max-width: 870px; }
+@media (min-width: 1400px) { .content-container { max-width: 900px; }
   .toc-content { margin-left: calc((100% - 1800px) / 2 + 232px); } }
 .highlight pre { background-color: #272822; }
 

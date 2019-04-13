@@ -371,7 +371,7 @@ Breakpoint 2 (Table of contents appears)
         position: -webkit-sticky;
         position: sticky;
         top: 1rem;
-        margin-top: 14.25rem;
+        margin-top: 16rem;
         clear: right;
     }
 
@@ -416,14 +416,14 @@ Breakpoint 2 (Table of contents appears)
 
 /*
 =================================================================
-Breakpoint 3 (Left margin increases to retain site ratio, roughly)
+Breakpoint 3
 =================================================================
 */
 @media (min-width: 1400px) {
 
 
     .content-container {
-        max-width: 870px;
+        max-width: 900px;
     }
 
 
