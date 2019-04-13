@@ -22,13 +22,13 @@ a:hover { background: #000; border-radius: 4px; color: #fff; text-decoration: no
 
 p a, h1 a, h2 a, h3 a, h4 a, a.edit, a.scroll, li a { padding: 0 4px; }
 
-aside { margin: 0; padding: 0; }
+aside { margin: 1rem 0 -4rem 0; padding: 0; text-align: center; }
 
 .blog-list { list-style: circle; }
 
 .blog-list-date { font-style: italic; margin-top: -1rem; }
 
-.content-container { margin: 0 1rem 1rem 1rem; padding-top: 3rem; max-width: 680px; }
+.content-container { margin: 0 1rem 1rem 1rem; max-width: 680px; }
 
 .current { border: 5px solid yellow; color: yellow; }
 
@@ -68,11 +68,9 @@ pre, code { font-size: 0.9rem; }
 
 .tag-list { list-style: circle; }
 
-.toc { clear: both; margin: 4rem 0 -1rem 1rem; }
+.toc { display: inline-block; text-align: left; }
 
 .toc:before { content: "Table of contents"; font-size: 1.75rem; font-weight: bold; line-height: 3rem; margin-left: -1.5rem; }
-
-.toc-heading { float: right; margin: 0.5rem 0 0 0.25rem; padding: 0.25rem 0.5rem 0 0.75rem; position: sticky; top: 1rem; right: 0rem; }
 
 .toc ul { counter-reset: item; margin-bottom: 0.5rem; }
 
@@ -101,7 +99,7 @@ Breakpoint 1 (Dispense with critical mobile styles)
 ==================================================
 */
 @media (min-width: 540px) { :root { font-size: calc(0.8em + 1vw); }
-  .content-container { margin: 0 1rem 1rem 2rem; padding-top: 6rem; }
+  .content-container { margin: 0 1rem 1rem 2rem; margin: 0 auto; padding: 8rem 1rem 0 1rem; }
   .edit { float: left; font-size: 1rem; margin: 1rem 0 2rem 0; }
   .github { clear: both; }
   nav { margin: 1rem; position: absolute; right: 1rem; top: 1rem; }
