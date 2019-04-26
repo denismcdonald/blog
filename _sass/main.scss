@@ -54,7 +54,7 @@ a:hover {
     text-decoration: none;
 }
 
-
+a,
 p a,
 h1 a,
 h2 a,
@@ -75,7 +75,7 @@ aside {
 
 
 .blog-list {
-    list-style: circle;
+    list-style: disc;
 }
 
 
@@ -129,9 +129,9 @@ h1 {
 }
 
 
-.indent-content {
-    margin-left: 1rem;
-}
+// .indent-content {
+//     margin-left: 1rem;
+// }
 
 
 li {
@@ -204,7 +204,7 @@ code {
 
 
 .tag-list {
-    list-style: circle;
+    list-style: disc;
 }
 
 
