@@ -22,6 +22,8 @@ a:hover { background: #000; border-radius: 4px; color: #fff; text-decoration: no
 
 a, p a, h1 a, h2 a, h3 a, h4 a, a.edit, a.scroll, li a { padding: 0 4px; }
 
+.archive-dates { margin: 2rem 0 -0.5rem 0; }
+
 aside { margin: 4rem 0 0 0; padding: 0; text-align: center; }
 
 .blog-list { list-style: disc; }
