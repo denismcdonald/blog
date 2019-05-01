@@ -70,6 +70,8 @@ pre, code { font-size: 0.9rem; }
 
 .tag-list { list-style: disc; }
 
+.test { display: none; }
+
 .toc { display: inline-block; text-align: left; }
 
 .toc:before { content: "Table of contents"; font-size: 1.75rem; font-weight: bold; line-height: 3rem; margin-left: -1.5rem; }
@@ -119,7 +121,8 @@ Breakpoint 2 (Table of contents appears)
   .edit { margin: 1rem 0 2rem 0; }
   .edit-toc { margin: 2rem 0 2rem 0; }
   aside { float: right; position: -webkit-sticky; position: sticky; top: 1rem; margin-top: 13rem; clear: right; }
-  .toc { background: linear-gradient(transparent, transparent); float: right; font-size: 0.8rem; margin: 0 0.5rem 0 0; padding: 0; text-align: left; width: 10rem; clear: both; }
+  .test { display: block; font-size: 0.8rem; position: absolute; bottom: -2rem; }
+  .toc { background: linear-gradient(transparent, transparent); float: right; font-size: 0.8rem; font-size: 0.85rem; margin: 0 0.5rem 0 0; padding: 0; text-align: left; width: 10rem; clear: both; }
   .toc:before { content: "Table of contents"; font-size: 1rem; font-weight: bold; line-height: 2rem; margin-left: -1rem; }
   .toc ul { padding-left: 1.25rem; }
   .toc ul li { list-style-position: outside; }

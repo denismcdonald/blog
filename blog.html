@@ -5,14 +5,14 @@ edit: false
 scroll: true
 ---
 <h1>Latest Posts</h1>
-
-<ul class="blog-list">
+<br>
+<!-- <ul class="blog-list"> -->
   {% for post in site.posts %}
-    <li>
+    <!-- <li> -->
       <h2><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></h2>
-      <p class="blog-list-date">{{ post.date | date: "%d %B %Y" }}</p>
-      <p>{{ post.excerpt }}</p>
-    </li>
+      <p class="blog-list-date">&mdash; {{ post.date | date: "%d %B %Y" }}</p>
+      <!-- <p>{{ post.excerpt }}</p> -->
+    <!-- </li> -->
+    <br>
   {% endfor %}
-  <br>
-</ul>
+<!-- </ul> -->
