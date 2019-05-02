@@ -40,6 +40,8 @@ aside { margin: 4rem 0 0 0; padding: 0; text-align: center; }
 
 .edit-container { text-align: center; }
 
+h1, h2, h3, h4 { font-style: italic; font-weight: 900; }
+
 h1 { font-size: 2rem; }
 
 .highlight { margin: 0; width: 100%; }
@@ -64,17 +66,21 @@ pre { border-radius: 8px; padding: 1rem; white-space: pre-wrap; }
 
 pre, code { font-size: 0.9rem; }
 
+.quote { margin-top: 5rem; text-align: center; }
+
+.quote span { font-style: italic; }
+
 .scroll { display: inline-block; margin: 1rem 0 2rem; }
 
 .scroll-container { text-align: center; }
 
 .tag-list { list-style: disc; }
 
-.test { display: none; }
-
 .toc { display: inline-block; text-align: left; }
 
-.toc:before { content: "Table of contents"; font-size: 1.75rem; font-weight: bold; line-height: 3rem; margin-left: -1.5rem; }
+.toc:before { content: "Table of contents"; font-size: 1.75rem; font-weight: 900; font-style: italic; line-height: 3rem; margin-left: -1.5rem; }
+
+#toc-scroll { display: none; }
 
 .toc ul { counter-reset: item; margin-bottom: 0.5rem; }
 
@@ -121,9 +127,9 @@ Breakpoint 2 (Table of contents appears)
   .edit { margin: 1rem 0 2rem 0; }
   .edit-toc { margin: 2rem 0 2rem 0; }
   aside { float: right; position: -webkit-sticky; position: sticky; top: 1rem; margin-top: 13rem; clear: right; }
-  .test { display: block; font-size: 0.8rem; position: absolute; bottom: -2rem; }
   .toc { background: linear-gradient(transparent, transparent); float: right; font-size: 0.8rem; font-size: 0.85rem; margin: 0 0.5rem 0 0; padding: 0; text-align: left; width: 10rem; clear: both; }
-  .toc:before { content: "Table of contents"; font-size: 1rem; font-weight: bold; line-height: 2rem; margin-left: -1rem; }
+  .toc:before { content: "Table of contents"; font-size: 1rem; font-weight: 900; font-style: italic; line-height: 2rem; margin-left: -1rem; }
+  #toc-scroll { color: #fff; display: block; font-size: 0.9rem; position: absolute; bottom: -2rem; color: #fff; font-style: italic; font-weight: 900; }
   .toc ul { padding-left: 1.25rem; }
   .toc ul li { list-style-position: outside; }
   .toc ul ul { padding-left: 0.25rem; } }

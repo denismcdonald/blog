@@ -118,6 +118,15 @@ aside {
 }
 
 
+h1,
+h2,
+h3,
+h4 {
+    font-style: italic;
+    font-weight: 900;
+}
+
+
 h1 {
     font-size: 2rem;
 }
@@ -197,6 +206,17 @@ code {
 }
 
 
+.quote {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+
+.quote span {
+    font-style: italic;
+}
+
+
 .scroll {
     display: inline-block;
     margin: 1rem 0 2rem;
@@ -213,11 +233,6 @@ code {
 }
 
 
-.test {
-    display: none;
-}
-
-
 .toc {
     display: inline-block;
     text-align: left;
@@ -227,9 +242,15 @@ code {
 .toc:before {
     content: "Table of contents";
     font-size: 1.75rem;
-    font-weight: bold;
+    font-weight: 900;
+    font-style: italic;
     line-height: 3rem;
     margin-left: -1.5rem;
+}
+
+
+#toc-scroll {
+    display: none;
 }
 
 
@@ -387,14 +408,6 @@ Breakpoint 2 (Table of contents appears)
     }
 
 
-    .test {
-        display: block;
-        font-size: 0.8rem;
-        position: absolute;
-        bottom: -2rem;
-    }
-
-
     .toc {
         background: linear-gradient(transparent, transparent);
         float: right;
@@ -411,9 +424,22 @@ Breakpoint 2 (Table of contents appears)
     .toc:before {
         content: "Table of contents";
         font-size: 1rem;
-        font-weight: bold;
+        font-weight: 900;
+        font-style: italic;
         line-height: 2rem;
         margin-left: -1rem;
+    }
+
+
+    #toc-scroll {
+        color: #fff;
+        display: block;
+        font-size: 0.9rem;
+        position: absolute;
+        bottom: -2rem;
+        color: #fff;
+        font-style: italic;
+        font-weight: 900;
     }
 
 
