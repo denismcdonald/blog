@@ -36,7 +36,7 @@ aside { margin: 4rem 0 0 0; padding: 0; text-align: center; }
 
 .current:before { content: "\003e"; }
 
-.edit { display: inline-block; }
+.edit { background-color: #4B525A; display: inline-block; }
 
 .edit-container { text-align: center; }
 
@@ -70,7 +70,7 @@ pre, code { font-size: 0.9rem; }
 
 .quote span { font-style: italic; }
 
-.scroll { display: inline-block; margin: 1rem 0 2rem; }
+.scroll { background-color: #4B525A; display: inline-block; margin: 1rem 0 2rem; }
 
 .scroll-container { text-align: center; }
 
