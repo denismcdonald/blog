@@ -44,15 +44,15 @@ h1, h2, h3, h4 { font-style: italic; font-weight: 900; }
 
 h1 { font-size: 2rem; }
 
+.heading-big { font-size: 3rem; }
+
 .highlight { margin: 0; width: 100%; }
 
 .indent { text-indent: 2.5rem; }
 
 li { padding-top: 0.25rem; }
 
-.lighthouse { width: 100%; margin: 0; float: right; max-width: 500px; display: block; }
-
-nav { display: flex; justify-content: space-between; text-align: center; margin: 2rem 1rem 1rem 1rem; }
+nav { display: flex; justify-content: space-between; text-align: center; margin: 1rem; }
 
 nav a { margin: 0 0.25rem 0 0.25rem; padding: 0 4px; text-decoration: none; }
 
@@ -113,7 +113,7 @@ Breakpoint 1 (Dispense with critical mobile styles)
   .content-container { margin: 0 1rem 1rem 2rem; margin: 0 auto; padding: 8rem 1rem 0 1rem; }
   .edit { float: left; font-size: 1rem; margin: 1rem 0 2rem 0; }
   .github { clear: both; }
-  nav { margin: 1rem; position: absolute; right: 1rem; top: 1rem; }
+  nav { position: absolute; right: 1rem; }
   nav a { font-size: 1rem; margin: 0 0.5rem 0 0.5rem; }
   .scroll { float: right; font-size: 1rem; margin: 1rem 2rem 2rem 0; }
   .toc { margin: 7rem 0 -3rem 1.5rem; } }

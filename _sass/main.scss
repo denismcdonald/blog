@@ -132,6 +132,12 @@ h1 {
 }
 
 
+.heading-big {
+    font-size: 3rem;
+}
+
+
+
 .highlight {
     margin: 0;
     width: 100%;
@@ -153,20 +159,21 @@ li {
 }
 
 
-.lighthouse {
-    width: 100%;
-    margin: 0;
-    float: right;
-    max-width: 500px;
-    display: block;
-}
+// .lighthouse {
+//     width: 100%;
+//     margin: 0;
+//     float: right;
+//     max-width: 500px;
+//     display: block;
+// }
 
 
 nav {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    margin: 2rem 1rem 1rem 1rem;
+    // margin: 2rem 1rem 1rem 1rem;
+    margin: 1rem;
 }
 
 
@@ -340,10 +347,10 @@ Breakpoint 1 (Dispense with critical mobile styles)
 
 
     nav {
-        margin: 1rem;
+        // margin: 1rem;
         position: absolute;
         right: 1rem;
-        top: 1rem;
+        // top: 1rem;
     }
 
 
