@@ -25,13 +25,21 @@ body {
     // background-color: #F6F6F6;
     color: #FFEFF4;
     font-family: "Vollkorn", "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+    // font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
     margin: 0;
+}
+
+.body-light {
+    background-color: #fff;
+    color: #000;
 }
 
 
 a {
     color: #FFFFBC;
 }
+
+
 
 
 a:focus {
@@ -53,6 +61,16 @@ a:hover {
     color: #fff;
     text-decoration: none;
 }
+
+
+.a-light {
+    color: blue;
+}
+
+.a-light:visited {
+    color: orange;
+}
+
 
 a,
 p a,
@@ -85,13 +103,14 @@ aside {
 
 
 .blog-list-date {
+    display: inline;
     font-style: italic;
-    margin-top: -1rem;
+    // margin-top: -1rem;
 }
 
 
 .content-container {
-    margin: 0 1rem 1rem 1rem;
+    // margin: 0 1rem 1rem 1rem;
     padding-top: 3rem;
     max-width: 680px;
 }
@@ -109,7 +128,7 @@ aside {
 
 
 .edit {
-    background-color: #4B525A;
+    // background-color: #4B525A;
     display: inline-block;
 }
 
@@ -226,7 +245,7 @@ code {
 
 
 .scroll {
-    background-color: #4B525A;
+    // background-color: #4B525A;
     display: inline-block;
     margin: 1rem 0 2rem;
 }
@@ -321,6 +340,7 @@ Breakpoint 1 (Dispense with critical mobile styles)
     
     :root {
         font-size: calc(0.8em + 1vw);
+        // font-size: calc(0.6em + 1vw);
     }
     
 
@@ -331,7 +351,7 @@ Breakpoint 1 (Dispense with critical mobile styles)
 
     .content-container {
         margin: 0 1rem 1rem 2rem;
-        margin: 0 auto;
+        // margin: 0 auto;
         padding: 8rem 1rem 0 1rem;
     }
 
@@ -351,8 +371,10 @@ Breakpoint 1 (Dispense with critical mobile styles)
     nav {
         // margin: 1rem;
         position: absolute;
-        right: 1rem;
+        // right: 1rem;
+        left: 1rem;
         // top: 1rem;
+        justify-content: center;
     }
 
 
@@ -386,7 +408,7 @@ Breakpoint 2 (Table of contents appears)
 
 
     .content-container {
-        margin: 0 auto;
+        // margin: 0 auto;
         padding-top: 8rem;
     }
 
@@ -481,9 +503,12 @@ Breakpoint 3
     }
 
 
-    .toc-content {
+    .toc-content, 
+    nav, 
+    .content-container {
         margin-left: calc((100% - 1800px) / 2 + 232px);
     }
+
 
     // .wrapper {
     //     margin-left: calc((100% - 1800px) / 2 + 232px);
