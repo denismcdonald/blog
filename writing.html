@@ -1,0 +1,10 @@
+---
+layout: default
+title: Writing
+edit: false
+scroll: true
+---
+<h1>Latest Posts</h1>
+  {% for post in site.posts %}
+      <p><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%d %B %Y" }}</p>
+  {% endfor %}

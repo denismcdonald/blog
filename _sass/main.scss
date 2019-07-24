@@ -8,39 +8,25 @@ MOBILE STYLES (See media queries below for desktop styles)
     font-size: calc(0.85em + 1vw);
 }
 
-
 * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-
 html {
     box-sizing: border-box;
 }
 
-
 body {
     background-color: #4B525A;
-    // background-color: #F6F6F6;
     color: #FFEFF4;
     font-family: "Vollkorn", "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
-    // font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
     margin: 0;
 }
-
-.body-light {
-    background-color: #fff;
-    color: #000;
-}
-
 
 a {
     color: #FFFFBC;
 }
-
-
-
 
 a:focus {
     background-color: #000;
@@ -49,11 +35,9 @@ a:focus {
     text-decoration: none;
 }
 
-
 a:visited {
     color: #FEF5DE;
 }
-
 
 a:hover {
     background: #000;
@@ -61,16 +45,6 @@ a:hover {
     color: #fff;
     text-decoration: none;
 }
-
-
-.a-light {
-    color: blue;
-}
-
-.a-light:visited {
-    color: orange;
-}
-
 
 a,
 p a,
@@ -84,11 +58,9 @@ li a {
     padding: 0 4px;
 }
 
-
 .archive-dates {
     margin: 2rem 0 -0.5rem 0;
 }
-
 
 aside {
     margin: 4rem 0 0 0;
@@ -96,47 +68,38 @@ aside {
     text-align: center;
 }
 
-
 .blog-list {
     list-style: disc;
 }
 
-
 .blog-list-date {
     display: inline;
     font-style: italic;
-    // margin-top: -1rem;
 }
 
-
 .content-container {
-    // margin: 0 1rem 1rem 1rem;
+    margin: 0 1rem 1rem 1rem;
     padding-top: 3rem;
     max-width: 680px;
 }
 
-
 .current {
-    border: 5px solid yellow;
-    color: yellow;
+    border-bottom: 3px solid #FFFFBC;
+    // border-radius: 4px;
 }
-
-
-.current:before {
-    content: "\003e";
-}
-
 
 .edit {
-    // background-color: #4B525A;
     display: inline-block;
 }
-
 
 .edit-container {
     text-align: center;
 }
 
+div a .edit {
+    color: blue;
+    text-decoration: none;
+}
 
 h1,
 h2,
@@ -146,56 +109,33 @@ h4 {
     font-weight: 900;
 }
 
-
 h1 {
     font-size: 2rem;
 }
 
-
 .heading-big {
     font-size: 3rem;
 }
-
-
 
 .highlight {
     margin: 0;
     width: 100%;
 }
 
-
 .indent {
     text-indent: 2.5rem;
 }
-
-
-// .indent-content {
-//     margin-left: 1rem;
-// }
-
 
 li {
     padding-top: 0.25rem;
 }
 
-
-// .lighthouse {
-//     width: 100%;
-//     margin: 0;
-//     float: right;
-//     max-width: 500px;
-//     display: block;
-// }
-
-
 nav {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    // margin: 2rem 1rem 1rem 1rem;
     margin: 1rem;
 }
-
 
 nav a {
     margin: 0 0.25rem 0 0.25rem;
@@ -203,22 +143,18 @@ nav a {
     text-decoration: none;
 }
 
-
 p {
     line-height: 1.65rem;
 }
-
 
 .post-date {
     font-style: italic;
     margin: -1.5rem 0 2rem 0;
 }
 
-
 .post-tags {
     margin: 3rem 0 3rem 0;
 }
-
 
 pre {
     border-radius: 8px;
@@ -226,46 +162,37 @@ pre {
     white-space: pre-wrap;
 }
 
-
 pre,
 code {
     font-size: 0.9rem;
 }
-
 
 .quote {
     margin-top: 5rem;
     text-align: center;
 }
 
-
 .quote span {
     font-style: italic;
 }
 
-
 .scroll {
-    // background-color: #4B525A;
     display: inline-block;
     margin: 1rem 0 2rem;
 }
-
 
 .scroll-container {
     text-align: center;
 }
 
-
 .tag-list {
     list-style: disc;
 }
-
 
 .toc {
     display: inline-block;
     text-align: left;
 }
-
 
 .toc:before {
     content: "Table of contents";
@@ -276,17 +203,14 @@ code {
     margin-left: -1.5rem;
 }
 
-
 #toc-scroll {
     display: none;
 }
-
 
 .toc ul {
     counter-reset: item;
     margin-bottom: 0.5rem;
 }
-
 
 .toc ul li {
     list-style: none;
@@ -294,23 +218,19 @@ code {
     margin-bottom: 0.5rem;
 }
 
-
 .toc ul li:before {
     content: "("counter(item, lower-latin)")\200B\00a0";  
     counter-increment: item;
 }
-
 
 .toc ul ul li {
     list-style: none;
     list-style-position: inside;
 }
 
-
 .top-toc {
     margin-left: 2rem;
 }
-
 
 /*
 NB:  The following is a workaround to add parentheses around list sub-items; eg, 1(a), 2(b), etc. 
@@ -321,11 +241,9 @@ The zero-width space ("\200B") addresses the following accessibility concern: ht
     counter-increment: item;
 }
 
-
 ul {
     list-style: decimal;
 }
-
 
 /*
 ============================================================
@@ -340,21 +258,16 @@ Breakpoint 1 (Dispense with critical mobile styles)
     
     :root {
         font-size: calc(0.8em + 1vw);
-        // font-size: calc(0.6em + 1vw);
     }
     
-
     aside {
         margin: 1rem 0.25rem -4rem 0;
     }
 
-
     .content-container {
         margin: 0 1rem 1rem 2rem;
-        // margin: 0 auto;
         padding: 8rem 1rem 0 1rem;
     }
-
 
     .edit {
         float: left;
@@ -362,27 +275,20 @@ Breakpoint 1 (Dispense with critical mobile styles)
         margin: 1rem 0 2rem 0;
     }
 
-
     .github {
         clear: both;
     }
 
-
     nav {
-        // margin: 1rem;
         position: absolute;
-        // right: 1rem;
         left: 1rem;
-        // top: 1rem;
         justify-content: center;
     }
-
 
     nav a {
         font-size: 1rem;
         margin: 0 0.5rem 0 0.5rem;
     }
-
 
     .scroll {
         float: right;
@@ -390,14 +296,14 @@ Breakpoint 1 (Dispense with critical mobile styles)
         margin: 1rem 2rem 2rem 0;
     }
 
-
     .toc {
         margin: 7rem 0 -3rem 1.5rem;
     }
 
-
+    .toggle-theme {
+        display: inline;
+    }
 }
-
 
 /*
 =======================================
@@ -406,38 +312,30 @@ Breakpoint 2 (Table of contents appears)
 */
 @media (min-width: 1100px) {
 
-
     .content-container {
-        // margin: 0 auto;
         padding-top: 8rem;
     }
-
 
     .toc-content {
         margin: 0 1rem 1rem 2rem;
     }
 
-
     .edit {
         margin: 1rem 0 2rem 0;
     }
 
-
     .edit-toc {
         margin: 2rem 0 2rem 0;
     }
-
 
     aside {
         float: right;
         position: -webkit-sticky;
         position: sticky;
         top: 1rem;
-        // margin-top: 15rem;
         margin-top: 13rem;
         clear: right;
     }
-
 
     .toc {
         background: linear-gradient(transparent, transparent);
@@ -451,7 +349,6 @@ Breakpoint 2 (Table of contents appears)
         clear: both;
     }
 
-
     .toc:before {
         content: "Table of contents";
         font-size: 1rem;
@@ -460,7 +357,6 @@ Breakpoint 2 (Table of contents appears)
         line-height: 2rem;
         margin-left: -1rem;
     }
-
 
     #toc-scroll {
         // color: #fff;
@@ -472,23 +368,18 @@ Breakpoint 2 (Table of contents appears)
         font-weight: 900;
     }
 
-
     .toc ul {
         padding-left: 1.25rem;
     }
-    
-    
+     
     .toc ul li {
         list-style-position: outside;
     }
    
-
     .toc ul ul {
         padding-left: 0.25rem;
     } 
-
 }
-
 
 /*
 =================================================================
@@ -497,21 +388,13 @@ Breakpoint 3
 */
 @media (min-width: 1400px) {
 
-
     .content-container {
         max-width: 900px;
     }
 
-
+    nav,
     .toc-content, 
-    nav, 
     .content-container {
         margin-left: calc((100% - 1800px) / 2 + 232px);
     }
-
-
-    // .wrapper {
-    //     margin-left: calc((100% - 1800px) / 2 + 232px);
-    // }
-
 }

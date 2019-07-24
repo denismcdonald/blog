@@ -18,11 +18,11 @@
     <meta name="msapplication-TileColor" content="#4b525a">
     <meta name="theme-color" content="#ffffff">
     <!-- End favicons -->
-  
+    
     {% if site.tags != "" %}
-      {% include tags.html %}
+    {% include tags.html %}
     {% endif %}
-
+    
   </head>
   <body>
     <div class="wrapper">       
@@ -30,37 +30,37 @@
       {% include navigation.html %}
       
       {%- if page.toc == true -%}
-        <aside>
-          {% include toc.html html=content class="toc" %}
-        </aside>
-
-        <div class="content-container toc-content">
-          {{ content }}
+      <aside>
+        {% include toc.html html=content class="toc" %}
+      </aside>
+      
+      <div class="content-container toc-content">
+        {{ content }}
         
-          {%- if page.edit == true -%}
-          <div class="edit-toc">
-            {% include edit.html %}
-          </div>
-          {%- endif -%}
+        {%- if page.edit == true -%}
+        <div class="edit-toc">
+          {% include edit.html %}
+        </div>
+        {%- endif -%}
         
-        </div> 
-
+      </div> 
+      
       {%- else -%}
-        <div class="content-container">
-          {{ content }}
-          
-          {%- if page.edit == true -%}
-            {% include edit.html %}
-          {%- endif -%}
-        </div> 
+      <div class="content-container">
+        {{ content }}
+        
+        {%- if page.edit == true -%}
+        {% include edit.html %}
+        {%- endif -%}
+      </div> 
       {%- endif -%}
-          
+      
       {%- if page.scroll == true -%}
-        {% include scroll.html %}
+      {% include scroll.html %}
       {%- endif -%}
     </div>
-
-    <script src="{{ site.baseurl }}/assets/js/script.js"></script>
-
+     
+    <!-- <script src="{{ site.baseurl }}/assets/js/script.js"></script> -->
+    
   </body>
-</html>
+  </html>

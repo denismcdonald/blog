@@ -1,8 +1,7 @@
 <nav> 
   {%- for item in site.data.navigation -%}
-  <a href="{{ site.baseurl }}/{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %} id="{{ item.name }}">
+  <a href="{{ site.baseurl }}{{ item.link }}" {% if page.url == item.link %}class="current" {% endif %} id="{{ item.name }}">
     {{ item.name }}
   </a>
   {%- endfor -%}
-  <a href="" class="toggle-theme">Theme</a>
 </nav>
