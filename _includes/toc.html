@@ -3,8 +3,6 @@
         Version 1.0.6
           https://github.com/allejo/jekyll-toc
 
-        "...like all things liquid - where there's a will, and ~36 hours to spare, there's usually a/some way" ~jaybe
-
         Usage:
             {% include toc.html html=content sanitize=true class="inline_toc" id="my_toc" h_min=2 h_max=3 %}
 
@@ -72,4 +70,4 @@
 {{ my_toc | lstrip }}{% endcapture %}
     {% endif %}
 {% endcapture %}{% assign tocWorkspace = '' %}{{ my_toc | markdownify | strip }}
-<a href="#Home" id="toc-scroll">Scroll to top &#8593;</a>
+<a href="#Home" class="toc-scroll">Scroll to top<span>&#8593;</span></a>

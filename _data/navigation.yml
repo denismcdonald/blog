@@ -1,8 +1,8 @@
 - name: Home
   link: /
-- name: Writing
-  link: /writing.html
+- name: Blog
+  link: /blog.html
 - name: Archive
   link: /archive.html
-- name: About
-  link: /about.html
+- name: Folio
+  link: /folio.html
