@@ -4,10 +4,10 @@ scroll: true
 ---
 
 <h1>Archive</h1>
-<!-- <hr> -->
 <br>
 <h2>Tags</h2>
 
+<section class="archive-tags-list">
 {% capture tags %}
   {% for tag in site.tags %}
     {{ tag[0] }}
@@ -15,11 +15,12 @@ scroll: true
 {% endcapture %}
 {% assign sortedtags = tags | split:' ' | sort %}
 
-
 {% for tag in sortedtags %}
 <!-- <a href="#{{ tag }}">{{ tag }}</a><span> /</span> -->
-<a href="{{ site.baseurl}}/tag/{{ tag }}">{{ tag | capitalize }}</a><span>&nbsp;|</span>
+<a class="archive-tags" href="{{ site.baseurl}}/tag/{{ tag }}">{{ tag | capitalize }}</a><span>&nbsp;|</span>
 {% endfor %}
+</section>
+
 <br>
 <br>
 
@@ -32,14 +33,11 @@ scroll: true
           <ul class="tag-list">
           {% assign myDate = currentDate %}
       {% endif %}
-      <li><a href="{{ site.baseurl}}{{ post.url }}"><span>{{ post.date | date: "%-d %B" }}</span> - {{ post.title }}</a></li>
+      <li><span>{{ post.date | date: "%-d %B" }}&nbsp; | &nbsp;</span><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
       {% if forloop.last %}</ul>{% endif %}
   {% endfor %}
   <br>
 </section>
-
-
-
 
 <!-- {% for tag in sortedtags %}
   <h3 id="{{ tag }}">{{ tag | capitalize }}:</h3>

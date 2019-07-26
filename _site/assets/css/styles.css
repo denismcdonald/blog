@@ -10,19 +10,19 @@ MOBILE STYLES (See media queries below for desktop styles)
 
 html { box-sizing: border-box; }
 
-body { background-color: #4B525A; color: #FFEFF4; font-family: "Vollkorn", "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif; margin: 0; }
+body { background-color: #fff; color: #000; font-family: "Vollkorn", "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif; margin: 0; }
 
-a { color: #FFFFBC; }
-
-a:focus { background-color: #000; box-shadow: 0 0 0 3px #88b8ff; border-radius: 2px; text-decoration: none; }
-
-a:visited { color: #FEF5DE; }
+a:focus { box-shadow: 0 0 0 3px #88b8ff; border-radius: 2px; text-decoration: none; }
 
 a:hover { background: #000; border-radius: 4px; color: #fff; text-decoration: none; }
 
 a, p a, h1 a, h2 a, h3 a, h4 a, a.edit, a.scroll, li a { padding: 0 4px; }
 
 .archive-dates { margin: 2rem 0 -0.5rem 0; }
+
+.archive-tags { font-family: "BenchNine"; font-size: 1.25rem; }
+
+.archive-tags-list { margin: -1rem 0 0 1.5rem; }
 
 aside { margin: 4rem 0 0 0; padding: 0; text-align: center; }
 
@@ -32,7 +32,7 @@ aside { margin: 4rem 0 0 0; padding: 0; text-align: center; }
 
 .content-container { margin: 0 1rem 1rem 1rem; padding-top: 3rem; max-width: 680px; }
 
-.current { border-bottom: 3px solid #FFFFBC; }
+.current { border-bottom: 3px solid #000; }
 
 .edit { display: inline-block; font-family: 'BenchNine'; font-weight: 900; }
 
@@ -60,6 +60,10 @@ nav { display: flex; font-family: 'BenchNine'; font-size: 1.75rem; justify-conte
 
 nav a { margin: 0 0.25rem 0 0.25rem; padding: 0 4px; text-decoration: none; }
 
+nav a:visited { color: #000; }
+
+nav a:hover { color: #fff; }
+
 p { line-height: 1.65rem; }
 
 .post-date { font-family: 'BenchNine'; font-style: italic; margin: -1.5rem 0 2rem 0; }
@@ -80,7 +84,9 @@ pre, code { font-size: 0.9rem; }
 
 .scroll-container a span { display: inline-block; padding-left: 5px; text-decoration: none; }
 
-.tag-list { list-style: disc; }
+.tag-list { list-style: none; }
+
+.tag-list span { font-family: "BenchNine"; font-size: 1.25rem; text-decoration: none; display: inline-block; }
 
 .toc { display: inline-block; text-align: left; }
 
@@ -137,7 +143,7 @@ Breakpoint 2 (Table of contents appears)
   aside { float: right; position: -webkit-sticky; position: sticky; top: 1rem; margin-top: 13rem; clear: right; }
   .toc { background: linear-gradient(transparent, transparent); float: right; font-size: 1rem; margin: 0 0.5rem 0 0; padding: 0; text-align: left; width: 10rem; clear: both; }
   .toc:before { content: "Table of contents"; font-family: "BenchNine"; font-size: 1.75rem; font-weight: 900; font-style: italic; line-height: 2rem; margin-left: -1rem; }
-  .toc-scroll { color: #fff; display: block; font-size: 1.25rem; font-style: italic; position: absolute; bottom: -2rem; left: -1.25rem; font-weight: 900; }
+  .toc-scroll { display: block; font-size: 1.25rem; font-style: italic; position: absolute; bottom: -2rem; left: -1.25rem; font-weight: 900; }
   .toc ul { padding-left: 1.25rem; }
   .toc ul li { list-style-position: outside; }
   .toc ul ul { padding-left: 0.25rem; } }
