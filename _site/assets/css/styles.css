@@ -44,7 +44,7 @@ aside { margin: 4rem 0 0 0; padding: 0; text-align: center; }
 
 .edit-container a span { display: inline-block; padding-right: 4px; text-decoration: none; }
 
-h1, h2, h3, h4 { font-weight: 900; }
+h1, h2, h3, h4 { margin-top: 3rem; font-weight: 900; }
 
 .heading-big { font-size: 3rem; }
 
@@ -56,7 +56,7 @@ li { padding-top: 0.25rem; }
 
 nav { border-radius: 6px; display: flex; justify-content: space-between; text-align: center; margin: 0.5rem; padding: 0.5rem 0; }
 
-nav a { margin: 0 0.25rem 0 0.25rem; padding: 4px; }
+nav a { margin: 0 0.25rem 0 0.25rem; padding: 4px; text-decoration: none; font-weight: 900; }
 
 nav a:hover { color: #fff; }
 
@@ -145,7 +145,7 @@ Breakpoint 2 (Table of contents appears)
   aside { float: right; position: -webkit-sticky; position: sticky; top: 1rem; margin-top: 10.5rem; clear: right; }
   .toc { background: linear-gradient(transparent, transparent); float: right; font-size: 0.8rem; margin: 0 0.5rem 0 0; padding: 0; text-align: left; width: 10rem; clear: both; }
   .toc:before { content: "Table of contents"; font-size: 1.25rem; font-weight: 900; font-style: italic; line-height: 2rem; margin-left: -1rem; }
-  .toc-scroll { display: block; position: absolute; bottom: -2rem; left: -1.25rem; font-weight: 900; }
+  .toc-scroll { display: block; position: absolute; bottom: -2.25rem; left: -0.25rem; font-weight: 900; }
   .toc ul { padding-left: 1.25rem; }
   .toc ul li { list-style-position: outside; }
   .toc ul ul { padding-left: 0.25rem; } }
