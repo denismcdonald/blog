@@ -2,6 +2,8 @@ url: https://denismcdonald.github.io
 baseurl: /jekyll-from-scratch
 repository: denismcdonald/jekyll-from-scratch
 
+permalink: /blog/:categories/:year/:month/:day/:title:output_ext
+
 collections:
   authors:
     output: true

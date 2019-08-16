@@ -21,7 +21,7 @@ body {
     // background-color: #4B525A;
     background-color: #fff;
     // border-right: 2rem solid #eee;
-    border-top: 0.25rem solid #eee;
+    // border-top: 1px solid #000;
     // color: #FFEFF4;
     color: #000;
     // font-family: "Vollkorn", "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
@@ -114,6 +114,7 @@ aside {
     background-color: #000;
     color: #fff;
     border-radius: 4px;
+    text-decoration: none;
 }
 
 // nav a.current {
@@ -127,7 +128,7 @@ aside {
 }
 
 .edit-container {
-    text-align: center;
+    text-align: left;
 }
 
 .edit-container a span {
@@ -175,19 +176,24 @@ li {
 }
 
 nav {
+    // background-color: rgb(250, 250, 250);
+    // border: 1px solid #eee;
+    border-radius: 6px;
     display: flex;
     // font-family: 'BenchNine';
     // font-size: 1.75rem;
     justify-content: space-between;
     text-align: center;
-    margin: 1rem;
+    // margin: 1rem;
+    margin: 0.5rem;
+    padding: 0.5rem 0;
 }
 
 nav a {
     margin: 0 0.25rem 0 0.25rem;
     // padding: 0 4px;
     padding: 4px;
-    text-decoration: none;
+    // text-decoration: none;
 }
 
 // nav a:visited {
@@ -241,7 +247,8 @@ code {
 }
 
 .scroll-container {
-    text-align: center;
+    margin-left: 1rem;
+    text-align: left;
 }
 
 .scroll-container a span {
@@ -380,14 +387,16 @@ Breakpoint 1 (Dispense with critical mobile styles)
         position: absolute;
         right: 1rem;
         margin-bottom: 0;
-        padding-bottom: 0;
+        // padding-bottom: 0;
+        padding: 0;
         justify-content: center;
     }
 
     nav a {
         font-size: 1rem;
         // font-size: 1.5rem;
-        margin: 0 0.75rem 0 0.75rem;
+        // margin: 0 0.75rem 0 0.75rem;
+        margin: 0.75rem;
     }
 
     .scroll {

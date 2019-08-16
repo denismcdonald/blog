@@ -1,8 +1,13 @@
 <nav> 
-  {%- for item in site.data.navigation -%}
-  <!-- <a href="{{ site.baseurl }}{{ item.link }}" {% if page.url == item.link %}class="current" {% endif %} id="{{ item.name }}"> -->
-  <a href="{{ site.baseurl }}{{ item.link }}" {% if page.url == item.link %}class="current" {% endif %} {% if item.link == "/" %}class="dmcd" {% endif %} id="{{ item.name }}">
-    {{ item.name }}
+  <a href="{{ site.baseurl }}/index.html" {% if page.url == "/" %}class="current" {% endif %} id="home">Home</a>
+  <a href="{{ site.baseurl }}/blog.html" {% if page.url contains "blog" %}class="current" {% endif %}>Blog</a>
+  <a href="{{ site.baseurl }}/archive.html" {% if page.url contains "archive" or page.url contains "tag" %}class="current" {% endif %}>Archive</a>
+  <a href="{{ site.baseurl }}/links.html" {% if page.url contains "links" %}class="current" {% endif %}>Links</a>
+ 
+  <!-- {%- for item in site.data.navigation -%}
+  <a href="{{ site.baseurl }}{{ item.link }}" {% if page.url contains item.name %}class="current" {% endif %} id="{{ item.name }}">
+    {{ item.name | capitalize }}
   </a>
-  {%- endfor -%}
+  {%- endfor -%} -->
+
 </nav>

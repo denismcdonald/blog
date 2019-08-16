@@ -1,8 +1,6 @@
-- name: DMcD
-  link: /
-- name: Blog
+- name: blog
   link: /blog.html
-- name: Archive
+- name: archive
   link: /archive.html
-- name: Links
+- name: links
   link: /links.html
