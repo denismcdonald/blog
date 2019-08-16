@@ -86,8 +86,6 @@ pre, code { font-size: 0.9rem; }
 
 .toc { display: inline-block; text-align: left; }
 
-.toc a { text-decoration: none; }
-
 .toc:before { content: "Table of contents"; font-size: 1.5rem; font-weight: 900; font-style: italic; line-height: 3rem; }
 
 .toc-scroll { display: none; }
