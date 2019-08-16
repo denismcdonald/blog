@@ -10,7 +10,9 @@ MOBILE STYLES (See media queries below for desktop styles)
 
 html { box-sizing: border-box; }
 
-body { background-color: #fff; color: #000; font-family: "Vollkorn", "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif; margin: 0; }
+body { background-color: #fff; border-top: 0.25rem solid #eee; color: #000; font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif; margin: 0; }
+
+a { color: #000; }
 
 a:focus { box-shadow: 0 0 0 3px #88b8ff; border-radius: 2px; text-decoration: none; }
 
@@ -20,9 +22,9 @@ a, p a, h1 a, h2 a, h3 a, h4 a, a.edit, a.scroll, li a { padding: 0 4px; }
 
 .archive-dates { margin: 2rem 0 -0.5rem 0; }
 
-.archive-tags { font-family: "BenchNine"; font-size: 1.25rem; }
+.archive-post-list ul li { list-style: none; }
 
-.archive-tags-list { margin: -1rem 0 0 1.5rem; }
+.archive-tags-list { margin: 1rem 0 0 1.5rem; }
 
 aside { margin: 4rem 0 0 0; padding: 0; text-align: center; }
 
@@ -30,23 +32,19 @@ aside { margin: 4rem 0 0 0; padding: 0; text-align: center; }
 
 .blog-list-date { display: inline; font-style: italic; }
 
+.centered { margin: 0 auto; }
+
 .content-container { margin: 0 1rem 1rem 1rem; padding-top: 3rem; max-width: 680px; }
 
-.current { border-bottom: 3px solid #000; }
+.current { background-color: #000; color: #fff; border-radius: 4px; }
 
-.edit { display: inline-block; font-family: 'BenchNine'; font-weight: 900; }
+.edit { display: inline-block; font-weight: 900; }
 
 .edit-container { text-align: center; }
 
 .edit-container a span { display: inline-block; padding-right: 4px; text-decoration: none; }
 
-h1, h2, h3, h4 { font-family: 'BenchNine'; font-style: italic; font-weight: 900; }
-
-h1 { font-size: 3rem; }
-
-h2 { font-size: 2.5rem; }
-
-h3 { font-size: 2rem; }
+h1, h2, h3, h4 { font-weight: 900; }
 
 .heading-big { font-size: 3rem; }
 
@@ -56,19 +54,17 @@ h3 { font-size: 2rem; }
 
 li { padding-top: 0.25rem; }
 
-nav { display: flex; font-family: 'BenchNine'; font-size: 1.75rem; justify-content: space-between; text-align: center; margin: 1rem; }
+nav { display: flex; justify-content: space-between; text-align: center; margin: 1rem; }
 
-nav a { margin: 0 0.25rem 0 0.25rem; padding: 0 4px; text-decoration: none; }
-
-nav a:visited { color: #000; }
+nav a { margin: 0 0.25rem 0 0.25rem; padding: 4px; text-decoration: none; }
 
 nav a:hover { color: #fff; }
 
 p { line-height: 1.65rem; }
 
-.post-date { font-family: 'BenchNine'; font-style: italic; margin: -1.5rem 0 2rem 0; }
+.post-date { font-style: italic; margin: -1.5rem 0 2rem 0; }
 
-.post-tags { font-family: 'BenchNine'; margin: 3rem 0 3rem 0; }
+.post-tags { margin: 3rem 0 3rem 0; }
 
 pre { border-radius: 8px; padding: 1rem; white-space: pre-wrap; }
 
@@ -78,7 +74,7 @@ pre, code { font-size: 0.9rem; }
 
 .quote span { font-style: italic; }
 
-.scroll { display: inline-block; font-family: 'BenchNine'; font-weight: 900; margin: 1rem 0 2rem; }
+.scroll { display: inline-block; font-weight: 900; margin: 1rem 0 2rem; }
 
 .scroll-container { text-align: center; }
 
@@ -86,19 +82,27 @@ pre, code { font-size: 0.9rem; }
 
 .tag-list { list-style: none; }
 
-.tag-list span { font-family: "BenchNine"; font-size: 1.25rem; text-decoration: none; display: inline-block; }
+.tag-list span { font-size: 1.25rem; text-decoration: none; display: inline-block; }
 
 .toc { display: inline-block; text-align: left; }
 
-.toc:before { content: "Table of contents"; font-family: "BenchNine"; font-size: 2rem; font-weight: 900; font-style: italic; line-height: 3rem; margin-left: -1.5rem; }
+.toc a { text-decoration: none; }
 
-.toc-scroll { display: none; font-family: 'BenchNine'; }
+.toc:before { content: "Table of contents"; font-size: 1.5rem; font-weight: 900; font-style: italic; line-height: 3rem; }
+
+.toc-scroll { display: none; }
+
+ul.toc { counter-reset: item; }
+
+ul.toc li { list-style: none; }
+
+ul.toc li:before { content: "" counter(item,decimal) ". "; counter-increment: item; font-weight: 900; }
 
 .toc ul { counter-reset: item; margin-bottom: 0.5rem; }
 
 .toc ul li { list-style: none; list-style-position: inside; margin-bottom: 0.5rem; }
 
-.toc ul li:before { content: "(" counter(item,lower-latin) ")​ "; counter-increment: item; }
+.toc ul li:before { content: "(" counter(item,lower-latin) ")​ "; counter-increment: item; font-weight: 900; }
 
 .toc ul ul li { list-style: none; list-style-position: inside; }
 
@@ -120,14 +124,14 @@ MEDIA QUERIES (x3) FOR DESKTOP STYLES
 Breakpoint 1 (Dispense with critical mobile styles)
 ==================================================
 */
-@media (min-width: 540px) { :root { font-size: calc(0.75em + 1vw); }
+@media (min-width: 540px) { :root { font-size: calc(0.5em + 1vw); }
   aside { margin: 1rem 0.25rem -4rem 0; }
   .content-container { margin: 0 1rem 1rem 2rem; padding: 8rem 1rem 0 1rem; }
-  .edit { float: left; font-size: 1.25rem; margin: 1rem 0 2rem 0; }
+  .edit { float: left; margin: 1rem 0 2rem 0; }
   .github { clear: both; }
   nav { position: absolute; right: 1rem; margin-bottom: 0; padding-bottom: 0; justify-content: center; }
-  nav a { font-size: 1rem; font-size: 1.5rem; margin: 0 0.75rem 0 0.75rem; }
-  .scroll { float: right; font-size: 1.25rem; margin: 1rem 2rem 2rem 0; }
+  nav a { font-size: 1rem; margin: 0 0.75rem 0 0.75rem; }
+  .scroll { float: right; margin: 1rem 2rem 2rem 0; }
   .toc { margin: 8rem 0 -3rem 1.5rem; font-size: 1.15rem; }
   .toggle-theme { display: inline; } }
 /*
@@ -140,10 +144,10 @@ Breakpoint 2 (Table of contents appears)
   .toc-scroll span { display: inline-block; padding-left: 5px; text-decoration: none; }
   .edit { margin: 1rem 0 2rem 0; }
   .edit-toc { margin: 2rem 0 2rem 0; }
-  aside { float: right; position: -webkit-sticky; position: sticky; top: 1rem; margin-top: 13rem; clear: right; }
-  .toc { background: linear-gradient(transparent, transparent); float: right; font-size: 1rem; margin: 0 0.5rem 0 0; padding: 0; text-align: left; width: 10rem; clear: both; }
-  .toc:before { content: "Table of contents"; font-family: "BenchNine"; font-size: 1.75rem; font-weight: 900; font-style: italic; line-height: 2rem; margin-left: -1rem; }
-  .toc-scroll { display: block; font-size: 1.25rem; font-style: italic; position: absolute; bottom: -2rem; left: -1.25rem; font-weight: 900; }
+  aside { float: right; position: -webkit-sticky; position: sticky; top: 1rem; margin-top: 10.5rem; clear: right; }
+  .toc { background: linear-gradient(transparent, transparent); float: right; font-size: 0.8rem; margin: 0 0.5rem 0 0; padding: 0; text-align: left; width: 10rem; clear: both; }
+  .toc:before { content: "Table of contents"; font-size: 1.25rem; font-weight: 900; font-style: italic; line-height: 2rem; margin-left: -1rem; }
+  .toc-scroll { display: block; position: absolute; bottom: -2rem; left: -1.25rem; font-weight: 900; }
   .toc ul { padding-left: 1.25rem; }
   .toc ul li { list-style-position: outside; }
   .toc ul ul { padding-left: 0.25rem; } }

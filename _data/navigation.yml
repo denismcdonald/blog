@@ -1,8 +1,8 @@
-- name: Home
+- name: DMcD
   link: /
 - name: Blog
   link: /blog.html
 - name: Archive
   link: /archive.html
-- name: Folio
-  link: /folio.html
+- name: Links
+  link: /links.html

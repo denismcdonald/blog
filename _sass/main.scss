@@ -20,14 +20,18 @@ html {
 body {
     // background-color: #4B525A;
     background-color: #fff;
+    // border-right: 2rem solid #eee;
+    border-top: 0.25rem solid #eee;
     // color: #FFEFF4;
     color: #000;
-    font-family: "Vollkorn", "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+    // font-family: "Vollkorn", "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+    font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
     margin: 0;
 }
 
 a {
     // color: #FFFFBC;
+    color: #000;
     // color: darkmagenta;
 }
 
@@ -66,13 +70,18 @@ li a {
     margin: 2rem 0 -0.5rem 0;
 }
 
+.archive-post-list ul li {
+    // background-color: yellow;
+    list-style: none;
+}
+
 .archive-tags {
-    font-family: "BenchNine";
-    font-size: 1.25rem;
+    // font-family: "BenchNine";
+    // font-size: 1.25rem;
 }
 
 .archive-tags-list {
-    margin: -1rem 0 0 1.5rem;
+    margin: 1rem 0 0 1.5rem;
 }
 
 aside {
@@ -90,6 +99,10 @@ aside {
     font-style: italic;
 }
 
+.centered {
+    margin: 0 auto;
+}
+
 .content-container {
     margin: 0 1rem 1rem 1rem;
     padding-top: 3rem;
@@ -97,12 +110,19 @@ aside {
 }
 
 .current {
-    border-bottom: 3px solid #000;
+    // border-bottom: 3px solid #000;
+    background-color: #000;
+    color: #fff;
+    border-radius: 4px;
 }
+
+// nav a.current {
+//     color: yellow;
+// }
 
 .edit {
     display: inline-block;
-    font-family: 'BenchNine';
+    // font-family: 'BenchNine';
     font-weight: 900;
 }
 
@@ -120,22 +140,22 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: 'BenchNine';
-    font-style: italic;
+    // font-family: 'BenchNine';
+    // font-style: italic;
     font-weight: 900;
 }
 
-h1 {
-    font-size: 3rem;
-}
+// h1 {
+//     font-size: 3rem;
+// }
 
-h2 {
-    font-size: 2.5rem;
-}
+// h2 {
+//     font-size: 2.5rem;
+// }
 
-h3 {
-    font-size: 2rem;
-}
+// h3 {
+//     font-size: 2rem;
+// }
 
 .heading-big {
     font-size: 3rem;
@@ -156,8 +176,8 @@ li {
 
 nav {
     display: flex;
-    font-family: 'BenchNine';
-    font-size: 1.75rem;
+    // font-family: 'BenchNine';
+    // font-size: 1.75rem;
     justify-content: space-between;
     text-align: center;
     margin: 1rem;
@@ -165,13 +185,14 @@ nav {
 
 nav a {
     margin: 0 0.25rem 0 0.25rem;
-    padding: 0 4px;
+    // padding: 0 4px;
+    padding: 4px;
     text-decoration: none;
 }
 
-nav a:visited {
-    color: #000;
-}
+// nav a:visited {
+//     color: #000;
+// }
 
 nav a:hover {
     color: #fff;
@@ -182,13 +203,13 @@ p {
 }
 
 .post-date {
-    font-family: 'BenchNine';
+    // font-family: 'BenchNine';
     font-style: italic;
     margin: -1.5rem 0 2rem 0;
 }
 
 .post-tags {
-    font-family: 'BenchNine';
+    // font-family: 'BenchNine';
     margin: 3rem 0 3rem 0;
 }
 
@@ -214,7 +235,7 @@ code {
 
 .scroll {
     display: inline-block;
-    font-family: 'BenchNine';
+    // font-family: 'BenchNine';
     font-weight: 900;
     margin: 1rem 0 2rem;
 }
@@ -234,7 +255,7 @@ code {
 }
 
 .tag-list span {
-    font-family: "BenchNine";
+    // font-family: "BenchNine";
     font-size: 1.25rem;
     text-decoration: none;
     display: inline-block;
@@ -246,20 +267,44 @@ code {
     text-align: left;
 }
 
+.toc a {
+    text-decoration: none;
+}
+
 .toc:before {
     content: "Table of contents";
-    font-family: "BenchNine";
-    font-size: 2rem;
+    // font-family: "BenchNine";
+    font-size: 1.5rem;
     font-weight: 900;
     font-style: italic;
     line-height: 3rem;
-    margin-left: -1.5rem;
+    // margin-left: -1.5rem;
 }
 
 .toc-scroll {
     display: none;
-    font-family: 'BenchNine';
+    // font-family: 'BenchNine';
 }
+
+
+
+ul.toc {
+    counter-reset: item;
+    // list-style: none;
+}
+
+ul.toc li {
+    list-style: none;
+}
+
+ul.toc li:before {
+    content: ""counter(item, decimal)". ";  
+    counter-increment: item;
+    font-weight: 900;
+}
+
+
+
 
 .toc ul {
     counter-reset: item;
@@ -275,6 +320,7 @@ code {
 .toc ul li:before {
     content: "("counter(item, lower-latin)")\200B\00a0";  
     counter-increment: item;
+    font-weight: 900;
 }
 
 .toc ul ul li {
@@ -311,7 +357,8 @@ Breakpoint 1 (Dispense with critical mobile styles)
 @media (min-width: 540px) {
     
     :root {
-        font-size: calc(0.75em + 1vw);
+        // font-size: calc(0.75em + 1vw);
+        font-size: calc(0.5em + 1vw);
     }
     
     aside {
@@ -325,7 +372,7 @@ Breakpoint 1 (Dispense with critical mobile styles)
 
     .edit {
         float: left;
-        font-size: 1.25rem;
+        // font-size: 1.25rem;
         margin: 1rem 0 2rem 0;
     }
 
@@ -343,13 +390,13 @@ Breakpoint 1 (Dispense with critical mobile styles)
 
     nav a {
         font-size: 1rem;
-        font-size: 1.5rem;
+        // font-size: 1.5rem;
         margin: 0 0.75rem 0 0.75rem;
     }
 
     .scroll {
         float: right;
-        font-size: 1.25rem;
+        // font-size: 1.25rem;
         margin: 1rem 2rem 2rem 0;
     }
 
@@ -398,15 +445,16 @@ Breakpoint 2 (Table of contents appears)
         position: -webkit-sticky;
         position: sticky;
         top: 1rem;
-        margin-top: 13rem;
+        // margin-top: 13rem;
+        margin-top: 10.5rem;
         clear: right;
     }
 
     .toc {
         background: linear-gradient(transparent, transparent);
         float: right;
-        // font-size: 0.8rem;
-        font-size: 1rem;
+        font-size: 0.8rem;
+        // font-size: 1rem;
         margin: 0 0.5rem 0 0;
         padding: 0;
         text-align: left;
@@ -416,8 +464,8 @@ Breakpoint 2 (Table of contents appears)
 
     .toc:before {
         content: "Table of contents";
-        font-family: "BenchNine";
-        font-size: 1.75rem;
+        // font-family: "BenchNine";
+        font-size: 1.25rem;
         font-weight: 900;
         font-style: italic;
         line-height: 2rem;
@@ -427,8 +475,8 @@ Breakpoint 2 (Table of contents appears)
     .toc-scroll {
         // color: #fff;
         display: block;
-        font-size: 1.25rem;
-        font-style: italic;
+        // font-size: 1.25rem;
+        // font-style: italic;
         position: absolute;
         bottom: -2rem;
         left: -1.25rem;
