@@ -29,11 +29,10 @@ body {
     margin: 0;
 }
 
-a {
-    // color: #FFFFBC;
-    color: #000;
-    // color: darkmagenta;
-}
+// a {
+//     color: #FFFFBC;
+//     color: #000;
+// }
 
 a:focus {
     // background-color: #000;
@@ -42,10 +41,10 @@ a:focus {
     text-decoration: none;
 }
 
-a:visited {
-    // color: #FEF5DE;
-    // color: darkmagenta;
-}
+// a:visited {
+//     color: #FEF5DE;
+//     color: darkmagenta;
+// }
 
 a:hover {
     background: #000;
@@ -116,7 +115,6 @@ aside {
     border-radius: 4px;
     text-decoration: none;
 }
-
 
 .edit {
     display: inline-block;
@@ -189,6 +187,7 @@ nav {
 }
 
 nav a {
+    color: #000;
     margin: 0 0.25rem 0 0.25rem;
     // padding: 0 4px;
     padding: 4px;
@@ -274,9 +273,9 @@ code {
     text-align: left;
 }
 
-.toc a {
-    text-decoration: none;
-}
+// .toc a {
+//     text-decoration: none;
+// }
 
 .toc:before {
     content: "Table of contents";
