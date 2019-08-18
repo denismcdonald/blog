@@ -140,7 +140,7 @@ Breakpoint 2 (Table of contents appears)
   .edit-toc { margin: 2rem 0 2rem 0; }
   aside { float: right; position: -webkit-sticky; position: sticky; top: 1rem; margin-right: 1rem; margin-top: 12rem; clear: right; }
   .toc { background: linear-gradient(transparent, transparent); float: right; font-size: 0.8rem; margin: 0 0.5rem 0 0; padding: 0; text-align: left; width: 10rem; clear: both; }
-  .toc:before { content: "Table of contents"; font-size: 1.25rem; font-weight: 900; font-style: italic; line-height: 2rem; margin-left: -1rem; }
+  .toc:before { content: "Table of contents"; font-size: 1.1rem; font-weight: 900; font-style: italic; line-height: 2rem; }
   .toc-scroll { display: none; position: absolute; bottom: -2.25rem; left: -0.25rem; font-weight: 900; }
   .toc ul { padding-left: 1.25rem; }
   .toc ul li { list-style-position: outside; }
