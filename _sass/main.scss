@@ -98,9 +98,9 @@ aside {
     font-style: italic;
 }
 
-.centered {
-    margin: 0 auto;
-}
+// .centered {
+//     margin: 0 auto;
+// }
 
 .content-container {
     margin: 0 1rem 1rem 1rem;
@@ -144,18 +144,6 @@ h4 {
     font-weight: 900;
 }
 
-// h1 {
-//     font-size: 3rem;
-// }
-
-// h2 {
-//     font-size: 2.5rem;
-// }
-
-// h3 {
-//     font-size: 2rem;
-// }
-
 .heading-big {
     font-size: 3rem;
 }
@@ -191,7 +179,7 @@ nav a {
     color: #000;
     margin: 0 0.25rem 0 0.25rem;
     // padding: 0 4px;
-    padding: 4px 8px;
+    padding: 3px 6px;
     text-decoration: none;
     font-weight: 900;
 }
@@ -263,7 +251,7 @@ code {
 
 .tag-list span {
     // font-family: "BenchNine";
-    font-size: 1.25rem;
+    // font-size: 1.25rem;
     text-decoration: none;
     display: inline-block;
 }
@@ -409,7 +397,8 @@ Breakpoint 1 (Dispense with critical mobile styles)
         // font-style: italic;
         // font-size: 1.5rem;
         // margin: 0 0.75rem 0 0.75rem;
-        margin: 0.75rem;
+        // margin: 0.75rem;
+        margin: 0.6rem;
     }
 
     .scroll {
