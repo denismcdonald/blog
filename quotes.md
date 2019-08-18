@@ -4,7 +4,7 @@ scroll: true
 toc: true
 ---
 
-# Quotes
+<h1 class="h1-title">Quotes</h1>
 
 ## Accessibility
 ## Australia

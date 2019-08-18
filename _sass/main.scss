@@ -65,8 +65,20 @@ li a {
     padding: 0 4px;
 }
 
+.h1-title {
+    background-color: #000;
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block;
+    // margin-top: 1.5rem;
+    // margin-top: 3rem;
+    padding: 4px 10px;
+}
+
+
 .archive-dates {
-    margin: 2rem 0 -0.5rem 0;
+    // margin: 2rem 0 -0.5rem 0;
+    margin: 3rem 0 -0.5rem 0;
 }
 
 .archive-post-list ul li {
@@ -133,6 +145,11 @@ aside {
     padding-right: 4px;
     text-decoration: none; 
 }
+
+// h1 {
+//     font-weight: 900;
+//     margin-top: 5rem;
+// }
 
 h1,
 h2,
@@ -465,7 +482,7 @@ Breakpoint 2 (Table of contents appears)
         // margin-top: 13rem;
         margin-right: 1rem;
         // margin-top: 10.5rem;
-        margin-top: 12rem;
+        margin-top: 14rem;
         clear: right;
     }
 

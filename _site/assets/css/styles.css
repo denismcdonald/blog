@@ -18,7 +18,9 @@ a:hover { background: #000; border-radius: 4px; color: #fff; text-decoration: no
 
 a, p a, h1 a, h2 a, h3 a, h4 a, a.edit, a.scroll, li a { padding: 0 4px; }
 
-.archive-dates { margin: 2rem 0 -0.5rem 0; }
+.h1-title { background-color: #000; border-radius: 4px; color: #fff; display: inline-block; padding: 4px 10px; }
+
+.archive-dates { margin: 3rem 0 -0.5rem 0; }
 
 .archive-post-list ul li { list-style: none; }
 
@@ -138,7 +140,7 @@ Breakpoint 2 (Table of contents appears)
   .toc-scroll span { display: inline-block; display: none; padding-left: 5px; text-decoration: none; }
   .edit { margin: 1rem 0 2rem 0; }
   .edit-toc { margin: 2rem 0 2rem 0; }
-  aside { float: right; padding-left: 15px; position: -webkit-sticky; position: sticky; top: 1rem; margin-right: 1rem; margin-top: 12rem; clear: right; }
+  aside { float: right; padding-left: 15px; position: -webkit-sticky; position: sticky; top: 1rem; margin-right: 1rem; margin-top: 14rem; clear: right; }
   .toc { background: linear-gradient(transparent, transparent); float: right; font-size: 0.8rem; margin: 0 0.5rem 0 0; padding: 0; text-align: left; width: 11rem; clear: both; }
   .toc:before { content: "Table of contents"; font-size: 1.1rem; font-weight: 900; font-style: italic; line-height: 2rem; }
   .toc-scroll { display: none; position: absolute; bottom: -2.25rem; left: -0.25rem; font-weight: 900; }
