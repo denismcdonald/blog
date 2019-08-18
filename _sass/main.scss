@@ -140,6 +140,7 @@ h3,
 h4 {
     // font-family: 'BenchNine';
     // font-style: italic;
+    // margin-bottom: 1.5rem;
     margin-top: 3rem;
     font-weight: 900;
 }
@@ -295,7 +296,7 @@ ul.toc li:before {
     // background: #eee;
     // border-radius: 5px;
     // color: #fff;
-    content: ""counter(item, decimal)". ";  
+    content: ""counter(item, decimal)"";  
     counter-increment: item;
     font-weight: 900;
     padding: 3px;
@@ -313,11 +314,12 @@ ul.toc li:before {
 .toc ul li {
     list-style: none;
     list-style-position: inside;
-    margin-bottom: 0.5rem;
+    // margin-bottom: 0.5rem;
 }
 
 .toc ul li:before {
-    content: "("counter(item, lower-latin)")\200B\00a0";  
+    // content: "("counter(item, lower-latin)")\200B\00a0";
+    content: "("counter(item, lower-latin)")\200B";
     counter-increment: item;
     font-weight: 900;
 }
@@ -451,7 +453,12 @@ Breakpoint 2 (Table of contents appears)
     }
 
     aside {
+        // border-left: 1px solid #eee;
+        // box-shadow: -3px 0px 5px #eee;
+        // box-shadow: 1px 0 5px -2px #888;
+        // box-shadow: -2px 0px 5px -3px #eee;
         float: right;
+        padding-left: 15px;
         position: -webkit-sticky;
         position: sticky;
         top: 1rem;
@@ -470,7 +477,8 @@ Breakpoint 2 (Table of contents appears)
         margin: 0 0.5rem 0 0;
         padding: 0;
         text-align: left;
-        width: 10rem;
+        // width: 10rem;
+        width: 11rem;
         clear: both;
     }
 
