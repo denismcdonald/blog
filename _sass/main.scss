@@ -104,7 +104,8 @@ aside {
 
 .content-container {
     margin: 0 1rem 1rem 1rem;
-    padding-top: 3rem;
+    // padding-top: 3rem;
+    padding-top: 1rem;
     max-width: 680px;
 }
 
@@ -377,8 +378,11 @@ Breakpoint 1 (Dispense with critical mobile styles)
     }
 
     .content-container {
+        // margin: 0 1rem 1rem 1rem;
         margin: 0 1rem 1rem 2rem;
-        padding: 8rem 1rem 0 1rem;
+        // padding: 8rem 1rem 0 1rem;
+        // padding: 8rem 1rem 0 0;
+        padding: 6rem 1rem 0 0;
     }
 
     .edit {
@@ -432,7 +436,7 @@ Breakpoint 2 (Table of contents appears)
 =======================================
 */
 // @media (min-width: 1100px) {
-@media (min-width: 1030px) {
+@media (min-width: 1000px) {
 
     .content-container {
         padding-top: 5.5rem;
@@ -463,8 +467,9 @@ Breakpoint 2 (Table of contents appears)
         position: sticky;
         top: 1rem;
         // margin-top: 13rem;
-        margin-right: 1.5rem;
-        margin-top: 10.5rem;
+        margin-right: 1rem;
+        // margin-top: 10.5rem;
+        margin-top: 12rem;
         clear: right;
     }
 
@@ -515,9 +520,26 @@ Breakpoint 2 (Table of contents appears)
     } 
 }
 
+
 /*
 =================================================================
 Breakpoint 3
+=================================================================
+*/
+
+
+@media (min-width: 1100px) {
+    
+    .content-container {
+        margin: 0 1rem 1rem 2rem;
+        padding-left: 1rem;
+    }
+}
+
+
+/*
+=================================================================
+Breakpoint 4
 =================================================================
 */
 @media (min-width: 1400px) {

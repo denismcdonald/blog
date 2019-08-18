@@ -32,7 +32,7 @@ aside { margin: 4rem 0 0 0; padding: 0; text-align: left; }
 
 .centered { margin: 0 auto; }
 
-.content-container { margin: 0 1rem 1rem 1rem; padding-top: 3rem; max-width: 680px; }
+.content-container { margin: 0 1rem 1rem 1rem; padding-top: 1rem; max-width: 680px; }
 
 .current { background-color: #000; color: #fff; border-radius: 4px; text-decoration: none; }
 
@@ -122,7 +122,7 @@ Breakpoint 1 (Dispense with critical mobile styles)
 */
 @media (min-width: 540px) { :root { font-size: calc(0.5em + 1vw); }
   aside { margin: 1rem 0.25rem -4rem 0; }
-  .content-container { margin: 0 1rem 1rem 2rem; padding: 8rem 1rem 0 1rem; }
+  .content-container { margin: 0 1rem 1rem 2rem; padding: 6rem 1rem 0 0; }
   .edit { float: left; margin: 1rem 0 2rem 0; }
   .github { clear: both; }
   nav { position: absolute; right: 1rem; margin-bottom: 0; padding: 0; justify-content: center; }
@@ -135,12 +135,12 @@ Breakpoint 1 (Dispense with critical mobile styles)
 Breakpoint 2 (Table of contents appears)
 =======================================
 */
-@media (min-width: 1030px) { .content-container { padding-top: 5.5rem; }
+@media (min-width: 1000px) { .content-container { padding-top: 5.5rem; }
   .toc-content { margin: 0 1rem 1rem 2rem; }
   .toc-scroll span { display: inline-block; display: none; padding-left: 5px; text-decoration: none; }
   .edit { margin: 1rem 0 2rem 0; }
   .edit-toc { margin: 2rem 0 2rem 0; }
-  aside { float: right; position: -webkit-sticky; position: sticky; top: 1rem; margin-right: 1.5rem; margin-top: 10.5rem; clear: right; }
+  aside { float: right; position: -webkit-sticky; position: sticky; top: 1rem; margin-right: 1rem; margin-top: 12rem; clear: right; }
   .toc { background: linear-gradient(transparent, transparent); float: right; font-size: 0.8rem; margin: 0 0.5rem 0 0; padding: 0; text-align: left; width: 10rem; clear: both; }
   .toc:before { content: "Table of contents"; font-size: 1.25rem; font-weight: 900; font-style: italic; line-height: 2rem; margin-left: -1rem; }
   .toc-scroll { display: none; position: absolute; bottom: -2.25rem; left: -0.25rem; font-weight: 900; }
@@ -150,6 +150,12 @@ Breakpoint 2 (Table of contents appears)
 /*
 =================================================================
 Breakpoint 3
+=================================================================
+*/
+@media (min-width: 1100px) { .content-container { margin: 0 1rem 1rem 2rem; padding-left: 1rem; } }
+/*
+=================================================================
+Breakpoint 4
 =================================================================
 */
 @media (min-width: 1400px) { .content-container { max-width: 900px; }
