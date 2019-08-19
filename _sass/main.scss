@@ -20,19 +20,24 @@ html {
 body {
     // background-color: #4B525A;
     background-color: #fff;
+    // background-color: #107896;
+    // background-color: #DA621E;
+    // background-color: #E37F45;
     // border-right: 2rem solid #eee;
     // border-top: 1px solid #000;
     // color: #FFEFF4;
     color: #000;
+    // color: #fff;
+    // color: #2A150D;
     // font-family: "Vollkorn", "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
     font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
     margin: 0;
 }
 
-// a {
-//     color: #FFFFBC;
-//     color: #000;
-// }
+a {
+    // color: #FFFFBC;
+    color: #1E518F;
+}
 
 a:focus {
     // background-color: #000;
@@ -315,7 +320,8 @@ ul.toc li:before {
     // color: #fff;
     content: ""counter(item, decimal)"";  
     counter-increment: item;
-    font-weight: 900;
+    font-size: 0.7rem;
+    // font-weight: 900;
     padding: 3px;
 }
 
@@ -338,7 +344,8 @@ ul.toc li:before {
     // content: "("counter(item, lower-latin)")\200B\00a0";
     content: "("counter(item, lower-latin)")\200B";
     counter-increment: item;
-    font-weight: 900;
+    font-size: 0.7rem;
+    // font-weight: 900;
 }
 
 .toc ul ul li {
@@ -489,8 +496,8 @@ Breakpoint 2 (Table of contents appears)
     .toc {
         background: linear-gradient(transparent, transparent);
         float: right;
-        font-size: 0.8rem;
-        // font-size: 1rem;
+        // font-size: 0.8rem;
+        font-size: 0.9rem;
         margin: 0 0.5rem 0 0;
         padding: 0;
         text-align: left;
