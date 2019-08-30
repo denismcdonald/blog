@@ -196,9 +196,10 @@ nav {
     // font-family: 'BenchNine';
     // font-size: 1.75rem;
     justify-content: space-between;
+    justify-content: space-evenly;
     text-align: center;
-    // margin: 1rem;
-    margin: 0.5rem;
+    margin: 1rem;
+    // margin: 0.5rem;
     padding: 0.5rem 0;
 }
 
@@ -238,6 +239,7 @@ p {
 pre {
     border-radius: 8px;
     padding: 1rem;
+    margin: 1rem -0.25rem;
     white-space: pre-wrap;
 }
 
@@ -285,7 +287,7 @@ code {
 }
 
 .toc {
-    background-color: #eee;
+    background-color: rgb(245, 245, 245);
     border-radius: 10px;
     padding: 15px;
     display: inline-block;
@@ -301,7 +303,7 @@ code {
 .toc:before {
     content: "Table of contents";
     // font-family: "BenchNine";
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 900;
     font-style: italic;
     line-height: 3rem;
@@ -431,6 +433,13 @@ Breakpoint 1 (Dispense with critical mobile styles)
         margin: 0.6rem;
     }
 
+    pre {
+        // border-radius: 8px;
+        // padding: 1rem;
+        margin: 1rem -1rem;
+        // white-space: pre-wrap;
+    }
+
     .scroll {
         float: right;
         // font-size: 1.25rem;
@@ -457,15 +466,17 @@ Breakpoint 2 (Table of contents appears)
 =======================================
 */
 // @media (min-width: 1100px) {
-@media (min-width: 1000px) {
+// @media (min-width: 1000px) {
+@media (min-width: 950px) {
 
     :root {
         // font-size: calc(0.75em + 1vw);
-        // font-size: calc(0.5em + 1vw);
-        font-size: calc(0.3em + 1vw);
+        font-size: calc(0.4em + 1vw);
+        // font-size: calc(0.3em + 1vw);
     }
 
     .content-container {
+        margin: 0 auto;
         padding-top: 5.5rem;
     }
 
@@ -489,17 +500,17 @@ Breakpoint 2 (Table of contents appears)
     }
 
     aside {
-        background-color: #eee;
+        background-color: rgb(245, 245, 245);
         border-radius: 10px;
         float: right;
         // padding-left: 15px;
-        padding: 10px 0 10px 10px;
+        padding: 5px 0 10px 10px;
         position: -webkit-sticky;
         position: sticky;
         // top: 1rem;
         top: 0.5rem;
         // margin-right: 1rem;
-        margin-right: 0.4rem;
+        margin-right: 0.75rem;
         margin-top: 14rem;
         clear: right;
     }
@@ -557,7 +568,8 @@ Breakpoint 3
 */
 
 
-@media (min-width: 1100px) {
+// @media (min-width: 1100px) {
+@media (min-width: 1150px) {
     
     // .content-container {
     //     margin: 0 1rem 1rem 2rem;
