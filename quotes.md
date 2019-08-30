@@ -1,6 +1,6 @@
 ---
 title: Quotes
-scroll: true
+scroll: false
 toc: true
 ---
 

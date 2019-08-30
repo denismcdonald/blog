@@ -4,13 +4,13 @@
 MOBILE STYLES (See media queries below for desktop styles)
 ===========================================================
 */
-:root { font-size: calc(0.85em + 1vw); }
+:root { font-size: calc(0.75em + 1vw); }
 
 * { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
 html { box-sizing: border-box; }
 
-body { background-color: #fff; color: #000; font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif; margin: 0; }
+body { background-color: #fff; color: #000; font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif; margin: 0; height: 100%; min-height: 100%; }
 
 a { color: #1E518F; color: #214169; }
 
@@ -20,7 +20,7 @@ a:hover { background: #000; border-radius: 4px; color: #fff; text-decoration: no
 
 a, p a, h1 a, h2 a, h3 a, h4 a, a.edit, a.scroll, li a { padding: 0 4px; }
 
-.h1-title { background-color: #000; border-radius: 4px; color: #fff; display: inline-block; padding: 4px 10px; }
+.h1-title { background-color: #000; border-radius: 4px; color: #fff; display: block; margin-left: -0.5rem; margin-right: -0.5rem; padding: 4px 10px; }
 
 .archive-dates { margin: 3rem 0 -0.5rem 0; }
 
@@ -44,17 +44,21 @@ aside { margin: 4rem 0 0 0; padding: 0; text-align: center; }
 
 .edit-container a span { display: inline-block; padding-right: 4px; text-decoration: none; }
 
+footer { clear: both; font-size: 0.75rem; position: relative; padding-top: 4rem; margin: 2rem 0 1rem 0; text-align: center; }
+
 h1, h2, h3, h4 { margin-top: 3rem; font-weight: 900; }
 
 .heading-big { font-size: 3rem; }
 
 .highlight { margin: 0; width: 100%; }
 
+.home { background-color: #afdbec; border-radius: 4px; color: #000; }
+
 .indent { text-indent: 2.5rem; }
 
 li { padding-top: 0.25rem; }
 
-nav { border-radius: 6px; display: flex; justify-content: space-between; justify-content: space-evenly; text-align: center; margin: 1rem; padding: 0.5rem 0; }
+nav { display: flex; font-size: 0.9rem; justify-content: space-evenly; text-align: center; margin: 1rem; padding: 0.5rem 0; }
 
 nav a { color: #000; margin: 0 0.25rem 0 0.25rem; padding: 3px 6px; text-decoration: none; font-weight: 900; }
 
@@ -65,6 +69,8 @@ p { line-height: 1.85rem; }
 .post-date { font-style: italic; margin: -1.5rem 0 2rem 0; }
 
 .post-tags { margin: 3rem 0 3rem 0; }
+
+.post-tags span { font-weight: bold; }
 
 pre { border-radius: 8px; padding: 1rem; margin: 1rem -0.25rem; white-space: pre-wrap; }
 
@@ -84,7 +90,7 @@ pre, code { font-size: 0.9rem; }
 
 .tag-list span { text-decoration: none; display: inline-block; }
 
-.toc { background-color: whitesmoke; border-radius: 10px; padding: 15px; display: inline-block; font-size: 0.8rem; text-align: left; }
+.toc { background-color: whitesmoke; border-radius: 10px; padding: 5px 15px 15px 15px; display: inline-block; font-size: 0.8rem; text-align: left; }
 
 .toc:before { content: "Table of contents"; font-size: 1rem; font-weight: 900; font-style: italic; line-height: 3rem; }
 
@@ -125,8 +131,9 @@ Breakpoint 1 (Dispense with critical mobile styles)
 @media (min-width: 540px) { :root { font-size: calc(0.6em + 1vw); }
   aside { margin: 1rem 0.25rem -4rem 0; }
   .content-container { margin: 0 1rem 1rem 2rem; padding: 6rem 1rem 0 0; }
-  .edit { float: left; margin: 1rem 0 2rem 0; }
+  .edit { float: left; margin: 1rem 0 1rem 0; }
   .github { clear: both; }
+  .h1-title { margin-left: -1rem; margin-right: -1rem; }
   nav { padding: 0; justify-content: center; }
   nav a { font-size: 1rem; margin: 0.6rem; }
   pre { margin: 1rem -1rem; }
@@ -142,12 +149,12 @@ Breakpoint 2 (Table of contents appears)
   .content-container { margin: 0 auto; padding-top: 5.5rem; }
   .toc-content { margin: 0 1rem 1rem 2rem; }
   .toc-scroll span { display: inline-block; display: none; padding-left: 5px; text-decoration: none; }
-  .edit { margin: 1rem 0 2rem 0; }
+  .edit { margin: 1rem 0 1rem 0; }
   .edit-toc { margin: 2rem 0 2rem 0; }
   aside { background-color: whitesmoke; border-radius: 10px; float: right; padding: 5px 0 10px 10px; position: -webkit-sticky; position: sticky; top: 0.5rem; margin-right: 0.75rem; margin-top: 14rem; clear: right; }
   .toc { background: linear-gradient(transparent, transparent); float: right; font-size: 0.9rem; font-size: 0.8rem; margin: 0 0.5rem 0 0; padding: 0; text-align: left; clear: both; }
   .toc:before { content: "Table of contents"; font-size: 1rem; font-weight: 900; font-style: italic; line-height: 2rem; }
-  .toc-scroll { display: none; position: absolute; bottom: -2.25rem; left: -0.25rem; font-weight: 900; }
+  .toc-scroll { display: none; font-size: 0.8rem; position: absolute; bottom: -2.25rem; right: -0.25rem; font-weight: 900; }
   .toc ul { padding-left: 1.25rem; }
   .toc ul li { list-style-position: outside; }
   .toc ul ul { padding-left: 0.25rem; } }

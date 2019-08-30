@@ -5,7 +5,8 @@ MOBILE STYLES (See media queries below for desktop styles)
 */
 
 :root {
-    font-size: calc(0.85em + 1vw);
+    // font-size: calc(0.85em + 1vw);
+    font-size: calc(0.75em + 1vw);
 }
 
 * {
@@ -24,16 +25,13 @@ body {
     // background-color: #107896;
     // background-color: #DA621E;
     // background-color: #E37F45;
-    // border-right: 2rem solid #eee;
-    // border-top: 1px solid #000;
-    // color: #FFEFF4;
     color: #000;
-    // color: #fff;
-    // color: #2A150D;
     // font-family: "Vollkorn", "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
     font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
     // font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
+    height: 100%;
+    min-height: 100%;
 }
 
 a {
@@ -77,7 +75,10 @@ li a {
     background-color: #000;
     border-radius: 4px;
     color: #fff;
-    display: inline-block;
+    // display: inline-block;
+    display: block;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
     // margin-top: 1.5rem;
     // margin-top: 3rem;
     padding: 4px 10px;
@@ -155,6 +156,24 @@ aside {
     text-decoration: none; 
 }
 
+footer {
+    clear: both;
+    font-size: 0.75rem;
+    position: relative;
+    // height: 50px;
+    padding-top: 4rem;
+    // margin-top: -100px;
+    // margin: -50px auto 50px auto;
+    margin: 2rem 0 1rem 0;
+    text-align: center;
+    // z-index: -1;
+}
+
+// footer a {
+//     text-decoration: none;
+// }
+
+
 // h1 {
 //     font-weight: 900;
 //     margin-top: 5rem;
@@ -180,6 +199,18 @@ h4 {
     width: 100%;
 }
 
+.home {
+    background-color: rgb(175, 219, 236);
+    border-radius: 4px;
+    color: #000;
+}
+
+// #home {
+//     background-color: rgb(175, 219, 236);
+//     border-radius: 4px;
+//     color: #000;
+// }
+
 .indent {
     text-indent: 2.5rem;
 }
@@ -191,11 +222,11 @@ li {
 nav {
     // background-color: rgb(250, 250, 250);
     // border: 1px solid #eee;
-    border-radius: 6px;
+    // border-radius: 6px;
     display: flex;
     // font-family: 'BenchNine';
-    // font-size: 1.75rem;
-    justify-content: space-between;
+    font-size: 0.9rem;
+    // justify-content: space-between;
     justify-content: space-evenly;
     text-align: center;
     margin: 1rem;
@@ -234,6 +265,10 @@ p {
 .post-tags {
     // font-family: 'BenchNine';
     margin: 3rem 0 3rem 0;
+}
+
+.post-tags span {
+    font-weight: bold;
 }
 
 pre {
@@ -289,7 +324,7 @@ code {
 .toc {
     background-color: rgb(245, 245, 245);
     border-radius: 10px;
-    padding: 15px;
+    padding: 5px 15px 15px 15px;
     display: inline-block;
     // font-family: 'BenchNine';
     font-size: 0.8rem;
@@ -409,11 +444,16 @@ Breakpoint 1 (Dispense with critical mobile styles)
 
     .edit {
         float: left;
-        margin: 1rem 0 2rem 0;
+        margin: 1rem 0 1rem 0;
     }
 
     .github {
         clear: both;
+    }
+
+    .h1-title {
+        margin-left: -1rem;
+        margin-right: -1rem;
     }
 
     nav {
@@ -444,6 +484,7 @@ Breakpoint 1 (Dispense with critical mobile styles)
         float: right;
         // font-size: 1.25rem;
         margin: 1rem 2rem 2rem 0;
+        // margin: 1rem -2rem 2rem 0;
     }
 
     .toc {
@@ -492,7 +533,7 @@ Breakpoint 2 (Table of contents appears)
     }
 
     .edit {
-        margin: 1rem 0 2rem 0;
+        margin: 1rem 0 1rem 0;
     }
 
     .edit-toc {
@@ -512,6 +553,7 @@ Breakpoint 2 (Table of contents appears)
         // margin-right: 1rem;
         margin-right: 0.75rem;
         margin-top: 14rem;
+        // margin-top: 13rem;
         clear: right;
     }
 
@@ -541,9 +583,10 @@ Breakpoint 2 (Table of contents appears)
 
     .toc-scroll {
         display: none;
+        font-size: 0.8rem;
         position: absolute;
         bottom: -2.25rem;
-        left: -0.25rem;
+        right: -0.25rem;
         font-weight: 900;
     }
 

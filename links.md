@@ -2,7 +2,7 @@
 title: About
 toc: true
 edit: true
-scroll: true
+scroll: false
 ---
 
 <h1 class="h1-title">Links</h1>

@@ -1,6 +1,6 @@
 ---
-author: Ted
-scroll: true
+author: Denis
+scroll: false
 edit: true
 tags: kiwifruit jekyll
 toc: true
