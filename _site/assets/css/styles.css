@@ -10,9 +10,9 @@ MOBILE STYLES (See media queries below for desktop styles)
 
 html { box-sizing: border-box; }
 
-body { background-color: #fff; color: #000; font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif; margin: 0; height: 100%; min-height: 100%; }
+body { background-color: #fff; color: #000; font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif; height: 100%; margin: 0; min-height: 100%; }
 
-a { color: #1E518F; color: #214169; }
+a { color: #214169; }
 
 a:focus { box-shadow: 0 0 0 3px #88b8ff; border-radius: 2px; text-decoration: none; }
 
@@ -20,11 +20,15 @@ a:hover { background: #000; border-radius: 4px; color: #fff; text-decoration: no
 
 a, p a, h1 a, h2 a, h3 a, h4 a, a.edit, a.scroll, li a { padding: 0 4px; }
 
-.h1-title { background-color: #000; border-radius: 4px; color: #fff; display: block; margin-left: -0.5rem; margin-right: -0.5rem; padding: 4px 10px; }
+.archive-hr { margin-top: 0; margin-bottom: 0; margin-right: .5rem; margin-left: .5rem; height: 1px; border: none; border-bottom: 1px dotted #000; -webkit-box-flex: 1; -webkit-flex: 1 0 1rem; flex: 1 0 1rem; opacity: 0.25; }
 
-.archive-dates { margin: 3rem 0 -0.5rem 0; }
+hr .archive-hr a:hover { color: #fff; }
+
+.archive-post-date { -webkit-box-flex: 0; -webkit-flex: 0 1 auto; flex: 0 1 auto; }
 
 .archive-post-list ul li { list-style: none; }
+
+.archive-post-title { -webkit-box-flex: 0; -webkit-flex: 0 1 auto; flex: 0 1 auto; }
 
 .archive-tags-list { margin: 1rem 0 0 1.5rem; }
 
@@ -34,9 +38,9 @@ aside { margin: 4rem 0 0 0; padding: 0; text-align: center; }
 
 .blog-list-date { display: inline; font-style: italic; }
 
-.content-container { margin: 0 1rem 1rem 1rem; padding-top: 1rem; max-width: 680px; }
+.content-container { margin: 0 1rem 1rem 1rem; max-width: 680px; padding-top: 1rem; }
 
-.current { background-color: #000; color: #fff; border-radius: 4px; text-decoration: none; }
+.current { background-color: #000; border-radius: 4px; color: #fff; text-decoration: none; }
 
 .edit { display: inline-block; font-weight: 900; }
 
@@ -44,9 +48,11 @@ aside { margin: 4rem 0 0 0; padding: 0; text-align: center; }
 
 .edit-container a span { display: inline-block; padding-right: 4px; text-decoration: none; }
 
-footer { clear: both; font-size: 0.75rem; position: relative; padding-top: 4rem; margin: 2rem 0 1rem 0; text-align: center; }
+footer { clear: both; font-size: 0.75rem; margin: 2rem 0 1rem 0; padding-top: 4rem; position: relative; text-align: center; }
 
 h1, h2, h3, h4 { margin-top: 3rem; font-weight: 900; }
+
+.h1-title { background-color: #000; border-radius: 4px; color: #fff; display: block; margin-left: -0.5rem; margin-right: -0.5rem; padding: 4px 10px; }
 
 .heading-big { font-size: 3rem; }
 
@@ -56,9 +62,9 @@ h1, h2, h3, h4 { margin-top: 3rem; font-weight: 900; }
 
 li { padding-top: 0.25rem; }
 
-nav { display: flex; font-size: 0.9rem; justify-content: space-evenly; text-align: center; margin: 1rem; padding: 0.5rem 0; }
+nav { display: flex; font-size: 0.9rem; justify-content: space-evenly; margin: 1rem; padding: 0.5rem 0; text-align: center; }
 
-nav a { color: #000; margin: 0 0.25rem 0 0.25rem; padding: 3px 6px; text-decoration: none; font-weight: 900; }
+nav a { color: #000; font-weight: 900; margin: 0 0.25rem 0 0.25rem; padding: 3px 6px; text-decoration: none; }
 
 nav a:hover { color: #fff; }
 
@@ -70,7 +76,7 @@ p { line-height: 1.85rem; }
 
 .post-tags span { font-weight: bold; }
 
-pre { border-radius: 8px; padding: 1rem; margin: 1rem -0.25rem; white-space: pre-wrap; }
+pre { border-radius: 8px; margin: 1rem -0.25rem; padding: 1rem; white-space: pre-wrap; }
 
 pre, code { font-size: 0.9rem; }
 
@@ -84,15 +90,17 @@ pre, code { font-size: 0.9rem; }
 
 .scroll-container a span { display: inline-block; padding-left: 5px; text-decoration: none; }
 
-.smile { display: inline; font-size: 1rem; font-family: 'Baloo'; padding-left: 4px; font-weight: bold; }
+.smile { display: inline; font-size: 1rem; font-weight: bold; padding-left: 4px; }
 
-.tag-list { list-style: none; }
+.tag-list { display: flex; list-style: none; -webkit-box-align: baseline; -webkit-align-items: baseline; align-items: baseline; position: relative; }
 
-.tag-list span { text-decoration: none; display: inline-block; }
+.tag-list p { margin: 0.25rem; }
 
-.toc { background-color: whitesmoke; border-radius: 10px; padding: 5px 15px 15px 15px; display: inline-block; font-size: 0.8rem; text-align: left; }
+.tag-list span { display: inline-block; text-decoration: none; }
 
-.toc:before { content: "Table of contents"; font-size: 1rem; font-weight: 900; font-style: italic; line-height: 3rem; }
+.toc { background-color: whitesmoke; border-radius: 10px; display: inline-block; font-size: 0.8rem; padding: 5px 15px 15px 15px; text-align: left; }
+
+.toc:before { content: "On this page:"; font-size: 1rem; font-style: italic; font-weight: 900; line-height: 3rem; }
 
 .toc-scroll { display: none; }
 
@@ -113,8 +121,7 @@ ul.toc li:before { content: "" counter(item,decimal) ""; counter-increment: item
 .top-toc { margin-left: 2rem; }
 
 /*
-NB:  The following is a workaround to add parentheses around list sub-items; eg, 1(a), 2(b), etc. 
-The zero-width space ("\200B") addresses the following accessibility concern: https://developer.mozilla.org/en-US/docs/Web/CSS/list-style#Accessibility_concerns
+NB:  The zero-width space ("\200B") addresses the following accessibility concern: https://developer.mozilla.org/en-US/docs/Web/CSS/list-style#Accessibility_concerns
 */
 .toc ul ul li:before { content: "(" counter(item,lower-roman) ")​ "; counter-increment: item; }
 
@@ -138,7 +145,7 @@ Breakpoint 1 (Dispense with critical mobile styles)
   nav a { margin: 0.6rem; }
   pre { margin: 1rem -1rem; }
   .scroll { float: right; margin: 1rem 2rem 2rem 0; }
-  .toc { margin: 8rem 0 -3rem 1rem; margin: 4rem 0 -3rem 1rem; }
+  .toc { margin: 4rem 0 -3rem 1rem; }
   .toggle-theme { display: inline; } }
 /*
 =======================================
@@ -146,15 +153,15 @@ Breakpoint 2 (Table of contents appears)
 =======================================
 */
 @media (min-width: 950px) { :root { font-size: calc(0.4em + 1vw); }
+  aside { background-color: whitesmoke; border-radius: 10px; clear: right; float: right; padding: 5px 0 10px 10px; position: -webkit-sticky; position: sticky; top: 0.5rem; margin-right: 0.75rem; margin-top: 14rem; }
   .content-container { margin: 0 auto; padding-top: 5.5rem; }
-  .toc-content { margin: 0 1rem 1rem 2rem; }
-  .toc-scroll span { display: inline-block; display: none; padding-left: 5px; text-decoration: none; }
   .edit { margin: 1rem 0 1rem 0; }
   .edit-toc { margin: 2rem 0 2rem 0; }
-  aside { background-color: whitesmoke; border-radius: 10px; float: right; padding: 5px 0 10px 10px; position: -webkit-sticky; position: sticky; top: 0.5rem; margin-right: 0.75rem; margin-top: 14rem; clear: right; }
-  .toc { background: linear-gradient(transparent, transparent); float: right; font-size: 0.9rem; font-size: 0.8rem; margin: 0 0.5rem 0 0; padding: 0; text-align: left; clear: both; }
-  .toc:before { content: "Table of contents"; font-size: 1rem; font-weight: 900; font-style: italic; line-height: 2rem; }
-  .toc-scroll { display: none; font-size: 0.8rem; position: absolute; bottom: -2.25rem; right: -0.25rem; font-weight: 900; }
+  .toc { background: linear-gradient(transparent, transparent); clear: both; float: right; font-size: 0.8rem; margin: 0 0.5rem 0 0; padding: 0; text-align: left; }
+  .toc:before { content: "On this page:"; font-size: 1rem; font-style: italic; font-weight: 900; line-height: 2rem; }
+  .toc-content { margin: 0 1rem 1rem 2rem; }
+  .toc-scroll { bottom: -2.25rem; display: none; font-size: 0.8rem; font-weight: 900; position: absolute; right: -0.25rem; }
+  .toc-scroll span { display: inline-block; display: none; padding-left: 5px; text-decoration: none; }
   .toc ul { padding-left: 1.25rem; }
   .toc ul li { list-style-position: outside; }
   .toc ul ul { padding-left: 0.25rem; } }
@@ -163,7 +170,7 @@ Breakpoint 2 (Table of contents appears)
 Breakpoint 3
 =================================================================
 */
-@media (min-width: 1150px) { .content-container { margin: 0 auto; } }
+@media (min-width: 1170px) { .content-container { margin: 0 auto; } }
 /*
 =================================================================
 Breakpoint 4

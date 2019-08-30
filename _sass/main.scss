@@ -55,23 +55,38 @@ li a {
     padding: 0 4px;
 }
 
-.h1-title {
-    background-color: #000;
-    border-radius: 4px;
-    color: #fff;
-    display: block;
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
-    padding: 4px 10px;
+.archive-hr {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: .5rem;
+    margin-left: .5rem;
+    height: 1px;
+    border: none;
+    border-bottom: 1px dotted #000;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 1rem;
+    flex: 1 0 1rem;
+    opacity: 0.25;
 }
 
+hr .archive-hr a:hover {
+    color: #fff;
+}
 
-.archive-dates {
-    margin: 3rem 0 -0.5rem 0;
+.archive-post-date {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+    flex: 0 1 auto;
 }
 
 .archive-post-list ul li {
     list-style: none;
+}
+
+.archive-post-title {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+    flex: 0 1 auto;
 }
 
 .archive-tags-list {
@@ -137,6 +152,16 @@ h3,
 h4 {
     margin-top: 3rem;
     font-weight: 900;
+}
+
+.h1-title {
+    background-color: #000;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    padding: 4px 10px;
 }
 
 .heading-big {
@@ -234,13 +259,21 @@ code {
 .smile {
     display: inline;
     font-size: 1rem;
-    font-family: 'Baloo';
     font-weight: bold;
     padding-left: 4px;
 }
 
 .tag-list {
+    display: flex;
     list-style: none;
+    -webkit-box-align: baseline;
+    -webkit-align-items: baseline;
+    align-items: baseline;
+    position: relative;
+}
+
+.tag-list p {
+    margin: 0.25rem;
 }
 
 .tag-list span {
@@ -258,7 +291,7 @@ code {
 }
 
 .toc:before {
-    content: "Table of contents";
+    content: "On this page:";
     font-size: 1rem;
     font-style: italic;
     font-weight: 900;
@@ -398,30 +431,6 @@ Breakpoint 2 (Table of contents appears)
         font-size: calc(0.4em + 1vw);
     }
 
-    .content-container {
-        margin: 0 auto;
-        padding-top: 5.5rem;
-    }
-
-    .toc-content {
-        margin: 0 1rem 1rem 2rem;
-    }
-
-    .toc-scroll span {
-        display: inline-block;
-        display: none;
-        padding-left: 5px;
-        text-decoration: none; 
-    }
-
-    .edit {
-        margin: 1rem 0 1rem 0;
-    }
-
-    .edit-toc {
-        margin: 2rem 0 2rem 0;
-    }
-
     aside {
         background-color: rgb(245, 245, 245);
         border-radius: 10px;
@@ -435,6 +444,19 @@ Breakpoint 2 (Table of contents appears)
         margin-top: 14rem;
     }
 
+    .content-container {
+        margin: 0 auto;
+        padding-top: 5.5rem;
+    }
+
+    .edit {
+        margin: 1rem 0 1rem 0;
+    }
+
+    .edit-toc {
+        margin: 2rem 0 2rem 0;
+    }
+
     .toc {
         background: linear-gradient(transparent, transparent);
         clear: both;
@@ -446,11 +468,15 @@ Breakpoint 2 (Table of contents appears)
     }
 
     .toc:before {
-        content: "Table of contents";
+        content: "On this page:";
         font-size: 1rem;
         font-style: italic;
         font-weight: 900;
         line-height: 2rem;
+    }
+
+    .toc-content {
+        margin: 0 1rem 1rem 2rem;
     }
 
     .toc-scroll {
@@ -461,6 +487,13 @@ Breakpoint 2 (Table of contents appears)
         position: absolute;
         right: -0.25rem;
     }
+
+    .toc-scroll span {
+        display: inline-block;
+        display: none;
+        padding-left: 5px;
+        text-decoration: none; 
+    }  
 
     .toc ul {
         padding-left: 1.25rem;
@@ -481,7 +514,7 @@ Breakpoint 3
 =================================================================
 */
 
-@media (min-width: 1150px) {
+@media (min-width: 1170px) {
     
     .content-container {
         margin: 0 auto;

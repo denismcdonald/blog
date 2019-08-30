@@ -3,11 +3,18 @@ layout: default
 ---
 <div class="post">
 <h1>Of {{ page.tag }}:</h1>
-<ul>
+<!-- <ul> -->
 {% for post in site.tags[page.tag] %}
-  <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> &mdash; {{ post.date | date: "%d %B %Y" }}<br>
+
+  <a class="tag-list" href="{{ site.baseurl }}{{ post.url }}">
+    <p class="archive-post-title">{{ post.title }}</p>
+    <hr class="archive-hr">
+    <p class="archive-post-date">{{ post.date | date: "%d %B %Y" }}</p>
+  </a>
+
+  <!-- <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> &mdash; {{ post.date | date: "%d %B %Y" }}<br>
     {{ post.description }}
-  </li>
+  </li> -->
 {% endfor %}
-</ul>
+<!-- </ul> -->
 </div>
