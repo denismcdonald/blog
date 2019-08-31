@@ -69,8 +69,33 @@ li a {
     opacity: 0.25;
 }
 
-hr .archive-hr a:hover {
-    color: #fff;
+.archive-list {
+    align-items: baseline;
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+    max-width: 29rem;
+    position: relative;
+    -webkit-box-align: baseline;
+    -webkit-align-items: baseline;
+}
+
+// .archive-list.tags {
+//     max-width: 20rem;
+// }
+
+.archive-list p {
+    margin: 0.25rem;
+}
+
+.archive-list span {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.archive-list:hover .archive-hr {
+    border-bottom: 1px dotted #fff;
+    opacity: 1;
 }
 
 .archive-post-date {
@@ -90,7 +115,9 @@ hr .archive-hr a:hover {
 }
 
 .archive-tags-list {
-    margin: 1rem 0 0 1.5rem;
+    // margin: 1rem 0 0 1.5rem;
+    margin: 2rem auto 0 auto;
+    max-width: 29rem;
 }
 
 aside {
@@ -263,24 +290,6 @@ code {
     padding-left: 4px;
 }
 
-.tag-list {
-    display: flex;
-    list-style: none;
-    -webkit-box-align: baseline;
-    -webkit-align-items: baseline;
-    align-items: baseline;
-    position: relative;
-}
-
-.tag-list p {
-    margin: 0.25rem;
-}
-
-.tag-list span {
-    display: inline-block;
-    text-decoration: none;
-}
-
 .toc {
     background-color: rgb(245, 245, 245);
     border-radius: 10px;
@@ -291,7 +300,7 @@ code {
 }
 
 .toc:before {
-    content: "On this page:";
+    content: "Table of contents:";
     font-size: 1rem;
     font-style: italic;
     font-weight: 900;
@@ -375,8 +384,10 @@ Breakpoint 1 (Dispense with critical mobile styles)
     }
 
     .content-container {
-        margin: 0 1rem 1rem 2rem;
-        padding: 6rem 1rem 0 0;
+        // margin: 0 1rem 1rem 2rem;
+        // padding: 6rem 1rem 0 0;
+        margin: 0 auto;
+        padding: 6rem 1rem 1rem 1rem;
     }
 
     .edit {
@@ -411,6 +422,11 @@ Breakpoint 1 (Dispense with critical mobile styles)
         margin: 1rem 2rem 2rem 0;
     }
 
+    .tag-page-content {
+        max-width: 25rem;
+        margin: 0 auto;
+    }
+
     .toc {
         margin: 4rem 0 -3rem 1rem;
     }
@@ -439,9 +455,14 @@ Breakpoint 2 (Table of contents appears)
         padding: 5px 0 10px 10px;
         position: -webkit-sticky;
         position: sticky;
-        top: 0.5rem;
-        margin-right: 0.75rem;
-        margin-top: 14rem;
+        top: 1rem;
+        // margin-right: 0.75rem;
+        margin-right: 1rem;
+        margin-top: 15rem;
+    }
+
+    .aside-page {
+        margin-top: 13.25rem;
     }
 
     .content-container {
@@ -468,7 +489,7 @@ Breakpoint 2 (Table of contents appears)
     }
 
     .toc:before {
-        content: "On this page:";
+        content: "Table of contents:";
         font-size: 1rem;
         font-style: italic;
         font-weight: 900;

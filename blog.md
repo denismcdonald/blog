@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Writing
+title: Blog
 edit: false
 scroll: false
 ---
@@ -9,7 +9,7 @@ scroll: false
   <h1 class="h1-title">Blog</h1>
   <h2>Latest Entries</h2>
     {% for post in site.posts limit: 6 %}
-      <a class="tag-list" href="{{ site.baseurl}}{{ post.url }}">
+      <a class="archive-list" href="{{ site.baseurl}}{{ post.url }}">
             <!-- <li>{{ post.date | date: "%d %B %Y" }}&nbsp; | &nbsp;<a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li> -->
             <p class="archive-post-title">{{ post.title }}</p>
             <hr class="archive-hr">
@@ -24,7 +24,7 @@ scroll: false
 <!-- <div>
   <h1 class="h1-title">Blog</h1>
   <h2>Latest Entries</h2>
-  <ul class="tag-list">
+  <ul class="archive-list">
     {% for post in site.posts limit: 6 %}
         <li>{{ post.date | date: "%d %B %Y" }}&nbsp; | &nbsp;<a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
@@ -59,13 +59,13 @@ scroll: false
       {% if currentDate != myDate %}
           {% unless forloop.first %}</a>{% endunless %}
           <h2 class="archive-dates">{{ currentDate }} Archive</h2>
-          <!-- <ul class="tag-list"> -->
+          <!-- <ul class="archive-list"> -->
           {% assign myDate = currentDate %}
       {% endif %}
-      <a class="tag-list" href="{{ site.baseurl}}{{ post.url }}">
-        <p class="archive-post-date">{{ post.date | date: "%-d %B" }}</p>
-        <hr class="archive-hr">
+      <a class="archive-list" href="{{ site.baseurl}}{{ post.url }}">
         <p class="archive-post-title">{{ post.title }}</p>
+        <hr class="archive-hr">
+        <p class="archive-post-date">{{ post.date | date: "%-d %B" }}</p>
       {% if forloop.last %}</a><br>{% endif %}
   {% endfor %}
       </a>
@@ -80,7 +80,7 @@ scroll: false
       {% if currentDate != myDate %}
           {% unless forloop.first %}</ul>{% endunless %}
           <h2 class="archive-dates">{{ currentDate }} Archive</h2>
-          <ul class="tag-list">
+          <ul class="archive-list">
           {% assign myDate = currentDate %}
       {% endif %}
       <li><span>{{ post.date | date: "%-d %B" }}&nbsp; | &nbsp;</span><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>

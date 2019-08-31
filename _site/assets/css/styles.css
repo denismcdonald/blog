@@ -22,7 +22,13 @@ a, p a, h1 a, h2 a, h3 a, h4 a, a.edit, a.scroll, li a { padding: 0 4px; }
 
 .archive-hr { margin-top: 0; margin-bottom: 0; margin-right: .5rem; margin-left: .5rem; height: 1px; border: none; border-bottom: 1px dotted #000; -webkit-box-flex: 1; -webkit-flex: 1 0 1rem; flex: 1 0 1rem; opacity: 0.25; }
 
-hr .archive-hr a:hover { color: #fff; }
+.archive-list { align-items: baseline; display: flex; list-style: none; margin: 0 auto; max-width: 29rem; position: relative; -webkit-box-align: baseline; -webkit-align-items: baseline; }
+
+.archive-list p { margin: 0.25rem; }
+
+.archive-list span { display: inline-block; text-decoration: none; }
+
+.archive-list:hover .archive-hr { border-bottom: 1px dotted #fff; opacity: 1; }
 
 .archive-post-date { -webkit-box-flex: 0; -webkit-flex: 0 1 auto; flex: 0 1 auto; }
 
@@ -30,7 +36,7 @@ hr .archive-hr a:hover { color: #fff; }
 
 .archive-post-title { -webkit-box-flex: 0; -webkit-flex: 0 1 auto; flex: 0 1 auto; }
 
-.archive-tags-list { margin: 1rem 0 0 1.5rem; }
+.archive-tags-list { margin: 2rem auto 0 auto; max-width: 29rem; }
 
 aside { margin: 4rem 0 0 0; padding: 0; text-align: center; }
 
@@ -92,15 +98,9 @@ pre, code { font-size: 0.9rem; }
 
 .smile { display: inline; font-size: 1rem; font-weight: bold; padding-left: 4px; }
 
-.tag-list { display: flex; list-style: none; -webkit-box-align: baseline; -webkit-align-items: baseline; align-items: baseline; position: relative; }
-
-.tag-list p { margin: 0.25rem; }
-
-.tag-list span { display: inline-block; text-decoration: none; }
-
 .toc { background-color: whitesmoke; border-radius: 10px; display: inline-block; font-size: 0.8rem; padding: 5px 15px 15px 15px; text-align: left; }
 
-.toc:before { content: "On this page:"; font-size: 1rem; font-style: italic; font-weight: 900; line-height: 3rem; }
+.toc:before { content: "Table of contents:"; font-size: 1rem; font-style: italic; font-weight: 900; line-height: 3rem; }
 
 .toc-scroll { display: none; }
 
@@ -137,7 +137,7 @@ Breakpoint 1 (Dispense with critical mobile styles)
 */
 @media (min-width: 540px) { :root { font-size: calc(0.6em + 1vw); }
   aside { margin: 1rem 0.25rem -4rem 0; }
-  .content-container { margin: 0 1rem 1rem 2rem; padding: 6rem 1rem 0 0; }
+  .content-container { margin: 0 auto; padding: 6rem 1rem 1rem 1rem; }
   .edit { float: left; margin: 1rem 0 1rem 0; }
   .github { clear: both; }
   .h1-title { margin-left: -1rem; margin-right: -1rem; }
@@ -145,6 +145,7 @@ Breakpoint 1 (Dispense with critical mobile styles)
   nav a { margin: 0.6rem; }
   pre { margin: 1rem -1rem; }
   .scroll { float: right; margin: 1rem 2rem 2rem 0; }
+  .tag-page-content { max-width: 25rem; margin: 0 auto; }
   .toc { margin: 4rem 0 -3rem 1rem; }
   .toggle-theme { display: inline; } }
 /*
@@ -153,12 +154,13 @@ Breakpoint 2 (Table of contents appears)
 =======================================
 */
 @media (min-width: 950px) { :root { font-size: calc(0.4em + 1vw); }
-  aside { background-color: whitesmoke; border-radius: 10px; clear: right; float: right; padding: 5px 0 10px 10px; position: -webkit-sticky; position: sticky; top: 0.5rem; margin-right: 0.75rem; margin-top: 14rem; }
+  aside { background-color: whitesmoke; border-radius: 10px; clear: right; float: right; padding: 5px 0 10px 10px; position: -webkit-sticky; position: sticky; top: 1rem; margin-right: 1rem; margin-top: 15rem; }
+  .aside-page { margin-top: 13.25rem; }
   .content-container { margin: 0 auto; padding-top: 5.5rem; }
   .edit { margin: 1rem 0 1rem 0; }
   .edit-toc { margin: 2rem 0 2rem 0; }
   .toc { background: linear-gradient(transparent, transparent); clear: both; float: right; font-size: 0.8rem; margin: 0 0.5rem 0 0; padding: 0; text-align: left; }
-  .toc:before { content: "On this page:"; font-size: 1rem; font-style: italic; font-weight: 900; line-height: 2rem; }
+  .toc:before { content: "Table of contents:"; font-size: 1rem; font-style: italic; font-weight: 900; line-height: 2rem; }
   .toc-content { margin: 0 1rem 1rem 2rem; }
   .toc-scroll { bottom: -2.25rem; display: none; font-size: 0.8rem; font-weight: 900; position: absolute; right: -0.25rem; }
   .toc-scroll span { display: inline-block; display: none; padding-left: 5px; text-decoration: none; }

@@ -2,7 +2,7 @@
 author: Denis
 scroll: false
 edit: true
-tags: kiwifruit jekyll
+tags: jekyll kiwifruit
 toc: true
 ---
 Kiwifruit (often abbreviated as kiwi), or Chinese gooseberry is the edible

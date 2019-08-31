@@ -1,12 +1,12 @@
 ---
 layout: default
 ---
-<div class="post">
+<div class="tag-page-content">
 <h1>Of {{ page.tag }}:</h1>
 <!-- <ul> -->
 {% for post in site.tags[page.tag] %}
 
-  <a class="tag-list" href="{{ site.baseurl }}{{ post.url }}">
+  <a class="archive-list" href="{{ site.baseurl }}{{ post.url }}">
     <p class="archive-post-title">{{ post.title }}</p>
     <hr class="archive-hr">
     <p class="archive-post-date">{{ post.date | date: "%d %B %Y" }}</p>

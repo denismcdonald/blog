@@ -2,6 +2,7 @@
 title: Quotes
 scroll: false
 toc: true
+layout: default
 ---
 
 <h1 class="h1-title">Quotes</h1>
