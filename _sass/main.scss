@@ -80,10 +80,6 @@ li a {
     -webkit-align-items: baseline;
 }
 
-// .archive-list.tags {
-//     max-width: 20rem;
-// }
-
 .archive-list p {
     margin: 0.25rem;
 }
@@ -115,7 +111,6 @@ li a {
 }
 
 .archive-tags-list {
-    // margin: 1rem 0 0 1.5rem;
     margin: 2rem auto 0 auto;
     max-width: 29rem;
 }
@@ -384,10 +379,8 @@ Breakpoint 1 (Dispense with critical mobile styles)
     }
 
     .content-container {
-        // margin: 0 1rem 1rem 2rem;
-        // padding: 6rem 1rem 0 0;
         margin: 0 auto;
-        padding: 6rem 1rem 1rem 1rem;
+        padding: 6rem 1.5rem 1rem 1.5rem;
     }
 
     .edit {
@@ -456,7 +449,6 @@ Breakpoint 2 (Table of contents appears)
         position: -webkit-sticky;
         position: sticky;
         top: 1rem;
-        // margin-right: 0.75rem;
         margin-right: 1rem;
         margin-top: 15rem;
     }
