@@ -489,7 +489,7 @@ Breakpoint 2 (Table of contents appears)
     }
 
     .toc-content {
-        margin: 0 1rem 1rem 2rem;
+        margin: 0 1rem 1rem 1rem;
     }
 
     .toc-scroll {
@@ -527,7 +527,8 @@ Breakpoint 3
 =================================================================
 */
 
-@media (min-width: 1170px) {
+// @media (min-width: 1170px) {
+@media (min-width: 1400px) {
     
     .content-container {
         margin: 0 auto;

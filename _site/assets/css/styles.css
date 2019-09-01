@@ -161,7 +161,7 @@ Breakpoint 2 (Table of contents appears)
   .edit-toc { margin: 2rem 0 2rem 0; }
   .toc { background: linear-gradient(transparent, transparent); clear: both; float: right; font-size: 0.8rem; margin: 0 0.5rem 0 0; padding: 0; text-align: left; }
   .toc:before { content: "Table of contents:"; font-size: 1rem; font-style: italic; font-weight: 900; line-height: 2rem; }
-  .toc-content { margin: 0 1rem 1rem 2rem; }
+  .toc-content { margin: 0 1rem 1rem 1rem; }
   .toc-scroll { bottom: -2.25rem; display: none; font-size: 0.8rem; font-weight: 900; position: absolute; right: -0.25rem; }
   .toc-scroll span { display: inline-block; display: none; padding-left: 5px; text-decoration: none; }
   .toc ul { padding-left: 1.25rem; }
@@ -172,7 +172,7 @@ Breakpoint 2 (Table of contents appears)
 Breakpoint 3
 =================================================================
 */
-@media (min-width: 1170px) { .content-container { margin: 0 auto; } }
+@media (min-width: 1400px) { .content-container { margin: 0 auto; } }
 /*
 =================================================================
 Breakpoint 4
