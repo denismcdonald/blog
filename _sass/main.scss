@@ -161,11 +161,15 @@ aside {
 
 footer {
     clear: both;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     margin: 2rem 0 1rem 0;
     padding-top: 4rem;
     position: relative;
     text-align: center;
+}
+
+footer a {
+    color: #000;
 }
 
 h1,
@@ -205,7 +209,7 @@ li {
 
 nav {
     display: flex;
-    font-size: 0.9rem;
+    font-size: 1rem;
     justify-content: space-evenly;
     margin: 1rem;
     padding: 0.5rem 0;
@@ -215,7 +219,7 @@ nav {
 nav a {
     color: #000;
     font-weight: 900;
-    margin: 0 0.25rem 0 0.25rem;
+    margin: 0 0.15rem 0 0.15rem;
     padding: 3px 6px;
     text-decoration: none;
 }
@@ -264,7 +268,7 @@ code {
 
 .scroll {
     display: inline-block;
-    font-weight: 900;
+    font-weight: bold;
     margin: 1rem 0 2rem;
 }
 
@@ -527,7 +531,6 @@ Breakpoint 3
 =================================================================
 */
 
-// @media (min-width: 1170px) {
 @media (min-width: 1400px) {
     
     .content-container {
