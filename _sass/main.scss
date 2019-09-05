@@ -171,16 +171,20 @@ aside {
 }
 
 footer {
+    // background-color: rgb(248, 243, 220);
     clear: both;
     font-size: 0.85rem;
-    margin: 2rem 0 1rem 0;
-    padding-top: 4rem;
+    font-weight: bold;
+    margin: 8rem 1rem 1rem 1rem;
+    padding: 0.5rem 0;
     position: relative;
     text-align: center;
 }
 
 footer a {
     color: #000;
+    padding: 3px 6px;
+    text-decoration: none;
 }
 
 .footer-logo {
@@ -228,17 +232,15 @@ li {
 .logo {
     display: block;
     margin: 0 auto;
-    // max-width: 500px;
-    max-width: 20rem;
-    // width: 15rem;
+    width: 15rem;
 }
 
 nav {
+    // background-color: rgb(248, 243, 220);
     display: flex;
-    font-size: 1rem;
+    font-size: 0.9rem;
     justify-content: space-evenly;
-    // margin: 0.5rem 1rem 0.5rem 1rem;
-    margin: 1rem 1rem 1.5rem 1rem;
+    margin: 1rem 1rem 2rem 1rem;
     padding: 0.5rem 0;
     text-align: center;
 }
@@ -432,6 +434,7 @@ Breakpoint 1 (Dispense with critical mobile styles)
     }
 
     nav {
+        font-size: 1rem;
         padding: 0;
         justify-content: center;
     }
