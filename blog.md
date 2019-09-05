@@ -36,7 +36,7 @@ scroll: false
 
 <h2>Topics</h2>
 
-<section class="archive-tags-list">
+<section class="archive-list">
 {% capture tags %}
   {% for tag in site.tags %}
     {{ tag[0] }}
