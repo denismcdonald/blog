@@ -1,5 +1,6 @@
 ---
 title: Quotes
+edit: true
 scroll: false
 toc: true
 layout: default
