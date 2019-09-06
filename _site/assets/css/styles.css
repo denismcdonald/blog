@@ -102,9 +102,9 @@ pre, code { font-size: 0.9rem; }
 
 .smile { display: inline; font-size: 1rem; font-weight: bold; padding-left: 4px; }
 
-.toc { border-radius: 10px; display: inline-block; font-size: 0.8rem; padding: 5px 15px 15px 15px; text-align: left; }
+.toc { display: inline-block; font-size: 0.8rem; padding: 5px 15px 15px 15px; text-align: left; }
 
-.toc:before { content: "Table of contents"; background-color: #000; border-radius: 4px; color: #fff; font-size: 1rem; font-weight: 900; line-height: 3rem; padding: 3px 8px; }
+.toc:before { content: "Table of contents"; background-color: #000; border-radius: 4px; color: #fff; font-size: 1rem; font-weight: 900; line-height: 2rem; padding: 3px 8px; }
 
 .toc-scroll { display: none; }
 
