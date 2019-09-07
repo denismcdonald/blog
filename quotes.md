@@ -10,6 +10,17 @@ layout: default
 
 ## Accessibility
 ## Information Architecture
+## Literary Theory
+
+
+> This is a regular paragraph. And I go on and say some more stuff." <span>&mdash; Denis McDonald</span>
+
 ## Project Management
+
+> This is another quote.
+
 ## Public Libraries
+
+> This is another quote.
+
 ## Web Development
