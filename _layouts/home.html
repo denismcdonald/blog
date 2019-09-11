@@ -7,8 +7,6 @@
     <meta name="description" content="Personal website of Denis McDonald">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cormorant:400,700&display=swap" rel="stylesheet">
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/apple-touch-icon.png">
@@ -27,12 +25,8 @@
   <body>
     <div class="wrapper">       
       
-      
       {% include navigation.html %}
 
-      <!-- <img class="logo" src="/assets/images/birds4.jpg"> -->
-      <!-- <img class="logo" src="/assets/images/handshake.jpg"> -->
-      
       {%- if page.toc == true -%}
       <aside>
         {% include toc.html html=content class="toc" %}
@@ -64,9 +58,6 @@
       {%- endif -%}
 
     </div>
-    
-    
-    <script src="/assets/js/script.js"></script>
 
   </body>
   </html>
