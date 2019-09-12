@@ -1,8 +1,6 @@
-/*
-===========================================================
+/*===========================================================
 MOBILE STYLES (See media queries below for desktop styles)
-===========================================================
-*/
+===========================================================*/
 
 :root {
     font-size: calc(0.9em + 1vw);
@@ -20,7 +18,6 @@ html {
 body {
     background-color: #F3EDC9;
     color: #000;
-    // font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     height: 100%;
     margin: 0;
@@ -59,7 +56,6 @@ blockquote span {
     margin: 1rem;
     text-align: right;
 }
-
 
 a {
     color: rgb(33, 65, 105);
@@ -233,12 +229,7 @@ h3,
 h4 {
     margin-top: 3rem;
     font-weight: 900;
-}
-
-h2,
-h3,
-h4 {
-    text-shadow: -2px 2px 1px #fff;
+    text-shadow: -2px 2px 2px #fff;
 }
 
 .h1-title {
@@ -249,19 +240,12 @@ h4 {
     margin-left: -0.5rem;
     margin-right: -0.5rem;
     padding: 4px 10px;
-}
-
-.heading-big {
-    font-size: 3rem;
+    text-shadow: none;
 }
 
 .highlight {
     margin: 0;
     width: 100%;
-}
-
-.indent {
-    text-indent: 2.5rem;
 }
 
 li {
@@ -289,7 +273,7 @@ nav a {
     margin: 0 0.15rem 0 0.15rem;
     padding: 3px 6px;
     text-decoration: none;
-    text-shadow: 2px 2px 2px #fff;
+    text-shadow: -1px 1px 1px #fff;
 }
 
 nav a:hover {
@@ -433,14 +417,12 @@ ul {
     list-style: decimal;
 }
 
-/*
-============================================================
+/*====================================
 MEDIA QUERIES (x3) FOR DESKTOP STYLES
-============================================================
+======================================
 ==================================================
 Breakpoint 1 (Dispense with critical mobile styles)
-==================================================
-*/
+==================================================*/
 
 @media (min-width: 540px) {
     
@@ -462,9 +444,9 @@ Breakpoint 1 (Dispense with critical mobile styles)
         margin: 1rem 0 1rem 0;
     }
 
-    .github {
-        clear: both;
-    }
+    // .github {
+    //     clear: both;
+    // }
 
     .h1-title {
         margin-left: -1rem;
@@ -505,11 +487,9 @@ Breakpoint 1 (Dispense with critical mobile styles)
     }
 }
 
-/*
-=======================================
+/*================================================
 Breakpoint 2 (Table of contents appears)
-=======================================
-*/
+=================================================*/
 @media (min-width: 1020px) {
 
     aside {
@@ -548,7 +528,6 @@ Breakpoint 2 (Table of contents appears)
         width: 50%;
         margin-top: 0;
         margin-bottom: 0;
-        // font-size: 1.1rem;
         line-height: 1.3;
         vertical-align: baseline;
         position: relative; 
@@ -608,24 +587,9 @@ Breakpoint 2 (Table of contents appears)
     } 
 }
 
-/*
-=================================================================
+/*====================================================
 Breakpoint 3
-=================================================================
-*/
-
-// @media (min-width: 1400px) {
-    
-//     .content-container {
-//         margin: 0 auto;
-//     }
-// }
-
-/*
-=================================================================
-Breakpoint 3
-=================================================================
-*/
+====================================================*/
 @media (min-width: 1400px) {
 
     .content-container {
