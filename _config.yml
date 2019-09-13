@@ -12,17 +12,14 @@ collections:
 defaults:
   - scope:
       path: ""
-      type: "authors"
-    values:
-      layout: "author"
-  - scope:
-      path: ""
       type: "posts"
     values:
       layout: "post"
       edit: "true"
       toc: "true"
+      footer: "true"
   - scope:
       path: ""
     values:
       layout: "default"
+      footer: "true"

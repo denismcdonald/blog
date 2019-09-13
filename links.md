@@ -2,8 +2,7 @@
 title: About
 toc: true
 edit: true
-scroll: false
-layout: lists
+layout: links
 ---
 
 <h1 class="h1-title">Links</h1>

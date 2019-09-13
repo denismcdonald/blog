@@ -9,7 +9,7 @@ layout: default
 <h1 class="h1-title">Quotes</h1>
 
 ## Accessibility
-## Information Architecture
+## Information&nbsp;Architecture
 ## Literary Theory
 
 

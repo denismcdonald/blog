@@ -1,14 +1,11 @@
 ---
-layout: default
 title: Blog
-edit: false
-scroll: false
 ---
 
 <div>
   <h1 class="h1-title">Blog</h1>
   <h2>Latest Entries</h2>
-    {% for post in site.posts limit: 6 %}
+    {% for post in site.posts limit: 5 %}
       <a class="archive-list" href="{{ site.baseurl}}{{ post.url }}">
             <p class="archive-post-title">{{ post.title }}</p>
             <hr class="archive-hr">
@@ -53,7 +50,7 @@ scroll: false
         <p class="archive-post-title">{{ post.title }}</p>
         <hr class="archive-hr">
         <p class="archive-post-date">{{ post.date | date: "%-d %B" }}</p>
-      {% if forloop.last %}</a><br>{% endif %}
-  {% endfor %}
+      {%- if forloop.last -%}</a><br>{%- endif -%}
+  {%- endfor -%}
       </a>
-</section>
+<!-- </section> -->

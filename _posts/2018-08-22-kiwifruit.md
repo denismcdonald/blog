@@ -1,6 +1,4 @@
 ---
-author: Denis
-scroll: false
 edit: true
 tags: jekyll kiwifruit
 toc: true

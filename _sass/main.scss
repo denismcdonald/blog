@@ -28,7 +28,8 @@ blockquote {
     border-radius: 4px;
     width: 70%;
     margin: 1rem auto;
-    font-style:italic;
+    font-size: 0.8rem;
+    // font-style: italic;
     color: #555555;
     padding: 0.5rem 1rem 0.5rem 3rem;
     border-left: 8px solid #78C0A8;
@@ -83,7 +84,7 @@ h4 a,
 a.edit,
 a.scroll,
 li a {
-    padding: 0 4px;
+    padding: 0 2px;
 }
 
 .archive-hr {
@@ -141,6 +142,10 @@ li a {
     flex: 0 1 auto;
 }
 
+.archive-tags {
+    margin: 0 0.5rem;
+}
+
 aside {
     margin: 3rem 0 0 0;
     padding: 0;
@@ -173,7 +178,7 @@ aside {
 .edit {
     display: inline-block;
     font-weight: 900;
-    margin-top: 2rem;
+    margin-top: 1rem;
     text-decoration: underline;
 }
 
@@ -222,13 +227,14 @@ footer a:hover {
 
 .home-handshake {
     margin: 0 auto;
-    width: 30rem;
+    width: 25rem;
     padding: 0;
     max-width: 100%;
     text-align: center;
 }
 
 .home-heading {
+    font-size: 1.75rem;
     text-shadow: 2px 2px 2px #fff;
     text-align: center;
 }
@@ -277,7 +283,8 @@ li {
 .logo {
     display: block;
     margin: 0 auto;
-    width: 15rem;
+    // width: 15rem;
+    width: 13rem;
 }
 
 nav {
@@ -295,7 +302,7 @@ nav a {
     margin: 0 0.15rem 0 0.15rem;
     padding: 3px 6px;
     text-decoration: none;
-    text-shadow: -1px 1px 1px #fff;
+    text-shadow: -2px 1px 1px #fff;
 }
 
 nav a:hover {
@@ -313,7 +320,7 @@ p {
 }
 
 .post-tags {
-    margin: 3rem 0 3rem 0;
+    margin: 2rem 0 1rem 0;
 }
 
 .post-tags span {
@@ -556,10 +563,8 @@ Breakpoint 2 (Table of contents appears)
     }
 
     .toc {
-        background: linear-gradient(transparent, transparent);
         clear: both;
         float: right;
-        font-size: 0.8rem;
         margin: 0 0.5rem 0 0;
         padding: 0;
         text-align: left;
