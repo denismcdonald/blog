@@ -90,7 +90,7 @@ nav a:hover { color: #fff; text-shadow: none; }
 
 p { line-height: 1.85rem; }
 
-.post-date { border-radius: 4px; color: #000; font-size: 0.8rem; font-style: italic; margin: -2rem 0 2rem 0; padding: 0.25rem; }
+.post-date { border-radius: 4px; color: #000; font-size: 0.8rem; font-style: italic; margin: -1.5rem 0 2rem 0; padding: 0.25rem; }
 
 .post-tags { margin: 2rem 0 1rem 0; }
 
