@@ -3,7 +3,8 @@ MOBILE STYLES (See media queries below for desktop styles)
 ===========================================================*/
 
 :root {
-    font-size: calc(0.9em + 1vw);
+    // font-size: calc(0.9em + 1vw);
+    font-size: calc(0.8em + 1vw);
 }
 
 * {
@@ -28,7 +29,7 @@ blockquote {
     border-radius: 4px;
     width: 70%;
     margin: 1rem auto;
-    font-size: 0.8rem;
+    // font-size: 0.8rem;
     // font-style: italic;
     color: #555555;
     padding: 0.5rem 1rem 0.5rem 3rem;
@@ -188,17 +189,6 @@ a span {
     padding-right: 4px;
 }
 
-// .edit-container {
-//     margin-top: 3rem;
-//     text-align: center;
-// }
-
-// .edit-container a span {
-//     display: inline-block;
-//     padding-right: 4px;
-//     text-decoration: none; 
-// }
-
 footer {
     clear: both;
     font-size: 0.85rem;
@@ -252,6 +242,7 @@ h4 {
     text-shadow: -2px 2px 2px #fff;
 }
 
+h1,
 .h1-title {
     background-color: #000;
     border-radius: 4px;
@@ -261,6 +252,7 @@ h4 {
     margin-right: -0.5rem;
     padding: 4px 10px;
     text-shadow: none;
+    z-index: 1;
 }
 
 .highlight {
@@ -284,7 +276,8 @@ li {
     display: block;
     margin: 0 auto;
     // width: 15rem;
-    width: 13rem;
+    // width: 13rem;
+    width: 12rem;
 }
 
 nav {
@@ -298,7 +291,7 @@ nav {
 
 nav a {
     color: #000;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    // font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 0 0.15rem 0 0.15rem;
     padding: 3px 6px;
     text-decoration: none;
@@ -315,8 +308,17 @@ p {
 }
 
 .post-date {
+    background-color: #fff;
+    border-radius: 4px;
+    color: #000;
+    display: inline-block;
     font-style: italic;
-    margin: -1.5rem 0 2rem 0;
+    margin: -3.5rem 0 2rem 0;
+    padding: 0.25rem;
+    // position: relative;
+    // text-align: right;
+    // float: right;
+    z-index: -5;
 }
 
 .post-tags {
@@ -456,7 +458,8 @@ Breakpoint 1 (Dispense with critical mobile styles)
 @media (min-width: 540px) {
     
     :root {
-        font-size: calc(0.7em + 1vw);
+        // font-size: calc(0.7em + 1vw);
+        font-size: calc(0.6em + 1vw);
     }
     
     aside {
@@ -467,15 +470,6 @@ Breakpoint 1 (Dispense with critical mobile styles)
         margin: 0 auto;
         padding: 4rem 1.5rem 1rem 1.5rem;
     }
-
-    // .edit {
-    //     float: left;
-    //     margin: 1rem 0 1rem 0;
-    // }
-
-    // .github {
-    //     clear: both;
-    // }
 
     .h1-title {
         margin-left: -1rem;
@@ -540,14 +534,6 @@ Breakpoint 2 (Table of contents appears)
         margin: 0 auto;
         padding-top: 3.5rem;
     }
-
-    // .edit {
-    //     margin: 1rem 0 1rem 0;
-    // }
-
-    // .edit-toc {
-    //     margin: 2rem 0 2rem 0;
-    // }
 
     .note {
         clear: right;

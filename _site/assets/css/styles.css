@@ -2,7 +2,7 @@
 /*===========================================================
 MOBILE STYLES (See media queries below for desktop styles)
 ===========================================================*/
-:root { font-size: calc(0.9em + 1vw); }
+:root { font-size: calc(0.8em + 1vw); }
 
 * { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
@@ -10,7 +10,7 @@ html { box-sizing: border-box; }
 
 body { background-color: #F3EDC9; color: #000; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; height: 100%; margin: 0; min-height: 100%; }
 
-blockquote { border-radius: 4px; width: 70%; margin: 1rem auto; font-size: 0.8rem; color: #555555; padding: 0.5rem 1rem 0.5rem 3rem; border-left: 8px solid #78C0A8; border-left: 8px solid #78C0A8; line-height: 1.6; position: relative; quotes: "“" "”" "‘" "’"; background: #ece6c0; }
+blockquote { border-radius: 4px; width: 70%; margin: 1rem auto; color: #555555; padding: 0.5rem 1rem 0.5rem 3rem; border-left: 8px solid #78C0A8; border-left: 8px solid #78C0A8; line-height: 1.6; position: relative; quotes: "“" "”" "‘" "’"; background: #ece6c0; }
 
 blockquote::before { content: "\201C"; color: #78C0A8; font-size: 4rem; font-family: 'Times New Roman', Times, serif; position: absolute; left: 10px; top: -10px; }
 
@@ -72,7 +72,7 @@ footer a:hover { text-shadow: none; }
 
 h1, h2, h3, h4 { margin-top: 3rem; font-weight: 900; text-shadow: -2px 2px 2px #fff; }
 
-.h1-title { background-color: #000; border-radius: 4px; color: #fff; display: block; margin-left: -0.5rem; margin-right: -0.5rem; padding: 4px 10px; text-shadow: none; }
+h1, .h1-title { background-color: #000; border-radius: 4px; color: #fff; display: block; margin-left: -0.5rem; margin-right: -0.5rem; padding: 4px 10px; text-shadow: none; z-index: 1; }
 
 .highlight { margin: 0; width: 100%; }
 
@@ -80,17 +80,17 @@ h1, h2, h3, h4 { margin-top: 3rem; font-weight: 900; text-shadow: -2px 2px 2px #
 
 li { padding-top: 0.25rem; }
 
-.logo { display: block; margin: 0 auto; width: 13rem; }
+.logo { display: block; margin: 0 auto; width: 12rem; }
 
 nav { display: flex; font-size: 0.9rem; justify-content: space-evenly; margin: 1rem 1rem 2rem 1rem; padding: 0.5rem 0; text-align: center; }
 
-nav a { color: #000; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin: 0 0.15rem 0 0.15rem; padding: 3px 6px; text-decoration: none; text-shadow: -2px 1px 1px #fff; }
+nav a { color: #000; margin: 0 0.15rem 0 0.15rem; padding: 3px 6px; text-decoration: none; text-shadow: -2px 1px 1px #fff; }
 
 nav a:hover { color: #fff; text-shadow: none; }
 
 p { line-height: 1.85rem; }
 
-.post-date { font-style: italic; margin: -1.5rem 0 2rem 0; }
+.post-date { background-color: #fff; border-radius: 4px; color: #000; display: inline-block; font-style: italic; margin: -3.5rem 0 2rem 0; padding: 0.25rem; z-index: -5; }
 
 .post-tags { margin: 2rem 0 1rem 0; }
 
@@ -147,7 +147,7 @@ MEDIA QUERIES (x3) FOR DESKTOP STYLES
 ==================================================
 Breakpoint 1 (Dispense with critical mobile styles)
 ==================================================*/
-@media (min-width: 540px) { :root { font-size: calc(0.7em + 1vw); }
+@media (min-width: 540px) { :root { font-size: calc(0.6em + 1vw); }
   aside { margin: 1rem 0.25rem -4rem 0; }
   .content-container { margin: 0 auto; padding: 4rem 1.5rem 1rem 1.5rem; }
   .h1-title { margin-left: -1rem; margin-right: -1rem; }
