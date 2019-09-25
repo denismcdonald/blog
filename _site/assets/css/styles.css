@@ -8,7 +8,7 @@ MOBILE STYLES (See media queries below for desktop styles)
 
 html { box-sizing: border-box; }
 
-body { background-color: #F3EDC9; color: #000; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; height: 100%; margin: 0; min-height: 100%; }
+body { background-color: #F1F0D1; color: #000; font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif; height: 100%; margin: 0; min-height: 100%; }
 
 blockquote { border-radius: 4px; width: 70%; margin: 1rem auto; color: #555555; padding: 0.5rem 1rem 0.5rem 3rem; border-left: 8px solid #78C0A8; border-left: 8px solid #78C0A8; line-height: 1.6; position: relative; quotes: "“" "”" "‘" "’"; background: #ece6c0; }
 
@@ -58,7 +58,7 @@ a span { text-decoration: none; display: inline-block; padding-right: 4px; }
 
 footer { clear: both; font-size: 0.85rem; margin: 8rem 1rem 1.5rem 1rem; padding: 0.5rem 0; position: relative; text-align: center; }
 
-footer a { color: #000; margin: 0 0.05rem; padding: 3px 6px; text-shadow: -1px 1px 1px #fff; }
+footer a { color: #000; font-weight: 900; margin: 0 0.05rem; padding: 3px 6px; text-shadow: -1px 1px 1px #fff; }
 
 footer a:hover { text-shadow: none; }
 
@@ -80,11 +80,11 @@ h1, h2, h3, h4 { margin-top: 3rem; font-weight: 900; text-shadow: -2px 2px 2px #
 
 li { padding-top: 0.25rem; }
 
-.logo { display: block; margin: 0 auto; width: 12rem; }
+.logo { display: block; margin: 0 auto; width: 8rem; }
 
 nav { display: flex; font-size: 0.9rem; justify-content: space-evenly; margin: 1rem 1rem 2rem 1rem; padding: 0.5rem 0; text-align: center; }
 
-nav a { color: #000; margin: 0 0.15rem 0 0.15rem; padding: 3px 6px; text-decoration: none; text-shadow: -2px 1px 1px #fff; }
+nav a { color: #000; font-size: 1.25rem; font-weight: 900; margin: 0 0.1rem 0 0.1rem; padding: 3px 6px; text-decoration: none; text-shadow: -3px 3px #fff; }
 
 nav a:hover { color: #fff; text-shadow: none; }
 
@@ -151,7 +151,7 @@ Breakpoint 1 (Dispense with critical mobile styles)
   aside { margin: 1rem 0.25rem -4rem 0; }
   .content-container { margin: 0 auto; padding: 4rem 1.5rem 1rem 1.5rem; }
   .h1-title { margin-left: -1rem; margin-right: -1rem; }
-  nav { font-size: 1rem; margin: 1.5rem 1rem 1.25rem 1rem; padding: 0; justify-content: center; }
+  nav { font-size: 1.25rem; margin: 1.5rem 1rem 1.25rem 1rem; padding: 0; justify-content: center; }
   nav a { margin: 0.5rem; }
   pre { margin: 1rem -1rem; }
   .scroll { float: right; margin: 1rem 2rem 2rem 0; }

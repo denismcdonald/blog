@@ -17,9 +17,13 @@ html {
 }
 
 body {
-    background-color: #F3EDC9;
+    // background-color: #F3EDC9;
+    background-color: #F1F0D1;
+    // background-color: #e0115f;
+    // background-color: #AB0D49;
     color: #000;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    // font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
     height: 100%;
     margin: 0;
     min-height: 100%;
@@ -200,6 +204,7 @@ footer {
 
 footer a {
     color: #000;
+    font-weight: 900;
     margin: 0 0.05rem;
     padding: 3px 6px;
     text-shadow: -1px 1px 1px #fff;
@@ -273,10 +278,11 @@ li {
 .logo {
     display: block;
     margin: 0 auto;
-    width: 12rem;
+    width: 8rem;
 }
 
 nav {
+    // background-color: #000;
     display: flex;
     font-size: 0.9rem;
     justify-content: space-evenly;
@@ -287,11 +293,15 @@ nav {
 
 nav a {
     color: #000;
-    // font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin: 0 0.15rem 0 0.15rem;
+    // font-family: 'Courier New', Courier, monospace;
+    font-size: 1.25rem;
+    font-weight: 900;
+    // margin: 0 0.15rem 0 0.15rem;
+    margin: 0 0.1rem 0 0.1rem;
+    // padding: 3px 6px;
     padding: 3px 6px;
     text-decoration: none;
-    text-shadow: -2px 1px 1px #fff;
+    text-shadow: -3px 3px #fff;
 }
 
 nav a:hover {
@@ -449,7 +459,6 @@ Breakpoint 1 (Dispense with critical mobile styles)
 @media (min-width: 540px) {
     
     :root {
-        // font-size: calc(0.7em + 1vw);
         font-size: calc(0.6em + 1vw);
     }
     
@@ -468,7 +477,7 @@ Breakpoint 1 (Dispense with critical mobile styles)
     }
 
     nav {
-        font-size: 1rem;
+        font-size: 1.25rem;
         margin: 1.5rem 1rem 1.25rem 1rem;
         padding: 0;
         justify-content: center;

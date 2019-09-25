@@ -6,6 +6,9 @@ title: Contact
 
 This is a blog about [information architecture](https://www.iainstitute.org/what-is-ia), or in other words:
 
+<!-- ![image](/assets/images/handshake.jpg) -->
+
+
 > ...the structural design of shared information environments; the art and science of organizing and labelling websites, intranets, online communities and software to support usability and findability; and an emerging community of practice focused on bringing principles of design, architecture and information science to the digital landscape." &mdash; [Wikipedia](https://en.wikipedia.org/wiki/Information_architecture)
 
 Me, I'm a final-year student undertaking a Master of Information Studies (Information Architecture) at [Charles Sturt University](https://www.csu.edu.au/), and yep, you guessed it: I'm casting out for an entry-level opportunity in this respect.
