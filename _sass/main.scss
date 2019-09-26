@@ -207,6 +207,7 @@ footer a {
     font-weight: 900;
     margin: 0 0.05rem;
     padding: 3px 6px;
+    text-decoration: none;
     text-shadow: -1px 1px 1px #fff;
 }
 
@@ -278,7 +279,7 @@ li {
 .logo {
     display: block;
     margin: 0 auto;
-    width: 8rem;
+    width: 5rem;
 }
 
 nav {
@@ -292,22 +293,27 @@ nav {
 }
 
 nav a {
+    // background-color: rgb(228, 223, 163);
+    // border-radius: 4px;
     color: #000;
     // font-family: 'Courier New', Courier, monospace;
     font-size: 1.25rem;
     font-weight: 900;
     // margin: 0 0.15rem 0 0.15rem;
     margin: 0 0.1rem 0 0.1rem;
-    // padding: 3px 6px;
-    padding: 3px 6px;
+    padding: 3px 4px;
     text-decoration: none;
-    text-shadow: -3px 3px #fff;
+    // text-shadow: -3px 3px #fff;
 }
 
 nav a:hover {
     color: #fff;
     text-shadow: none;
 }
+
+// nav span {
+//     color: red;
+// }
 
 p {
     line-height: 1.85rem;
@@ -372,6 +378,13 @@ code {
     font-size: 1rem;
     font-weight: bold;
     padding-left: 4px;
+}
+
+.title {
+    // font-family: 'Courier New', Courier, monospace;
+    font-size: 1.25rem;
+    margin: 1rem 0 -1rem 0;
+    text-align: center;
 }
 
 .toc {
@@ -477,7 +490,6 @@ Breakpoint 1 (Dispense with critical mobile styles)
     }
 
     nav {
-        font-size: 1.25rem;
         margin: 1.5rem 1rem 1.25rem 1rem;
         padding: 0;
         justify-content: center;
