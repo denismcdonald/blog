@@ -84,7 +84,7 @@ li { padding-top: 0.25rem; }
 
 nav { display: flex; font-size: 0.9rem; justify-content: space-evenly; margin: 1rem 1rem 2rem 1rem; padding: 0.5rem 0; text-align: center; }
 
-nav a { color: #000; font-size: 1.25rem; font-weight: 900; margin: 0 0.1rem 0 0.1rem; padding: 3px 4px; text-decoration: none; }
+nav a { color: #000; font-size: 1.25rem; font-weight: 900; margin: 0 0.1rem 0 0.1rem; padding: 3px 8px; text-decoration: none; text-shadow: -2px 2px #fff; }
 
 nav a:hover { color: #fff; text-shadow: none; }
 
@@ -114,7 +114,7 @@ pre, code { font-size: 0.9rem; }
 
 .title { font-size: 1.25rem; margin: 1rem 0 -1rem 0; text-align: center; }
 
-.toc { display: inline-block; font-size: 0.8rem; padding: 5px 15px 15px 15px; text-align: left; }
+.toc { display: inline-block; font-size: 0.9rem; padding: 5px 15px 15px 15px; text-align: left; }
 
 .toc:before { content: "Table of contents"; background-color: #000; border-radius: 4px; color: #fff; font-size: 1rem; font-weight: 900; line-height: 2rem; padding: 3px 8px; }
 
@@ -166,7 +166,6 @@ Breakpoint 2 (Table of contents appears)
 @media (min-width: 1020px) { aside { clear: right; float: right; padding: 5px 0 10px 10px; position: -webkit-sticky; position: sticky; top: 1rem; margin-right: 1rem; margin-top: 12.5rem; }
   .aside-page { margin-top: 10.5rem; }
   .content-container { margin: 0 auto; padding-top: 3.5rem; }
-  .note { clear: right; float: right; font-size: 0.8rem; margin-right: -60%; width: 50%; margin-top: 0; margin-bottom: 0; line-height: 1.3; vertical-align: baseline; position: relative; }
   .toc { clear: both; float: right; margin: 0 0.5rem 0 0; padding: 0; text-align: left; }
   .toc:before { content: "Table of contents"; background-color: #000; border-radius: 4px; color: #fff; font-size: 1rem; font-weight: 900; line-height: 2rem; padding: 3px 8px; }
   .toc-content { margin: 0 1rem 1rem 1rem; }

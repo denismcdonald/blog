@@ -301,9 +301,9 @@ nav a {
     font-weight: 900;
     // margin: 0 0.15rem 0 0.15rem;
     margin: 0 0.1rem 0 0.1rem;
-    padding: 3px 4px;
+    padding: 3px 8px;
     text-decoration: none;
-    // text-shadow: -3px 3px #fff;
+    text-shadow: -2px 2px #fff;
 }
 
 nav a:hover {
@@ -389,7 +389,7 @@ code {
 
 .toc {
     display: inline-block;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     padding: 5px 15px 15px 15px;
     text-align: left;
 }
@@ -547,18 +547,18 @@ Breakpoint 2 (Table of contents appears)
         padding-top: 3.5rem;
     }
 
-    .note {
-        clear: right;
-        float: right;
-        font-size: 0.8rem;
-        margin-right: -60%;
-        width: 50%;
-        margin-top: 0;
-        margin-bottom: 0;
-        line-height: 1.3;
-        vertical-align: baseline;
-        position: relative; 
-    }
+    // .note {
+    //     clear: right;
+    //     float: right;
+    //     font-size: 0.8rem;
+    //     margin-right: -60%;
+    //     width: 50%;
+    //     margin-top: 0;
+    //     margin-bottom: 0;
+    //     line-height: 1.3;
+    //     vertical-align: baseline;
+    //     position: relative; 
+    // }
 
     .toc {
         clear: both;
