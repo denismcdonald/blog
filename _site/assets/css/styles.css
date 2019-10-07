@@ -50,15 +50,11 @@ aside { margin: 3rem 0 0 0; padding: 0; text-align: center; }
 
 .blog-list { list-style: disc; }
 
-.blog-list-date { display: inline; font-style: italic; }
-
 .content-container { margin: 0 1rem 1rem 1rem; max-width: 680px; padding-top: 1rem; }
 
 .current { background-color: #000; border-radius: 4px; color: #fff; text-decoration: none; text-shadow: none; }
 
 .edit { display: inline-block; font-weight: 900; margin-top: 1rem; text-decoration: underline; }
-
-a span { text-decoration: none; display: inline-block; padding-right: 4px; }
 
 footer { clear: both; font-size: 0.85rem; margin: 8rem 1rem 1.5rem 1rem; padding: 0.5rem 0; position: relative; text-align: center; }
 
@@ -66,21 +62,11 @@ footer a { color: #000; font-weight: 900; margin: 0 0.15rem; padding: 3px 6px; t
 
 footer a:hover { text-shadow: none; }
 
-.footer-logo { display: block; margin: 2rem auto 1.5rem auto; width: 13rem; }
-
-.home-handshake { margin: 0 auto; width: 25rem; padding: 0; max-width: 100%; text-align: center; }
-
-.home-heading { font-size: 1.75rem; text-shadow: 2px 2px 2px #fff; text-align: center; }
-
-.home-p { text-align: center; }
-
 h1, h2, h3, h4 { margin-top: 3rem; font-weight: 900; text-shadow: -2px 2px 2px #fff; }
 
 .h1-title { background-color: #000; border-radius: 4px; color: #fff; display: block; margin-left: -0.5rem; margin-right: -0.5rem; padding: 4px 10px; text-shadow: none; }
 
 .highlight { margin: 0; width: 100%; }
-
-.hr-bold { background-color: #000; border-radius: 4px; border-style: none; color: #000; height: 1px; }
 
 li { padding-top: 0.25rem; }
 
@@ -102,21 +88,11 @@ p { line-height: 1.85rem; }
 
 pre { background-color: #000; border-radius: 8px; color: #fff; margin: 1rem -0.25rem; padding: 1rem; white-space: pre-wrap; }
 
-pre, code { font-size: 0.9rem; }
-
 .quote { margin-top: 5rem; text-align: center; }
 
 .quote span { font-style: italic; }
 
-.scroll { display: inline-block; font-weight: bold; margin: 1rem 0 2rem; }
-
-.scroll-container { text-align: center; }
-
-.scroll-container a span { display: inline-block; padding-left: 5px; text-decoration: none; }
-
-.smile { display: inline; font-size: 1rem; font-weight: bold; padding-left: 4px; }
-
-.title { font-size: 1.25rem; margin: 1rem 0 -1rem 0; text-align: center; }
+.scroll { display: none; }
 
 .toc { display: inline-block; font-size: 0.9rem; padding: 5px 15px 15px 15px; text-align: left; }
 
@@ -173,7 +149,7 @@ Breakpoint 2 (Table of contents appears)
   .toc { clear: both; float: right; margin: 0 0.5rem 0 0; padding: 0; text-align: left; }
   .toc:before { content: "Table of contents"; background-color: #000; border-radius: 4px; color: #fff; font-size: 1rem; font-weight: 900; line-height: 2rem; padding: 3px 8px; }
   .toc-content { margin: 0 1rem 1rem 1rem; }
-  .toc-scroll { bottom: -2.25rem; display: none; font-size: 0.8rem; font-weight: 900; position: absolute; right: -0.25rem; }
+  .toc-scroll { bottom: -1rem; font-size: 0.8rem; font-weight: 900; position: absolute; }
   .toc-scroll span { display: inline-block; display: none; padding-left: 5px; text-decoration: none; }
   .toc ul { padding-left: 1.25rem; }
   .toc ul li { list-style-position: outside; }

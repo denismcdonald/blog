@@ -3,6 +3,7 @@ title: About
 toc: true
 edit: true
 layout: links
+scroll: true
 ---
 
 <h1 class="h1-title">Links</h1>

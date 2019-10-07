@@ -1,7 +1,6 @@
 <nav> 
   <a href="{{ site.baseurl }}/index.html" {% if page.url == "/" %}class="current" {% endif %} id="home">Home</a>
   <a href="{{ site.baseurl }}/blog.html" {% if page.url contains "blog" or page.url contains "tag" %}class="current" {% endif %}>Blog</a>
-  <!-- <a href="{{ site.baseurl }}/quotes.html" {% if page.url contains "quotes" %}class="current" {% endif %}>Quotes</a> -->
-  <a href="{{ site.baseurl }}/links.html" {% if page.url contains "links" %}class="current" {% endif %}>Docs</a>
-  <a href="{{ site.baseurl }}/about.html" {% if page.url contains "about" %}class="current" {% endif %}>Links</a>
+  <a href="{{ site.baseurl }}/links.html" {% if page.url contains "links" %}class="current" {% endif %}>Links</a>
+  <a href="{{ site.baseurl }}/about.html" {% if page.url contains "about" %}class="current" {% endif %}>About</a>
 </nav>
