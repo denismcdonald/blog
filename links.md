@@ -35,7 +35,20 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolor laborum a
 
 ## Another heading
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolor laborum animi repellendus! Harum explicabo veritatis voluptatum dicta aut saepe ad provident dolor, ipsum in id amet. Voluptatum ex optio, eum et molestias libero excepturi ad. Quod possimus fuga quibusdam expedita cupiditate laudantium a id commodi deleniti? Quos recusandae architecto vel nulla, quis ea sed molestiae repellendus facilis minus, enim rem autem eligendi totam modi ipsa illo laudantium. Voluptate velit ea soluta assumenda magni, eius dolorem saepe nulla, officiis quibusdam cum nesciunt alias tenetur possimus porro maiores, minima eaque quaerat amet? Beatae ea at eligendi libero earum, debitis maxime vero inventore praesentium alias? Beatae sapiente repellendus perferendis amet omnis accusamus, magni iusto assumenda nostrum neque, rerum recusandae, alias molestiae iste!
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolor laborum animi repellendus! Harum explicabo veritatis voluptatum dicta aut saepe ad provident dolor, ipsum in id amet. Voluptatum ex optio, eum et molestias libero excepturi ad. Quod possimus fuga quibusdam expedita cupiditate laudantium a id commodi deleniti? Quos recusandae architecto vel nulla, quis ea sed molestiae.
+
+{% highlight ruby %}
+
+class Ticket
+    def price=(amount)
+        @price = amount
+    end
+end
+
+{% endhighlight %}
+
+
+repellendus facilis minus, enim rem autem eligendi totam modi ipsa illo laudantium. Voluptate velit ea soluta assumenda magni, eius dolorem saepe nulla, officiis quibusdam cum nesciunt alias tenetur possimus porro maiores, minima eaque quaerat amet? Beatae ea at eligendi libero earum, debitis maxime vero inventore praesentium alias? Beatae sapiente repellendus perferendis amet omnis accusamus, magni iusto assumenda nostrum neque, rerum recusandae, alias molestiae iste!
 
 ### Final heading
 
