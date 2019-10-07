@@ -62,7 +62,7 @@ a span { text-decoration: none; display: inline-block; padding-right: 4px; }
 
 footer { clear: both; font-size: 0.85rem; margin: 8rem 1rem 1.5rem 1rem; padding: 0.5rem 0; position: relative; text-align: center; }
 
-footer a { color: #000; font-weight: 900; margin: 0 0.05rem; padding: 3px 6px; text-decoration: none; text-shadow: -1px 1px 1px #fff; }
+footer a { color: #000; font-weight: 900; margin: 0 0.15rem; padding: 3px 6px; text-decoration: none; text-shadow: -1px 1px 1px #fff; }
 
 footer a:hover { text-shadow: none; }
 
