@@ -24,6 +24,8 @@ a:hover { background: #000; border-radius: 4px; color: #fff; text-decoration: no
 
 a, p a, h1 a, h2 a, h3 a, h4 a, a.edit, a.scroll, li a { padding: 0 2px; }
 
+.archive-titles { margin-top: 4rem; }
+
 .archive-hr { margin-top: 0; margin-bottom: 0; margin-right: .5rem; margin-left: .5rem; height: 1px; border: none; border-bottom: 1px dotted #000; -webkit-box-flex: 1; -webkit-flex: 1 0 1rem; flex: 1 0 1rem; opacity: 0.25; }
 
 .archive-list { align-items: baseline; display: flex; list-style: none; margin: 0 auto; max-width: 32rem; position: relative; -webkit-box-align: baseline; -webkit-align-items: baseline; }
@@ -35,6 +37,8 @@ a, p a, h1 a, h2 a, h3 a, h4 a, a.edit, a.scroll, li a { padding: 0 2px; }
 .archive-list:hover .archive-hr { border-bottom: 1px dotted #fff; opacity: 1; }
 
 .archive-post-date { -webkit-box-flex: 0; -webkit-flex: 0 1 auto; flex: 0 1 auto; }
+
+.archive-post-list { margin-top: 6rem; }
 
 .archive-post-list ul li { list-style: none; }
 
@@ -80,7 +84,7 @@ h1, h2, h3, h4 { margin-top: 3rem; font-weight: 900; text-shadow: -2px 2px 2px #
 
 li { padding-top: 0.25rem; }
 
-.logo { display: block; margin: 0 auto; width: 5rem; }
+.logo { display: block; margin: 0 auto; width: 13rem; }
 
 nav { display: flex; font-size: 0.9rem; justify-content: space-evenly; margin: 1rem 1rem 2rem 1rem; padding: 0.5rem 0; text-align: center; }
 

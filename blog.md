@@ -14,11 +14,7 @@ title: Blog
     {% endfor %}
 </div>
 
-<br>
-<hr class="hr-bold">
-<hr class="hr-bold">
-
-<h2>Topics</h2>
+<h2 class="archive-titles">Topics</h2>
 
 <section class="archive-list">
 {% capture tags %}
@@ -33,24 +29,20 @@ title: Blog
 {% endfor %}
 </section>
 
-<br>
-<br>
-<hr class="hr-bold">
-<hr class="hr-bold">
 
 <section class="archive-post-list">
   {% for post in site.posts %}
       {% assign currentDate = post.date | date: "%Y" %}
       {% if currentDate != myDate %}
           {% unless forloop.first %}</a>{% endunless %}
-          <h2 class="archive-dates">{{ currentDate }} Archive</h2>
+          <h2 class="archive-titles">{{ currentDate }} Archive</h2>
           {% assign myDate = currentDate %}
       {% endif %}
       <a class="archive-list" href="{{ site.baseurl}}{{ post.url }}">
         <p class="archive-post-title">{{ post.title }}</p>
         <hr class="archive-hr">
         <p class="archive-post-date">{{ post.date | date: "%-d %B" }}</p>
-      {%- if forloop.last -%}</a><br>{%- endif -%}
+      {%- if forloop.last -%}</a>{%- endif -%}
   {%- endfor -%}
       </a>
 <!-- </section> -->

@@ -21,6 +21,7 @@ body {
     background-color: #F1F0D1;
     color: #000;
     font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+    // font-family: "Lato";
     height: 100%;
     margin: 0;
     min-height: 100%;
@@ -89,6 +90,11 @@ li a {
     padding: 0 2px;
 }
 
+.archive-titles {
+    margin-top: 4rem;
+}
+
+
 .archive-hr {
     margin-top: 0;
     margin-bottom: 0;
@@ -132,6 +138,10 @@ li a {
     -webkit-box-flex: 0;
     -webkit-flex: 0 1 auto;
     flex: 0 1 auto;
+}
+
+.archive-post-list {
+    margin-top: 6rem;
 }
 
 .archive-post-list ul li {
@@ -276,7 +286,7 @@ li {
 .logo {
     display: block;
     margin: 0 auto;
-    width: 5rem;
+    width: 13rem;
 }
 
 nav {
