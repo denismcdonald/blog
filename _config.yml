@@ -2,7 +2,7 @@ url: https://denismcdonald.github.io
 baseurl: 
 repository: denismcdonald/blog
 
-permalink: blog/:categories/:year/:month/:day/:title:output_ext
+permalink: /:categories/:year/:month/:day/:title:output_ext
 # was blog/:categories/:year/:month/:day/:title:output_ext
 
 collections:
