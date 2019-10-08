@@ -48,8 +48,6 @@ a, p a, h1 a, h2 a, h3 a, h4 a, a.edit, a.scroll, li a { padding: 0 2px; }
 
 aside { margin: 3rem 0 0 0; padding: 0; text-align: center; }
 
-.blog-list { list-style: disc; }
-
 .content-container { margin: 0 1rem 1rem 1rem; max-width: 680px; padding-top: 1rem; }
 
 .current { background-color: #000; border-radius: 4px; color: #fff; text-decoration: none; text-shadow: none; }
@@ -120,8 +118,6 @@ ul.toc li:before { content: "" counter(item,decimal) ""; counter-increment: item
 NB:  The zero-width space ("\200B") addresses the following accessibility concern: https://developer.mozilla.org/en-US/docs/Web/CSS/list-style#Accessibility_concerns
 */
 .toc ul ul li:before { content: "(" counter(item,lower-roman) ")​ "; counter-increment: item; }
-
-ul { list-style: decimal; }
 
 /*====================================
 MEDIA QUERIES (x3) FOR DESKTOP STYLES

@@ -89,7 +89,6 @@ li a {
     margin-top: 4rem;
 }
 
-
 .archive-hr {
     margin-top: 0;
     margin-bottom: 0;
@@ -159,9 +158,9 @@ aside {
     text-align: center;
 }
 
-.blog-list {
-    list-style: disc;
-}
+// .blog-list {
+//     list-style: disc;
+// }
 
 .content-container {
     margin: 0 1rem 1rem 1rem;
@@ -379,9 +378,9 @@ NB:  The zero-width space ("\200B") addresses the following accessibility concer
     counter-increment: item;
 }
 
-ul {
-    list-style: decimal;
-}
+// ul {
+//     list-style: decimal;
+// }
 
 /*====================================
 MEDIA QUERIES (x3) FOR DESKTOP STYLES
