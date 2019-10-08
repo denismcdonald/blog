@@ -16,7 +16,6 @@ html {
 }
 
 body {
-    // background-color: #F1F0D1;
     background-color: #F2EEC9;
     color: #000;
     font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
@@ -225,6 +224,12 @@ h4 {
 .highlight {
     margin: 0;
     width: 100%;
+}
+
+.image-center {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
 }
 
 li {

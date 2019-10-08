@@ -66,6 +66,8 @@ h1, h2, h3, h4 { margin-top: 3rem; font-weight: 900; text-shadow: -2px 2px 2px #
 
 .highlight { margin: 0; width: 100%; }
 
+.image-center { display: block; margin: 0 auto; width: 90%; }
+
 li { padding-top: 0.25rem; }
 
 .logo { display: block; margin: 0 auto; width: 13rem; }
