@@ -158,10 +158,6 @@ aside {
     text-align: center;
 }
 
-// .blog-list {
-//     list-style: disc;
-// }
-
 .content-container {
     margin: 0 1rem 1rem 1rem;
     max-width: 680px;
@@ -309,7 +305,8 @@ pre {
 
 .toc {
     display: inline-block;
-    font-size: 0.9rem;
+    // font-size: 0.9rem;
+    // max-width: 12rem;
     padding: 5px 15px 15px 15px;
     text-align: left;
 }
@@ -319,7 +316,7 @@ pre {
     background-color: #000;
     border-radius: 4px;
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.15rem;
     font-weight: 900;
     line-height: 2rem;
     padding: 3px 8px;
@@ -348,6 +345,7 @@ ul.toc li:before {
 .toc ul {
     counter-reset: item;
     margin-bottom: 0.5rem;
+    padding-left: 0.75rem;
 }
 
 .toc ul li {
@@ -504,9 +502,9 @@ Breakpoint 2 (Table of contents appears)
         text-decoration: none; 
     }  
 
-    .toc ul {
-        padding-left: 1.25rem;
-    }
+    // .toc ul {
+    //     padding-left: 1.25rem;
+    // }
      
     .toc ul li {
         list-style-position: outside;

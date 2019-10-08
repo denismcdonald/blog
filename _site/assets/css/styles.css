@@ -92,9 +92,9 @@ pre { background-color: #000; border-radius: 8px; color: #fff; margin: 1rem -0.2
 
 .scroll { display: none; }
 
-.toc { display: inline-block; font-size: 0.9rem; padding: 5px 15px 15px 15px; text-align: left; }
+.toc { display: inline-block; padding: 5px 15px 15px 15px; text-align: left; }
 
-.toc:before { content: "Table of contents"; background-color: #000; border-radius: 4px; color: #fff; font-size: 1rem; font-weight: 900; line-height: 2rem; padding: 3px 8px; }
+.toc:before { content: "Table of contents"; background-color: #000; border-radius: 4px; color: #fff; font-size: 1.15rem; font-weight: 900; line-height: 2rem; padding: 3px 8px; }
 
 .toc-scroll { display: none; }
 
@@ -104,7 +104,7 @@ ul.toc li { list-style: none; margin-bottom: 0.25rem; }
 
 ul.toc li:before { content: "" counter(item,decimal) ""; counter-increment: item; font-size: 0.7rem; padding: 3px; }
 
-.toc ul { counter-reset: item; margin-bottom: 0.5rem; }
+.toc ul { counter-reset: item; margin-bottom: 0.5rem; padding-left: 0.75rem; }
 
 .toc ul li { list-style: none; list-style-position: inside; }
 
@@ -147,7 +147,6 @@ Breakpoint 2 (Table of contents appears)
   .toc-content { margin: 0 1rem 1rem 1rem; }
   .toc-scroll { bottom: -1rem; font-size: 0.8rem; font-weight: 900; position: absolute; }
   .toc-scroll span { display: inline-block; display: none; padding-left: 5px; text-decoration: none; }
-  .toc ul { padding-left: 1.25rem; }
   .toc ul li { list-style-position: outside; }
   .toc ul ul { padding-left: 0.25rem; } }
 /*====================================================
