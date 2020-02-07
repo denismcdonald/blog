@@ -16,7 +16,7 @@ blockquote::before { content: "\201C"; color: #78C0A8; font-size: 4rem; font-fam
 
 blockquote span { display: block; color: #333333; font-style: normal; margin: 1rem; text-align: right; }
 
-a { color: #214169; }
+a { color: #214169; text-decoration: none; }
 
 a:focus { box-shadow: 0 0 0 3px #88b8ff; border-radius: 2px; text-decoration: none; }
 
@@ -52,17 +52,23 @@ aside { margin: 3rem 0 0 0; padding: 0; text-align: center; }
 
 .current { background-color: #000; border-radius: 4px; color: #fff; text-decoration: none; text-shadow: none; }
 
-.edit { display: inline-block; font-weight: 900; margin-top: 1rem; text-decoration: underline; }
+.edit { background-color: #fff; border-radius: 4px; color: #000; display: inline-block; margin-top: 1rem; }
 
-footer { clear: both; font-size: 0.85rem; margin: 8rem 1rem 1.5rem 1rem; padding: 0.5rem 0; position: relative; text-align: center; }
+#edit-text { text-decoration: underline; }
 
-footer a { color: #000; font-weight: 900; margin: 0 0.15rem; padding: 3px 6px; text-decoration: none; text-shadow: -1px 1px 1px #fff; }
+a.edit { padding: 0.25rem 0.5rem 0.4rem 0.3rem; }
+
+footer { clear: both; font-size: 1.15rem; margin: 8rem 1.5rem 1.5rem 1rem; padding: 0.5rem 0; position: relative; text-align: center; }
+
+footer a { color: #000; font-weight: 900; margin: 0 0.1rem; padding: 3px 8px; text-decoration: none; text-shadow: -1px 1px 1px #fff; }
 
 footer a:hover { text-shadow: none; }
 
-h1, h2, h3, h4 { margin-top: 3rem; font-weight: 900; text-shadow: -2px 2px 2px #fff; }
+.footer-logo { display: block; margin: -1rem auto 1rem; width: 11rem; padding: 0; }
 
-.h1-title { background-color: #000; border-radius: 4px; color: #fff; display: block; margin-left: -0.5rem; margin-right: -0.5rem; padding: 4px 10px; text-shadow: none; }
+h1, h2, h3, h4 { margin-top: 3rem; font-weight: 900; text-shadow: -1px 1px 1px #fff; }
+
+.h1-title { background-color: #000; border-radius: 4px; color: #fff; display: block; margin-left: -0.5rem; margin-right: -0.5rem; padding: 4px 10px; text-align: center; text-shadow: none; }
 
 .highlight { margin: 0; width: 100%; }
 
@@ -70,19 +76,17 @@ h1, h2, h3, h4 { margin-top: 3rem; font-weight: 900; text-shadow: -2px 2px 2px #
 
 li { padding-top: 0.25rem; }
 
-.logo { display: block; margin: 0 auto; width: 13rem; }
+.logo { display: block; margin: 0 auto; width: 12rem; }
 
-.ruby { display: block; margin: 0 auto; width: 5rem; }
+nav { font-size: 0.9rem; margin: 1rem 1rem 2rem 1rem; padding: 0.5rem 0; text-align: center; }
 
-nav { display: flex; font-size: 0.9rem; justify-content: space-evenly; margin: 1rem 1rem 2rem 1rem; padding: 0.5rem 0; text-align: center; }
-
-nav a { color: #000; font-size: 1.25rem; font-weight: 900; margin: 0 0.1rem 0 0.1rem; padding: 3px 8px; text-decoration: none; text-shadow: -2px 2px #fff; }
+nav a { color: #000; font-size: 1.25rem; font-weight: 900; margin: 0 0.5rem 0 0.5rem; padding: 3px 8px; text-decoration: none; text-shadow: -1.5px 1.5px 1px #fff; }
 
 nav a:hover { color: #fff; text-shadow: none; }
 
 p { line-height: 1.85rem; }
 
-.post-date { border-radius: 4px; color: #000; font-size: 0.8rem; font-style: italic; margin: -1.5rem 0 2rem 0; padding: 0.25rem; }
+.post-date { background-color: #fff; border-radius: 4px; color: #000; font-size: 0.8rem; font-style: italic; margin: -1rem 0 2rem 0; text-align: center; display: block; }
 
 .post-tags { margin: 2rem 0 1rem 0; }
 
@@ -134,7 +138,6 @@ Breakpoint 1 (Dispense with critical mobile styles)
   .content-container { margin: 0 auto; padding: 4rem 1.5rem 1rem 1.5rem; }
   .h1-title { margin-left: -1rem; margin-right: -1rem; }
   nav { margin: 1.5rem 1rem 1.25rem 1rem; padding: 0; justify-content: center; }
-  nav a { margin: 0.5rem; }
   pre { margin: 1rem -1rem; }
   .scroll { float: right; margin: 1rem 2rem 2rem 0; }
   .tag-page-content { max-width: 25rem; margin: 0 auto; }

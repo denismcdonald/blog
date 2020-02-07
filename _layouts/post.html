@@ -3,14 +3,7 @@ layout: default
 ---
 
 <h1 class="h1-title">{{ page.title }}</h1>
-<p class="post-date">&mdash; {{ page.date | date: "%d %B %Y" }}</p>
+<!-- <p class="post-date">&mdash; {{ page.date | date: "%d %B %Y" }}</p> -->
+<p class="post-date">Last updated:&nbsp; {{ page.date | date: "%d %B %Y" }}</p>
 
 {{ content }}
-
-<script src="https://utteranc.es/client.js"
-        repo="denismcdonald/blog"
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

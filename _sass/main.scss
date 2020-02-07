@@ -58,6 +58,7 @@ blockquote span {
 
 a {
     color: rgb(33, 65, 105);
+    text-decoration: none;
 }
 
 a:focus {
@@ -173,16 +174,25 @@ aside {
 }
 
 .edit {
+    background-color: #fff;
+    border-radius: 4px;
+    color: #000;
     display: inline-block;
-    font-weight: 900;
     margin-top: 1rem;
+}
+
+#edit-text {
     text-decoration: underline;
+}
+
+a.edit {
+    padding: 0.25rem 0.5rem 0.4rem 0.3rem;
 }
 
 footer {
     clear: both;
-    font-size: 0.85rem;
-    margin: 8rem 1rem 1.5rem 1rem;
+    font-size: 1.15rem;
+    margin: 8rem 1.5rem 1.5rem 1rem;
     padding: 0.5rem 0;
     position: relative;
     text-align: center;
@@ -191,8 +201,8 @@ footer {
 footer a {
     color: #000;
     font-weight: 900;
-    margin: 0 0.15rem;
-    padding: 3px 6px;
+    margin: 0 0.1rem;
+    padding: 3px 8px;
     text-decoration: none;
     text-shadow: -1px 1px 1px #fff;
 }
@@ -201,13 +211,20 @@ footer a:hover {
     text-shadow: none;
 }
 
+.footer-logo {
+    display: block;
+    margin: -1rem auto 1rem;
+    width: 11rem;
+    padding: 0;
+}
+
 h1,
 h2,
 h3,
 h4 {
     margin-top: 3rem;
     font-weight: 900;
-    text-shadow: -2px 2px 2px #fff;
+    text-shadow: -1px 1px 1px #fff;
 }
 
 .h1-title {
@@ -218,6 +235,7 @@ h4 {
     margin-left: -0.5rem;
     margin-right: -0.5rem;
     padding: 4px 10px;
+    text-align: center;
     text-shadow: none;
 }
 
@@ -239,19 +257,13 @@ li {
 .logo {
     display: block;
     margin: 0 auto;
-    width: 13rem;
-}
-
-.ruby {
-    display: block;
-    margin: 0 auto;
-    width: 5rem;
+    width: 12rem;
 }
 
 nav {
-    display: flex;
+    // display: flex;
     font-size: 0.9rem;
-    justify-content: space-evenly;
+    // justify-content: space-evenly;
     margin: 1rem 1rem 2rem 1rem;
     padding: 0.5rem 0;
     text-align: center;
@@ -261,10 +273,10 @@ nav a {
     color: #000;
     font-size: 1.25rem;
     font-weight: 900;
-    margin: 0 0.1rem 0 0.1rem;
+    margin: 0 0.5rem 0 0.5rem;
     padding: 3px 8px;
     text-decoration: none;
-    text-shadow: -2px 2px #fff;
+    text-shadow: -1.5px 1.5px 1px #fff;
 }
 
 nav a:hover {
@@ -277,12 +289,14 @@ p {
 }
 
 .post-date {
+    background-color: #fff;
     border-radius: 4px;
     color: #000;
     font-size: 0.8rem;
     font-style: italic;
-    margin: -1.5rem 0 2rem 0;
-    padding: 0.25rem;
+    margin: -1rem 0 2rem 0;
+    text-align: center;
+    display: block;
 }
 
 .post-tags {
@@ -317,8 +331,6 @@ pre {
 
 .toc {
     display: inline-block;
-    // font-size: 0.9rem;
-    // max-width: 12rem;
     padding: 5px 15px 15px 15px;
     text-align: left;
 }
@@ -423,10 +435,6 @@ Breakpoint 1 (Dispense with critical mobile styles)
         margin: 1.5rem 1rem 1.25rem 1rem;
         padding: 0;
         justify-content: center;
-    }
-
-    nav a {
-        margin: 0.5rem;
     }
 
     pre {
