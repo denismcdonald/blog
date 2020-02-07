@@ -137,7 +137,7 @@ Breakpoint 1 (Dispense with critical mobile styles)
 ==================================================*/
 @media (min-width: 540px) { :root { font-size: calc(0.6em + 1vw); }
   aside { margin: 1rem 0.25rem -4rem 0; }
-  .content-container { margin: 0 auto; padding: 4rem 1.5rem 1rem 1.5rem; }
+  .content-container { margin: 0 auto; padding: 4rem 1rem 1rem 1rem; }
   .h1-title { margin-left: -1rem; margin-right: -1rem; }
   nav { margin: 1.5rem 1rem 1.25rem 1rem; padding: 0; justify-content: center; }
   pre { margin: 1rem -1rem; }
