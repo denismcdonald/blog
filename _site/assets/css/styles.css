@@ -8,7 +8,7 @@ MOBILE STYLES (See media queries below for desktop styles)
 
 html { box-sizing: border-box; }
 
-body { background-color: #F2EEC9; color: #000; font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif; height: 100%; margin: 0; min-height: 100%; }
+body { background-color: #F2EEC9; color: #000; font-family: 'Spectral'; height: 100%; margin: 0; min-height: 100%; }
 
 blockquote { border-radius: 4px; width: 70%; margin: 1rem auto; color: #555555; padding: 0.5rem 1rem 0.5rem 3rem; border-left: 8px solid #78C0A8; border-left: 8px solid #78C0A8; line-height: 1.6; position: relative; quotes: "“" "”" "‘" "’"; background: #ece6c0; }
 
@@ -48,27 +48,27 @@ a, p a, h1 a, h2 a, h3 a, h4 a, a.edit, a.scroll, li a { padding: 0 2px; }
 
 aside { margin: 3rem 0 0 0; padding: 0; text-align: center; }
 
-.content-container { margin: 0 1rem 1rem 1rem; max-width: 680px; padding-top: 0.5rem; }
+.content-container { margin: 0 1rem 1rem 1rem; max-width: 680px; }
 
 .current { background-color: #000; border-radius: 4px; color: #fff; text-decoration: none; text-shadow: none; }
 
-.edit { background-color: #fff; border-radius: 4px; color: #000; display: inline-block; font-size: 0.9rem; margin-top: 1rem; text-decoration: none; }
+.edit { background-color: rgba(255, 255, 255, 0.5); border-radius: 4px; color: #000; display: inline-block; font-size: 0.9rem; margin-top: 1rem; text-decoration: none; }
 
 #edit-text { text-decoration: underline; }
 
 .edit:hover #edit-text { text-decoration: none; }
 
-a.edit { padding: 0.25rem 0.5rem 0.4rem 0.3rem; }
+a.edit { padding: 0.5rem 1rem 0.5rem 0.5rem; }
 
 footer { clear: both; font-size: 1rem; margin: 8rem 1.5rem 1.5rem 1rem; padding: 0.75rem 0; position: relative; text-align: center; }
 
-footer a { color: #000; font-weight: 900; margin: 0 0.1rem; padding: 3px 8px; text-decoration: none; text-shadow: -1px 1px 1px #fff; }
+footer a { color: #000; font-weight: 600; margin: 0 0.1rem; padding: 3px 8px; text-decoration: underline; text-shadow: -1px 1px 1px #fff; }
 
 footer a:hover { text-shadow: none; }
 
-.footer-logo { display: block; margin: -1rem auto 1.5rem; padding: 0; }
+.footer-logo { display: block; margin: 1rem auto 1.5rem; padding: 0; width: 2rem; }
 
-h1, h2, h3, h4 { margin-top: 3rem; font-weight: 900; text-shadow: -1px 1px 1px #fff; }
+h1, h2, h3, h4 { margin-top: 3rem; font-weight: 600; text-shadow: -1px 1px 1px #fff; }
 
 .h1-title { background-color: #000; border-radius: 4px; color: #fff; display: block; margin-left: -0.5rem; margin-right: -0.5rem; padding: 4px 10px; text-align: center; text-shadow: none; }
 
@@ -78,17 +78,17 @@ h1, h2, h3, h4 { margin-top: 3rem; font-weight: 900; text-shadow: -1px 1px 1px #
 
 li { padding-top: 0.25rem; }
 
-.logo { display: block; margin: 3rem auto -1rem; width: 12rem; }
+.logo { display: block; margin: 2.5rem auto -1rem; width: 12rem; }
 
-nav { font-size: 0.9rem; margin: 1rem 1rem 2rem 1rem; padding: 0.5rem 0; text-align: center; }
+nav { font-size: 0.9rem; margin: 1rem 1rem -1rem 1rem; padding: 0.5rem 0; text-align: center; }
 
-nav a { color: #000; font-size: 1.25rem; font-weight: 900; margin: 0 0.5rem 0 0.5rem; padding: 3px 8px; text-decoration: none; text-shadow: -1.5px 1.5px 1px #fff; }
+nav a { color: #000; font-size: 1.25rem; font-weight: 600; margin: 0 0.5rem 0 0.5rem; padding: 3px 8px; text-decoration: underline; text-shadow: -1.5px 1.5px 1px #fff; }
 
 nav a:hover { color: #fff; text-shadow: none; }
 
 p { line-height: 1.85rem; }
 
-.post-date { background-color: #fff; border-radius: 4px; color: #000; font-size: 0.8rem; font-style: italic; margin: -1rem 0 2rem 0; text-align: center; display: block; }
+.post-date { background-color: rgba(255, 255, 255, 0.5); border-radius: 4px; color: #000; font-size: 0.8rem; font-style: italic; margin: -1rem 0 2rem 0; text-align: center; display: block; }
 
 .post-tags { margin: 2rem 0 1rem 0; }
 
@@ -102,9 +102,9 @@ pre { background-color: #000; border-radius: 8px; color: #fff; margin: 1rem -0.2
 
 .scroll { display: none; }
 
-.toc { display: inline-block; padding: 5px 15px 15px 15px; text-align: left; }
+.toc { display: inline-block; margin-bottom: -1rem; padding: 5px 15px 15px 15px; text-align: left; }
 
-.toc:before { content: "Table of contents"; background-color: #000; border-radius: 4px; color: #fff; font-size: 1.15rem; font-weight: 900; line-height: 2rem; padding: 3px 8px; }
+.toc:before { content: "Table of contents"; background-color: #000; border-radius: 4px; color: #fff; font-size: 1.15rem; font-weight: 600; line-height: 2rem; padding: 3px 8px; }
 
 .toc-scroll { display: none; }
 
@@ -137,7 +137,7 @@ Breakpoint 1 (Dispense with critical mobile styles)
 ==================================================*/
 @media (min-width: 540px) { :root { font-size: calc(0.6em + 1vw); }
   aside { margin: 1rem 0.25rem -4rem 0; }
-  .content-container { margin: 0 auto; padding: 1rem; }
+  .content-container { margin: 0 auto; padding: 0 1rem 1rem 1rem; }
   nav { margin: 1.5rem 1rem 1.25rem 1rem; padding: 0; justify-content: center; }
   pre { margin: 1rem -1rem; }
   .scroll { float: right; margin: 1rem 2rem 2rem 0; }
@@ -147,13 +147,13 @@ Breakpoint 1 (Dispense with critical mobile styles)
 /*================================================
 Breakpoint 2 (Table of contents appears)
 =================================================*/
-@media (min-width: 1020px) { aside { clear: right; float: right; padding: 5px 0 10px 10px; position: -webkit-sticky; position: sticky; top: 1rem; margin-right: 1rem; margin-top: 3rem; }
+@media (min-width: 1020px) { aside { clear: right; float: right; padding: 5px 0 10px 10px; position: -webkit-sticky; position: sticky; top: 1rem; margin-right: 1rem; margin-top: 2.75rem; }
   .aside-page { margin-top: 3rem; }
   .content-container { margin: 0 auto; padding-top: 0; }
   .toc { clear: both; float: right; margin: 0 0.5rem 0 0; padding: 0; text-align: left; }
-  .toc:before { content: "Table of contents"; background-color: #000; border-radius: 4px; color: #fff; font-size: 1rem; font-weight: 900; line-height: 2rem; padding: 3px 8px; }
+  .toc:before { content: "Table of contents"; background-color: #000; border-radius: 4px; color: #fff; font-size: 1rem; font-weight: 600; line-height: 2rem; padding: 3px 8px; }
   .toc-content { margin: 0 1rem 1rem 1rem; }
-  .toc-scroll { bottom: -1rem; font-size: 0.8rem; font-weight: 900; position: absolute; }
+  .toc-scroll { bottom: -1rem; font-size: 0.8rem; font-weight: 600; position: absolute; }
   .toc-scroll span { display: inline-block; display: none; padding-left: 5px; text-decoration: none; }
   .toc ul li { list-style-position: outside; }
   .toc ul ul { padding-left: 0.25rem; } }

@@ -18,7 +18,8 @@ html {
 body {
     background-color: #F2EEC9;
     color: #000;
-    font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+    // font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+    font-family: 'Spectral';
     height: 100%;
     margin: 0;
     min-height: 100%;
@@ -161,7 +162,7 @@ aside {
 .content-container {
     margin: 0 1rem 1rem 1rem;
     max-width: 680px;
-    padding-top: 0.5rem;
+    // padding-top: 0.5rem;
 }
 
 .current {
@@ -173,7 +174,7 @@ aside {
 }
 
 .edit {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 4px;
     color: #000;
     display: inline-block;
@@ -191,7 +192,7 @@ aside {
 }
 
 a.edit {
-    padding: 0.25rem 0.5rem 0.4rem 0.3rem;
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
 }
 
 footer {
@@ -205,10 +206,10 @@ footer {
 
 footer a {
     color: #000;
-    font-weight: 900;
+    font-weight: 600;
     margin: 0 0.1rem;
     padding: 3px 8px;
-    text-decoration: none;
+    text-decoration: underline;
     text-shadow: -1px 1px 1px #fff;
 }
 
@@ -218,9 +219,9 @@ footer a:hover {
 
 .footer-logo {
     display: block;
-    margin: -1rem auto 1.5rem;
-    // width: 7rem;
+    margin: 1rem auto 1.5rem;
     padding: 0;
+    width: 2rem;
 }
 
 h1,
@@ -228,7 +229,7 @@ h2,
 h3,
 h4 {
     margin-top: 3rem;
-    font-weight: 900;
+    font-weight: 600;
     text-shadow: -1px 1px 1px #fff;
 }
 
@@ -261,7 +262,8 @@ li {
 
 .logo {
     display: block;
-    margin: 3rem auto -1rem;
+    // margin: 2.75rem auto -1rem;
+    margin: 2.5rem auto -1rem;
     width: 12rem;
 }
 
@@ -269,7 +271,8 @@ nav {
     // display: flex;
     font-size: 0.9rem;
     // justify-content: space-evenly;
-    margin: 1rem 1rem 2rem 1rem;
+    // margin: 1rem 1rem 2rem 1rem;
+    margin: 1rem 1rem -1rem 1rem;
     padding: 0.5rem 0;
     text-align: center;
 }
@@ -277,10 +280,10 @@ nav {
 nav a {
     color: #000;
     font-size: 1.25rem;
-    font-weight: 900;
+    font-weight: 600;
     margin: 0 0.5rem 0 0.5rem;
     padding: 3px 8px;
-    text-decoration: none;
+    text-decoration: underline;
     text-shadow: -1.5px 1.5px 1px #fff;
 }
 
@@ -294,7 +297,8 @@ p {
 }
 
 .post-date {
-    background-color: #fff;
+    // background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 4px;
     color: #000;
     font-size: 0.8rem;
@@ -336,6 +340,7 @@ pre {
 
 .toc {
     display: inline-block;
+    margin-bottom: -1rem;
     padding: 5px 15px 15px 15px;
     text-align: left;
 }
@@ -346,7 +351,7 @@ pre {
     border-radius: 4px;
     color: #fff;
     font-size: 1.15rem;
-    font-weight: 900;
+    font-weight: 600;
     line-height: 2rem;
     padding: 3px 8px;
 }
@@ -429,7 +434,7 @@ Breakpoint 1 (Dispense with critical mobile styles)
     .content-container {
         margin: 0 auto;
         // padding: 4rem 1rem 1rem 1rem;
-        padding: 1rem;
+        padding: 0 1rem 1rem 1rem;
     }
 
     // .h1-title {
@@ -481,7 +486,7 @@ Breakpoint 2 (Table of contents appears)
         top: 1rem;
         margin-right: 1rem;
         // margin-top: 12.5rem;
-        margin-top: 3rem;
+        margin-top: 2.75rem;
     }
 
     .aside-page {
@@ -509,7 +514,7 @@ Breakpoint 2 (Table of contents appears)
         border-radius: 4px;
         color: #fff;
         font-size: 1rem;
-        font-weight: 900;
+        font-weight: 600;
         line-height: 2rem;
         padding: 3px 8px;
     }
@@ -521,7 +526,7 @@ Breakpoint 2 (Table of contents appears)
     .toc-scroll {
         bottom: -1rem;
         font-size: 0.8rem;
-        font-weight: 900;
+        font-weight: 600;
         position: absolute;
     }
 
