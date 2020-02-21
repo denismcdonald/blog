@@ -33,13 +33,14 @@ title: Home
 
 
 <section class="archive-post-list">
+  <h2 class="archive-titles">Archive</h2>
   {% for post in site.posts %}
       {% assign currentDate = post.date | date: "%Y" %}
-      {% if currentDate != myDate %}
+      <!-- {% if currentDate != myDate %}
           {% unless forloop.first %}</a>{% endunless %}
           <h2 class="archive-titles">{{ currentDate }} Archive</h2>
           {% assign myDate = currentDate %}
-      {% endif %}
+      {% endif %} -->
       <a class="archive-list" href="{{ site.baseurl}}{{ post.url }}">
         <p class="archive-post-title">{{ post.title }}</p>
         <hr class="archive-hr">
@@ -47,4 +48,5 @@ title: Home
       {%- if forloop.last -%}</a>{%- endif -%}
   {%- endfor -%}
       </a>
+
 <!-- </section> -->

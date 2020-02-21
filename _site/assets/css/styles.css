@@ -38,7 +38,7 @@ a, p a, h1 a, h2 a, h3 a, h4 a, a.edit, a.scroll, li a { padding: 0 2px; }
 
 .archive-post-date { -webkit-box-flex: 0; -webkit-flex: 0 1 auto; flex: 0 1 auto; }
 
-.archive-post-list { margin-top: 6rem; }
+.archive-post-list { margin-top: 5.5rem; }
 
 .archive-post-list ul li { list-style: none; }
 
@@ -60,7 +60,7 @@ aside { margin: 3rem 0 0 0; padding: 0; text-align: center; }
 
 a.edit { padding: 0.25rem 0.75rem 0.25rem 0.25rem; }
 
-footer { clear: both; font-size: 1rem; margin: 8rem 1.5rem 1.5rem 1rem; padding: 0.75rem 0; position: relative; text-align: center; }
+footer { clear: both; font-size: 1rem; margin: 6rem 1.5rem 1.5rem 1rem; padding: 0.75rem 0; position: relative; text-align: center; }
 
 footer a { color: #000; font-weight: 600; margin: 0 0.1rem; padding: 3px 8px; text-decoration: underline; text-shadow: -1px 1px 1px #fff; }
 
