@@ -175,11 +175,18 @@ aside {
 
 .edit {
     background-color: rgba(255, 255, 255, 0.5);
+    // background-color: rgba(255, 255, 255, 0.35);
     border-radius: 4px;
     color: #000;
-    display: inline-block;
+    // display: inline-block;
+    display: block;
     font-size: 0.9rem;
-    margin-top: 1rem;
+    // line-height: 1.85rem;
+    // margin-top: 1rem;
+    margin: 2rem auto;
+    // max-width: 80%;
+    padding: 1rem;
+    text-align: center;
     text-decoration: none;
 }
 
@@ -192,7 +199,7 @@ aside {
 }
 
 a.edit {
-    padding: 0.5rem 1rem 0.5rem 0.5rem;
+    padding: 0.25rem 0.75rem 0.25rem 0.25rem;
 }
 
 footer {
