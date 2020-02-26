@@ -23,12 +23,13 @@
     
   </head>
   <body>
+   
     <div class="outer-wrapper">
-    <div class="nav-wrapper">       
-      
-      {% include navigation.html %}
-
-    </div>
+      <div class="nav-wrapper">       
+        
+        {% include navigation.html %}
+        
+      </div>
       <!-- <img alt="Drawing of a handshake" class="logo" src="{{ site.baseurl }}/assets/images/writer6.jpg"> -->
       <img alt="Drawing of a handshake" class="logo" src="{{ site.baseurl }}/assets/images/writer8.jpg">
       <!-- <img alt="Drawing of a handshake" class="logo" src="{{ site.baseurl }}/assets/images/turtle.jpg"> -->
@@ -62,12 +63,13 @@
       {%- if page.scroll == true -%}
       {% include scroll.html %}
       {%- endif -%}
-    
-    {%- if page.footer -%}
-    <div class="footer-wrapper">
-    {% include footer.html %}
-    </div>
-    {%- endif -%}
+      
+      {%- if page.footer -%}
+      <div class="footer-wrapper">
+        {% include footer.html %}
+      </div>
+      {%- endif -%}
   </div>
   </body>
+  <script src="{{ site.baseurl }}/assets/js/script.js"></script>
   </html>
