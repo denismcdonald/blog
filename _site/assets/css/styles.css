@@ -8,7 +8,7 @@ MOBILE STYLES (See media queries below for desktop styles)
 
 html { box-sizing: border-box; height: 100%; }
 
-body { background-color: #F2EEC9; color: #000; font-family: 'Spectral'; height: 100%; margin: 0; position: relative; }
+body { background-color: #F2EEC9; color: #000; font-family: 'Spectral'; height: 100%; margin: 0; }
 
 blockquote { border-radius: 4px; width: 70%; margin: 1rem auto; color: #555555; padding: 0.5rem 1rem 0.5rem 3rem; border-left: 8px solid #78C0A8; border-left: 8px solid #78C0A8; line-height: 1.6; position: relative; quotes: "“" "”" "‘" "’"; background: #ece6c0; }
 
@@ -129,7 +129,7 @@ NB:  The zero-width space ("\200B") addresses the following accessibility concer
 */
 .toc ul ul li:before { content: "(" counter(item,lower-roman) ")​ "; counter-increment: item; }
 
-.outer-wrapper { min-height: 100vh; /* will cover the 100% of viewport */ overflow: hidden; display: block; position: relative; }
+.outer-wrapper { min-height: 100vh; /* will cover the 100% of viewport */ display: block; position: relative; }
 
 .footer-wrapper { padding-top: 7rem; text-align: center; }
 

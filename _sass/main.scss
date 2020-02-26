@@ -25,7 +25,7 @@ body {
     font-family: 'Spectral';
     height: 100%;
     margin: 0;
-    position: relative;
+    // position: relative;
     // min-height: 100vh;
 }
 
@@ -465,7 +465,7 @@ NB:  The zero-width space ("\200B") addresses the following accessibility concer
 
 .outer-wrapper {
     min-height: 100vh; /* will cover the 100% of viewport */
-    overflow: hidden;
+    // overflow: hidden;
     display: block;
     position: relative;
     // padding-bottom: 3rem; 
