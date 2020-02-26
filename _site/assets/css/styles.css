@@ -129,7 +129,7 @@ NB:  The zero-width space ("\200B") addresses the following accessibility concer
 */
 .toc ul ul li:before { content: "(" counter(item,lower-roman) ")​ "; counter-increment: item; }
 
-.outer-wrapper { min-height: 100vh; /* will cover the 100% of viewport */ display: block; position: relative; }
+.outer-wrapper { min-height: 100vh; display: block; position: relative; }
 
 .footer-wrapper { padding-top: 7rem; text-align: center; }
 
