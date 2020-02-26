@@ -23,7 +23,8 @@
     
   </head>
   <body>
-    <div class="wrapper">       
+    <div class="outer-wrapper">
+    <div class="nav-wrapper">       
       
       {% include navigation.html %}
 
@@ -61,11 +62,12 @@
       {%- if page.scroll == true -%}
       {% include scroll.html %}
       {%- endif -%}
-
     
     {%- if page.footer -%}
+    <div class="footer-wrapper">
     {% include footer.html %}
+    </div>
     {%- endif -%}
-
+  </div>
   </body>
   </html>

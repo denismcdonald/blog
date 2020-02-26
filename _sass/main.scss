@@ -13,16 +13,20 @@ MOBILE STYLES (See media queries below for desktop styles)
 
 html {
     box-sizing: border-box;
+    height: 100%;
 }
 
 body {
     background-color: #F2EEC9;
+    // border-top: 1px solid #000;
+    // border-bottom: 1px solid #000;
     color: #000;
     // font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
     font-family: 'Spectral';
     height: 100%;
     margin: 0;
-    min-height: 100%;
+    position: relative;
+    // min-height: 100vh;
 }
 
 blockquote {
@@ -155,7 +159,8 @@ li a {
 }
 
 aside {
-    margin: 3rem 0 0 0;
+    // margin: 3rem 0 0 0;
+    margin: 2rem 0 0 0;
     padding: 0;
     text-align: center;
 }
@@ -204,26 +209,47 @@ a.edit {
 }
 
 footer {
+    background-color: #000;
+    border-radius: 6px 6px 0 0;
     clear: both;
+    color: #fff;
+    // display: inline;
     font-size: 1rem;
     // margin: 8rem 1.5rem 1.5rem 1rem;
-    margin: 6rem 1.5rem 1.5rem 1rem;
-    padding: 0.75rem 0;
-    position: relative;
-    text-align: center;
+    margin: 6rem 1.5rem 0 1rem;
+    margin: 0;
+    // margin: 0 1.5rem 0 1rem;
+    // margin: auto;
+    // padding: 0.75rem 0;
+    padding: 0.4rem 0.75rem;
+    // left: 0;
+    // right: 0;
+    // bottom: 0;
+    // right: 25%;
+    // position: relative;
+    // position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    // width: 100%;
+    // height: 3rem;
+    // text-align: center;
+    position: absolute;
+    bottom: 0;
+    // width: 100%;
 }
 
 footer a {
-    color: #000;
+    color: #fff;
     font-weight: 600;
     margin: 0 0.1rem;
     padding: 3px 8px;
-    text-decoration: underline;
-    text-shadow: -1px 1px 1px #fff;
+    text-decoration: none;
+    // text-shadow: -1px 1px 1px #fff;
 }
 
 footer a:hover {
-    text-shadow: none;
+    text-decoration: underline;
 }
 
 .footer-logo {
@@ -271,7 +297,8 @@ li {
 
 .logo {
     display: block;
-    margin: 2.5rem auto -1rem;
+    // margin: 2.5rem auto -1rem;
+    margin: 2.5rem auto -1.5rem;
     width: 10rem;
 }
 
@@ -286,7 +313,7 @@ nav {
     margin: 0;
     // padding: 0.5rem 0;
     padding: 0.4rem 0.75rem;
-    text-align: center;
+    // text-align: center;
 }
 
 nav a {
@@ -366,14 +393,15 @@ pre {
 }
 
 .toc:before {
-    content: "Table of contents";
+    content: "Table of Contents";
     background-color: #000;
     border-radius: 4px;
     color: #fff;
     font-size: 1.15rem;
     font-weight: 600;
     line-height: 2rem;
-    padding: 3px 8px;
+    // padding: 3px 8px;
+    padding: 0.1rem 1.2rem;
 }
 
 .toc-scroll {
@@ -390,9 +418,10 @@ ul.toc li {
 }
 
 ul.toc li:before {
-    content: ""counter(item, decimal)"";  
+    content: ""counter(item, decimal)".";  
     counter-increment: item;
-    font-size: 0.7rem;
+    // font-size: 0.7rem;
+    font-size: 1rem;
     padding: 3px;
 }
 
@@ -410,7 +439,7 @@ ul.toc li:before {
 .toc ul li:before {
     content: "("counter(item, lower-latin)")\200B";
     counter-increment: item;
-    font-size: 0.7rem;
+    font-size: 1rem;
 }
 
 .toc ul ul li {
@@ -434,9 +463,23 @@ NB:  The zero-width space ("\200B") addresses the following accessibility concer
 //     list-style: decimal;
 // }
 
-.wrapper {
+.outer-wrapper {
+    min-height: 100vh; /* will cover the 100% of viewport */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    // padding-bottom: 3rem; 
+}
+
+.footer-wrapper {
+    padding-top: 7rem;
     text-align: center;
 }
+
+.nav-wrapper {
+    text-align: center;
+}
+
 
 /*====================================
 MEDIA QUERIES (x3) FOR DESKTOP STYLES
@@ -452,7 +495,9 @@ Breakpoint 1 (Dispense with critical mobile styles)
     }
     
     aside {
-        margin: 1rem 0.25rem -4rem 0;
+        // margin: 1rem 0.25rem -4rem 0;
+        // margin: 0.5rem 0.25rem -4rem 0;
+        margin: 0 0.25rem -4rem 0;
     }
 
     .content-container {
@@ -543,14 +588,15 @@ Breakpoint 2 (Table of contents appears)
     }
 
     .toc:before {
-        content: "Table of contents";
+        content: "Table of Contents";
         background-color: #000;
         border-radius: 4px;
         color: #fff;
         font-size: 1rem;
         font-weight: 600;
         line-height: 2rem;
-        padding: 3px 8px;
+        // padding: 3px 8px;
+        padding: 0.1rem 1.4rem;
     }
 
     .toc-content {
