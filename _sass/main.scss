@@ -262,6 +262,8 @@ li {
     display: block;
     margin: 2.5rem auto -1.5rem;
     width: 10rem;
+    // visibility: hidden;
+    // margin-top: -10rem;
 }
 
 nav {
@@ -444,6 +446,8 @@ Breakpoint 1 (Dispense with critical mobile styles)
 
     .logo {
         width: 10rem;
+        visibility: visible;
+        margin-top: 2.5rem;
     }
 
     pre {

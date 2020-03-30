@@ -2,6 +2,13 @@
 footer: false
 layout: default
 ---
+<style>
+  .logo {
+      visibility: hidden;
+      margin-top: -9rem;
+  } 
+</style>
+
 <div class="tag-page-content">
 <h1 class="h1-title">Of {{ page.tag }}</h1>
 {% for post in site.tags[page.tag] %}
