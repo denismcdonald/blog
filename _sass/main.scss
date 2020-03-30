@@ -31,7 +31,6 @@ blockquote {
     color: #555555;
     padding: 0.5rem 1rem 0.5rem 3rem;
     border-left: 8px solid #78C0A8;
-    border-left: 8px solid #78C0A8;
     line-height: 1.6;
     position: relative;
     quotes: "\201C""\201D""\2018""\2019";
@@ -90,10 +89,7 @@ li a {
 }
 
 .archive-hr {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-right: .5rem;
-    margin-left: .5rem;
+    margin: 0 0.5rem 0 0.5rem;
     height: 1px;
     border: none;
     border-bottom: 1px dotted #000;

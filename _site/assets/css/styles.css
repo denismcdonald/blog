@@ -10,7 +10,7 @@ html { box-sizing: border-box; height: 100%; }
 
 body { background-color: #F2EEC9; color: #000; font-family: 'Spectral'; height: 100%; margin: 0; }
 
-blockquote { border-radius: 4px; width: 70%; margin: 1rem auto; color: #555555; padding: 0.5rem 1rem 0.5rem 3rem; border-left: 8px solid #78C0A8; border-left: 8px solid #78C0A8; line-height: 1.6; position: relative; quotes: "“" "”" "‘" "’"; background: #ece6c0; }
+blockquote { border-radius: 4px; width: 70%; margin: 1rem auto; color: #555555; padding: 0.5rem 1rem 0.5rem 3rem; border-left: 8px solid #78C0A8; line-height: 1.6; position: relative; quotes: "“" "”" "‘" "’"; background: #ece6c0; }
 
 blockquote::before { content: "\201C"; color: #78C0A8; font-size: 4rem; font-family: 'Times New Roman', Times, serif; position: absolute; left: 10px; top: -10px; }
 
@@ -26,7 +26,7 @@ a, p a, h1 a, h2 a, h3 a, h4 a, a.edit, a.scroll, li a { padding: 0 2px; }
 
 .archive-titles { margin-top: 4rem; }
 
-.archive-hr { margin-top: 0; margin-bottom: 0; margin-right: .5rem; margin-left: .5rem; height: 1px; border: none; border-bottom: 1px dotted #000; -webkit-box-flex: 1; -webkit-flex: 1 0 1rem; flex: 1 0 1rem; opacity: 0.25; }
+.archive-hr { margin: 0 0.5rem 0 0.5rem; height: 1px; border: none; border-bottom: 1px dotted #000; -webkit-box-flex: 1; -webkit-flex: 1 0 1rem; flex: 1 0 1rem; opacity: 0.25; }
 
 .archive-list { align-items: baseline; display: flex; list-style: none; margin: 0 auto; max-width: 32rem; position: relative; -webkit-box-align: baseline; -webkit-align-items: baseline; }
 
