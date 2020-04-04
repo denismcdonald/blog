@@ -1,6 +1,6 @@
 ---
 title: Blog
-footer: false
+footer: true
 ---
 
 <div>
@@ -15,9 +15,9 @@ footer: false
     {% endfor %}
 </div>
 
-<br>
-<hr class="hr-bold">
-<hr class="hr-bold">
+<!-- <br> -->
+<!-- <hr class="hr-bold"> -->
+<!-- <hr class="hr-bold"> -->
 
 <h2>Topics</h2>
 
@@ -30,14 +30,13 @@ footer: false
 {% assign sortedtags = tags | split:' ' | sort %}
 
 {% for tag in sortedtags %}
-<a class="archive-tags" href="{{ site.baseurl}}/tag/{{ tag }}">{{ tag | capitalize }}</a><span>&nbsp;|</span>
+<a class="archive-tags" href="{{ site.baseurl}}/tag/{{ tag }}">{{ tag | capitalize }}</a><span>&nbsp;|&nbsp;</span>
 {% endfor %}
 </section>
 
-<br>
-<br>
-<hr class="hr-bold">
-<hr class="hr-bold">
+<!-- <br> -->
+<!-- <hr class="hr-bold"> -->
+<!-- <hr class="hr-bold"> -->
 
 <section class="archive-post-list">
   {% for post in site.posts %}
