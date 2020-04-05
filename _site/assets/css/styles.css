@@ -96,7 +96,7 @@ pre { border-radius: 4px; margin: 1rem 0; padding: 1rem; white-space: pre-wrap; 
 
 .quote span { font-style: italic; }
 
-.scroll { display: inline-block; margin: 4rem 0 0; }
+.scroll { display: inline-block; font-size: 14px; margin: 4rem 0 0; }
 
 .scroll-container { text-align: center; }
 
