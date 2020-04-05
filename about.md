@@ -1,5 +1,6 @@
 ---
 title: Contact
+footer: false
 ---
 
 <h1 class="h1-title">About</h1>
