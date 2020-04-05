@@ -15,10 +15,6 @@ footer: true
     {% endfor %}
 </div>
 
-<!-- <br> -->
-<!-- <hr class="hr-bold"> -->
-<!-- <hr class="hr-bold"> -->
-
 <h2>Topics</h2>
 
 <section class="archive-list">
@@ -33,10 +29,6 @@ footer: true
 <a class="archive-tags" href="{{ site.baseurl}}/tag/{{ tag }}">{{ tag | capitalize }}</a><span>&nbsp;|&nbsp;</span>
 {% endfor %}
 </section>
-
-<!-- <br> -->
-<!-- <hr class="hr-bold"> -->
-<!-- <hr class="hr-bold"> -->
 
 <section class="archive-post-list">
   {% for post in site.posts %}
