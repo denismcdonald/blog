@@ -9,7 +9,7 @@ MOBILE STYLES (See media queries below for desktop styles)
 
 html {
     box-sizing: border-box;
-    -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+    -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -409,15 +409,6 @@ Breakpoint 1 (Dispense with critical mobile styles)
         float: right;
         margin: 4rem 1rem 0 0;
     }
-
-    .tag-page-content {
-        max-width: 25rem;
-        margin: 0 auto;
-    }
-
-    // .toc {
-    //     margin: 3rem 0 0 1rem;
-    // }
 }
 
 /*================================================
