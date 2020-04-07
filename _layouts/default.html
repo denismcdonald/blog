@@ -23,8 +23,13 @@
     
   </head>
   <body>
+
+    {%- if page.overflow == true -%}
+    <div class="wrapper" style="overflow-x: hidden">
+      {%- else -%}    
     <div class="wrapper">
-      
+      {%- endif -%}
+
       {% include navigation.html %}
 
       <!-- <img alt="drawing of handshake" class="logo" src="/assets/images/handshake.jpg"> -->

@@ -22,7 +22,6 @@ body {
     height: 100vh;
     line-height: 160%;
     margin: 0;
-    // min-height: 100%;
 }
 
 .banner {
@@ -174,7 +173,7 @@ aside {
 }
 
 .content-container {
-    margin: 0 1rem 1rem 1rem;
+    margin: 0 1rem 2rem 1rem;
     max-width: 680px;
     padding-top: 4rem;
 }
@@ -246,14 +245,13 @@ li {
 }
 
 .logo {
-    font-weight: bold;
     position: absolute;
     width: 266px;
-    height: 95px;
-    top: 55%;
+    // height: 95px;
+    top: 45%;
     left: 50%;
     margin-left: -133px; /* margin is -0.5 * dimension */
-    margin-top: -47px; 
+    // margin-top: -47px; 
 }
 
 nav {
@@ -411,6 +409,7 @@ ul {
     min-height: 87vh;
     display: block;
     // overflow-x: hidden;
+    margin-bottom: 2rem;
     position: relative;
 }
 
@@ -452,14 +451,13 @@ Breakpoint 1 (Dispense with critical mobile styles)
     }
 
     .logo {
-        font-weight: bold;
         position: absolute;
         width: 400px;
         height: 143px;
-        top: 55%;
+        top: 45%;
         left: 50%;
-        margin-left: -200px; /* margin is -0.5 * dimension */
-        margin-top: -121px; 
+        margin-left: -200px;
+        // margin-top: -121px; 
     }
 
     nav {
@@ -510,7 +508,7 @@ Breakpoint 2 (Table of contents appears)
 
     .content-container {
         margin-left: 1.5rem;
-        padding-top: 3.5rem;
+        padding-bottom: 3rem;
     }
 
     .toc {

@@ -50,7 +50,7 @@ aside { margin: 3rem 0 0 0; padding: 0; text-align: center; }
 
 .blog-list-date { display: inline; font-style: italic; }
 
-.content-container { margin: 0 1rem 1rem 1rem; max-width: 680px; padding-top: 4rem; }
+.content-container { margin: 0 1rem 2rem 1rem; max-width: 680px; padding-top: 4rem; }
 
 .current { border: 1px solid #3391ff; border-radius: 2px; text-decoration: none; }
 
@@ -72,7 +72,7 @@ h2 { font-size: 16px; }
 
 li { padding-top: 0.25rem; }
 
-.logo { font-weight: bold; position: absolute; width: 266px; height: 95px; top: 55%; left: 50%; margin-left: -133px; /* margin is -0.5 * dimension */ margin-top: -47px; }
+.logo { position: absolute; width: 266px; top: 45%; left: 50%; margin-left: -133px; /* margin is -0.5 * dimension */ }
 
 nav { margin: 0.5rem 0.5rem 0 0.5rem; padding: 0; text-align: center; }
 
@@ -131,7 +131,7 @@ NB:  The zero-width space ("\200B") addresses the following accessibility concer
 
 ul { list-style: decimal; }
 
-.wrapper { min-height: 87vh; display: block; position: relative; }
+.wrapper { min-height: 87vh; display: block; margin-bottom: 2rem; position: relative; }
 
 /*====================================
 MEDIA QUERIES (x3) FOR DESKTOP STYLES
@@ -144,7 +144,7 @@ Breakpoint 1 (Dispense with critical mobile styles)
   .content-container { padding: 4rem 1.5rem 1rem 1rem; }
   footer { display: block; font-size: 14px; text-align: right; position: relative; padding: 2rem 0 1rem 0; bottom: 0; right: 1rem; width: 100%; }
   .h1-title { margin-right: -1rem; }
-  .logo { font-weight: bold; position: absolute; width: 400px; height: 143px; top: 55%; left: 50%; margin-left: -200px; /* margin is -0.5 * dimension */ margin-top: -121px; }
+  .logo { position: absolute; width: 400px; height: 143px; top: 45%; left: 50%; margin-left: -200px; }
   nav { display: block; margin: 0.75rem 1rem 0 1rem; padding: 0; text-align: right; }
   nav a { margin-left: 2px; padding: 2px 4px; }
   .post-tags { text-align: left; }
@@ -155,7 +155,7 @@ Breakpoint 2 (Table of contents appears)
 =================================================*/
 @media (min-width: 1020px) { aside { clear: right; float: right; padding: 5px 0 10px 10px; position: -webkit-sticky; position: sticky; top: 1rem; margin-right: 1rem; margin-top: 12rem; }
   .aside-page { margin-top: 9.5rem; }
-  .content-container { margin-left: 1.5rem; padding-top: 3.5rem; }
+  .content-container { margin-left: 1.5rem; padding-bottom: 3rem; }
   .toc { clear: both; float: right; margin: 0 0.5rem 0 0; padding: 0; text-align: left; }
   .toc:before { content: "Table of contents"; border-radius: 4px; font-weight: bold; line-height: 2rem; }
   .toc-content { margin: 0 1rem 0 1.5rem; }
