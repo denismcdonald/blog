@@ -14,6 +14,8 @@ html {
 }
 
 body {
+    // background-color: #181a1b;
+    // color: rgb(200, 196, 188);
     color: #595959;
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
@@ -53,7 +55,7 @@ blockquote::before {
   
 blockquote span {
     display: block;
-    color: #333333;
+    // color: #333333;
     font-style: normal;
     margin: 1rem;
     text-align: center;
@@ -78,8 +80,19 @@ h4 a,
 a.edit,
 a.scroll,
 li a {
+    // color: #3391ff;
     padding: 0 2px;
 }
+
+a span {
+    text-decoration: none; 
+    display: inline-block;
+    padding-right: 4px;
+}
+
+// a:visited {
+//     color: #2d77cc;
+// }
 
 .archive-dates {
     margin-top: 4rem;
@@ -92,7 +105,7 @@ li a {
     margin-left: .5rem;
     height: 1px;
     border: none;
-    border-bottom: 1px dotted #000;
+    border-bottom: 1px dotted #3391ff;
     -webkit-box-flex: 1;
     -webkit-flex: 1 0 1rem;
     flex: 1 0 1rem;
@@ -166,7 +179,7 @@ aside {
 }
 
 .current {
-    border: 1px solid #000;
+    border: 1px solid #3391ff;
     border-radius: 2px;
     text-decoration: none;
 }
@@ -179,10 +192,12 @@ aside {
     text-decoration: underline;
 }
 
-a span {
-    text-decoration: none; 
-    display: inline-block;
-    padding-right: 4px;
+.end {
+    color: #d6d6d6;
+    font-style: italic;
+    letter-spacing: 15px;
+    margin-top: 3rem;
+    text-align: center;
 }
 
 footer {
@@ -265,15 +280,15 @@ p {
 }
 
 .post-date {
-    background-color: #fff;
+    // background-color: #fff;
     border-radius: 4px;
-    color: #000;
+    // color: #000;
     font-style: italic;
     margin: -0.75rem 0 2rem 0;
 }
 
 .post-tags {
-    margin: 2rem 0 1rem 0;
+    margin: 2rem 0 2rem 0;
 }
 
 .post-tags span {
@@ -414,7 +429,7 @@ Breakpoint 1 (Dispense with critical mobile styles)
 
     .content-container {
         margin: 0 auto;
-        padding: 4rem 1.5rem 4rem 1rem;
+        padding: 4rem 1.5rem 1rem 1rem;
     }
 
     footer {

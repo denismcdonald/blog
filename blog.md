@@ -15,7 +15,7 @@ footer: true
     {% endfor %}
 </div>
 
-<h2>Topics</h2>
+<h2>Tags</h2>
 
 <section class="archive-list">
 {% capture tags %}

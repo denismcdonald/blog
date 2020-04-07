@@ -39,7 +39,7 @@
       
       <div class="content-container toc-content">
         {{ content }}
-        
+        <div class="end">###</div>
         {%- if page.edit == true -%}
         <div class="edit-toc">
           {% include edit.html %}
@@ -51,7 +51,7 @@
       {%- else -%}
       <div class="content-container">
         {{ content }}
-        
+        <div class="end">###</div>
         {%- if page.edit == true -%}
         {% include edit.html %}
         {%- endif -%}
