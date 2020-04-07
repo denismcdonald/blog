@@ -1,5 +1,4 @@
 ---
-edit: true
 tags: jekyll kiwifruit
 toc: true
 ---
