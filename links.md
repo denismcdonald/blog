@@ -1,5 +1,5 @@
 ---
-title: About
+title: Links
 toc: true
 edit: false
 layout: links

@@ -10,7 +10,7 @@ footer: true
       <a class="archive-list" href="{{ site.baseurl}}{{ post.url }}">
             <p class="archive-post-title">{{ post.title }}</p>
             <hr class="archive-hr">
-            <p class="archive-post-date">{{ post.date | date: "%d %B %Y" }}</p>
+            <p class="archive-post-date">{{ post.date | date: "%-d %B %Y" }}</p>
       </a>
     {% endfor %}
 </div>
@@ -41,7 +41,7 @@ footer: true
       <a class="archive-list" href="{{ site.baseurl}}{{ post.url }}">
         <p class="archive-post-title">{{ post.title }}</p>
         <hr class="archive-hr">
-        <p class="archive-post-date">{{ post.date | date: "%-d %B" }}</p>
+        <p class="archive-post-date">{{ post.date | date: "%-d %B %Y" }}</p>
       {%- if forloop.last -%}</a><br>{%- endif -%}
   {%- endfor -%}
       </a>

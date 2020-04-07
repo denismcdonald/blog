@@ -18,6 +18,7 @@ body {
     // color: rgb(200, 196, 188);
     color: #595959;
     font-family: Arial, Helvetica, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     height: 100vh;
     line-height: 160%;
     margin: 0;
@@ -31,8 +32,8 @@ body {
     height: 30px;
     top: 55%;
     left: 50%;
-    margin-left: -50px; /* margin is -0.5 * dimension */
-    margin-top: -25px; 
+    margin-left: -100px; /* margin is -0.5 * dimension */
+    margin-top: -15px; 
 }
 
 blockquote {
@@ -105,7 +106,7 @@ a span {
     margin-left: .5rem;
     height: 1px;
     border: none;
-    border-bottom: 1px dotted #3391ff;
+    border-bottom: 1px dotted #000;
     -webkit-box-flex: 1;
     -webkit-flex: 1 0 1rem;
     flex: 1 0 1rem;
@@ -123,7 +124,7 @@ a span {
 }
 
 .archive-list p {
-    line-height: 2.25rem;
+    line-height: 2rem;
     margin: 0 4px;
 }
 
@@ -149,7 +150,7 @@ a span {
 }
 
 .archive-tags {
-    font-size: 14px;
+    // font-size: 14px;
     margin: 0 0.2rem 0 0;
 }
 
@@ -196,22 +197,18 @@ aside {
     color: #d6d6d6;
     font-style: italic;
     letter-spacing: 15px;
-    margin-top: 3rem;
+    margin-top: 2.5rem;
     text-align: center;
 }
 
 footer {
     font-size: 16px;
-    // margin: 4rem 1rem 1.5rem 1rem;
-    // margin-right: 0;
-    // margin-left: 0;
     margin-top: 3rem;
     padding-bottom: 1rem;
     padding-top: 2rem;
     text-align: center;
     position: relative;
     bottom: 0;
-    // right: 2rem;
     width: 100%;
 }
 
@@ -249,9 +246,14 @@ li {
 }
 
 .logo {
-    display: block;
-    margin: 0 auto;
-    width: 12rem;
+    font-weight: bold;
+    position: absolute;
+    width: 266px;
+    height: 95px;
+    top: 55%;
+    left: 50%;
+    margin-left: -133px; /* margin is -0.5 * dimension */
+    margin-top: -47px; 
 }
 
 nav {
@@ -275,7 +277,7 @@ nav p {
 }
 
 p {
-    font-size: 14px;
+    font-size: 17px;
     line-height: 2rem;
 }
 
@@ -289,6 +291,7 @@ p {
 
 .post-tags {
     margin: 2rem 0 2rem 0;
+    text-align: center;
 }
 
 .post-tags span {
@@ -329,7 +332,7 @@ pre {
 
 .toc {
     display: inline-block;
-    font-size: 14px;
+    font-size: 15px;
     padding: 5px 15px 15px 15px;
     margin: 3rem 0 0 1rem;
     text-align: left;
@@ -342,6 +345,7 @@ pre {
     font-weight: bold;
     line-height: 2rem;
     padding: 3px 8px;
+    // margin-left: -0.25rem;
 }
 
 .toc-content {
@@ -406,7 +410,7 @@ ul {
 .wrapper {
     min-height: 87vh;
     display: block;
-    overflow-x: hidden;
+    // overflow-x: hidden;
     position: relative;
 }
 
@@ -420,7 +424,7 @@ Breakpoint 1 (Dispense with critical mobile styles)
 @media (min-width: 540px) {
        
     .archive-list p {
-        line-height: 1.5rem;
+        line-height: 1.7rem;
     }
 
     aside {
@@ -428,16 +432,13 @@ Breakpoint 1 (Dispense with critical mobile styles)
     }
 
     .content-container {
-        margin: 0 auto;
+        // margin: 0 auto;
         padding: 4rem 1.5rem 1rem 1rem;
     }
 
     footer {
         display: block;
         font-size: 14px;
-        // margin: 1rem;
-        // margin-left: 2rem;
-        // margin-top: 0;
         text-align: right;
         position: relative;
         padding: 2rem 0 1rem 0;
@@ -450,6 +451,17 @@ Breakpoint 1 (Dispense with critical mobile styles)
         margin-right: -1rem;
     }
 
+    .logo {
+        font-weight: bold;
+        position: absolute;
+        width: 400px;
+        height: 143px;
+        top: 55%;
+        left: 50%;
+        margin-left: -200px; /* margin is -0.5 * dimension */
+        margin-top: -121px; 
+    }
+
     nav {
         display: block;
         margin: 0.75rem 1rem 0 1rem;
@@ -460,6 +472,10 @@ Breakpoint 1 (Dispense with critical mobile styles)
     nav a {
         margin-left: 2px;
         padding: 2px 4px;
+    }
+
+    .post-tags {
+        text-align: left;
     }
 
     pre {
@@ -510,7 +526,8 @@ Breakpoint 2 (Table of contents appears)
         border-radius: 4px;
         font-weight: bold;
         line-height: 2rem;
-        padding: 3px 8px;
+        // margin-left: -0.25rem;
+        // padding: 3px 8px;
     }
 
     .toc-content {
@@ -533,8 +550,10 @@ Breakpoint 2 (Table of contents appears)
     //     text-decoration: none; 
     // }  
 
+
+
     .toc ul {
-        padding-left: 1.25rem;
+        padding-left: 0.75rem;
     }
      
     .toc ul li {
@@ -542,7 +561,7 @@ Breakpoint 2 (Table of contents appears)
     }
    
     .toc ul ul {
-        padding-left: 0.25rem;
+        padding-left: 0.5rem;
     } 
 }
 

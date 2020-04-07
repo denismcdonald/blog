@@ -1,11 +1,12 @@
 ---
+title: Denis McDonald
 layout: home
 footer: false
 ---
 
-<div class="banner">
+<!-- <div class="banner">
     Of information.
-</div>
+</div> -->
 
 <!-- 
 {%- assign latest_post = site.posts[0] -%}
