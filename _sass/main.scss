@@ -214,6 +214,7 @@ footer {
 footer a {
     margin: 1rem 2px 0;
     padding: 2px 4px;
+    text-decoration: none;
 }
 
 h1,
@@ -224,15 +225,12 @@ h4 {
     font-weight: bold;
 }
 
-h1,
-.h1-title {
-    border-radius: 4px;
-    display: block;
-    margin-right: -0.5rem;
+h1 {
+    margin-bottom: 2.5rem;
 }
 
-h2 {
-    font-size: 16px;
+h1.h1-title {
+    margin-bottom: 4rem;
 }
 
 .highlight {
@@ -284,7 +282,7 @@ p {
     border-radius: 4px;
     // color: #000;
     font-style: italic;
-    margin: -0.75rem 0 2rem 0;
+    margin: -2.5rem 0 3rem 0;
 }
 
 .post-tags {
@@ -406,7 +404,7 @@ ul {
 }
 
 .wrapper {
-    min-height: 87vh;
+    min-height: 86vh;
     display: block;
     // overflow-x: hidden;
     margin-bottom: 2rem;
@@ -446,10 +444,6 @@ Breakpoint 1 (Dispense with critical mobile styles)
         width: 100%;
     }
 
-    .h1-title {
-        margin-right: -1rem;
-    }
-
     .logo {
         position: absolute;
         width: 400px;
@@ -470,6 +464,7 @@ Breakpoint 1 (Dispense with critical mobile styles)
     nav a {
         margin-left: 2px;
         padding: 2px 4px;
+        text-decoration: none;
     }
 
     .post-tags {
@@ -499,11 +494,11 @@ Breakpoint 2 (Table of contents appears)
         position: sticky;
         top: 1rem;
         margin-right: 1rem;
-        margin-top: 12rem;
+        margin-top: 13.5rem;
     }
 
     .aside-page {
-        margin-top: 9.5rem;
+        margin-top: 11rem;
     }
 
     .content-container {

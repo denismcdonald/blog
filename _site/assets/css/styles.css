@@ -60,13 +60,13 @@ aside { margin: 3rem 0 0 0; padding: 0; text-align: center; }
 
 footer { font-size: 16px; margin-top: 3rem; padding-bottom: 1rem; padding-top: 2rem; text-align: center; position: relative; bottom: 0; width: 100%; }
 
-footer a { margin: 1rem 2px 0; padding: 2px 4px; }
+footer a { margin: 1rem 2px 0; padding: 2px 4px; text-decoration: none; }
 
 h1, h2, h3, h4 { margin-top: 3rem; font-weight: bold; }
 
-h1, .h1-title { border-radius: 4px; display: block; margin-right: -0.5rem; }
+h1 { margin-bottom: 2.5rem; }
 
-h2 { font-size: 16px; }
+h1.h1-title { margin-bottom: 4rem; }
 
 .highlight { margin: 0; width: 100%; }
 
@@ -82,7 +82,7 @@ nav p { background-color: #000; color: #fff; display: block; margin: 0 0 8px 0; 
 
 p { font-size: 17px; line-height: 2rem; }
 
-.post-date { border-radius: 4px; font-style: italic; margin: -0.75rem 0 2rem 0; }
+.post-date { border-radius: 4px; font-style: italic; margin: -2.5rem 0 3rem 0; }
 
 .post-tags { margin: 2rem 0 2rem 0; text-align: center; }
 
@@ -131,7 +131,7 @@ NB:  The zero-width space ("\200B") addresses the following accessibility concer
 
 ul { list-style: decimal; }
 
-.wrapper { min-height: 87vh; display: block; margin-bottom: 2rem; position: relative; }
+.wrapper { min-height: 86vh; display: block; margin-bottom: 2rem; position: relative; }
 
 /*====================================
 MEDIA QUERIES (x3) FOR DESKTOP STYLES
@@ -143,18 +143,17 @@ Breakpoint 1 (Dispense with critical mobile styles)
   aside { margin: 1rem 0.25rem -4rem 0; }
   .content-container { padding: 4rem 1.5rem 1rem 1rem; }
   footer { display: block; font-size: 14px; text-align: right; position: relative; padding: 2rem 0 1rem 0; bottom: 0; right: 1rem; width: 100%; }
-  .h1-title { margin-right: -1rem; }
   .logo { position: absolute; width: 400px; height: 143px; top: 45%; left: 50%; margin-left: -200px; }
   nav { display: block; margin: 0.75rem 1rem 0 1rem; padding: 0; text-align: right; }
-  nav a { margin-left: 2px; padding: 2px 4px; }
+  nav a { margin-left: 2px; padding: 2px 4px; text-decoration: none; }
   .post-tags { text-align: left; }
   pre { margin: 1rem 0; }
   .scroll { float: right; margin: 4rem 1rem 0 0; } }
 /*================================================
 Breakpoint 2 (Table of contents appears)
 =================================================*/
-@media (min-width: 1020px) { aside { clear: right; float: right; padding: 5px 0 10px 10px; position: -webkit-sticky; position: sticky; top: 1rem; margin-right: 1rem; margin-top: 12rem; }
-  .aside-page { margin-top: 9.5rem; }
+@media (min-width: 1020px) { aside { clear: right; float: right; padding: 5px 0 10px 10px; position: -webkit-sticky; position: sticky; top: 1rem; margin-right: 1rem; margin-top: 13.5rem; }
+  .aside-page { margin-top: 11rem; }
   .content-container { margin-left: 1.5rem; padding-bottom: 3rem; }
   .toc { clear: both; float: right; margin: 0 0.5rem 0 0; padding: 0; text-align: left; }
   .toc:before { content: "Table of contents"; border-radius: 4px; font-weight: bold; line-height: 2rem; }
