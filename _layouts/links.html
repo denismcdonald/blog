@@ -24,14 +24,9 @@
   </head>
   <body>
     <div class="wrapper">       
-
       
       {% include navigation.html %}
 
-      <div class="border-top"></div>
-
-      <!-- <img alt="drawing of handshake" class="logo" src="/assets/images/handshake.jpg"> -->
-      
       {%- if page.toc == true -%}
       <aside class="aside-page">
         {% include toc.html html=content class="toc" %}
