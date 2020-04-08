@@ -56,7 +56,7 @@ aside { margin: 3rem 0 0 0; padding: 0; text-align: center; }
 
 .edit { display: inline-block; font-size: 14px; font-weight: bold; margin-top: 1rem; text-decoration: underline; }
 
-.end { color: #d6d6d6; font-style: italic; letter-spacing: 15px; margin-top: 2.5rem; text-align: center; }
+.end { color: #cacaca; font-style: italic; letter-spacing: 15px; margin-top: 2.5rem; text-align: center; }
 
 footer { font-size: 16px; margin-top: 3rem; padding-bottom: 1rem; padding-top: 2rem; text-align: center; position: relative; bottom: 0; width: 100%; }
 
@@ -82,13 +82,13 @@ nav p { background-color: #000; color: #fff; display: block; margin: 0 0 8px 0; 
 
 p { font-size: 17px; line-height: 2rem; }
 
-.post-date { border-radius: 4px; font-style: italic; margin: -2.5rem 0 3rem 0; }
+.post-date { border-radius: 4px; font-style: italic; margin: -2rem 0 3rem 0; }
 
 .post-tags { margin: 2rem 0 2rem 0; text-align: center; }
 
 .post-tags span { font-weight: bold; }
 
-pre { border-radius: 4px; margin: 1rem 0; padding: 1rem; white-space: pre-wrap; }
+pre { border-radius: 4px; font-size: 16px; margin: 1rem 0; padding: 1rem; white-space: pre-wrap; }
 
 .quote { margin-top: 5rem; text-align: center; }
 
@@ -102,7 +102,7 @@ pre { border-radius: 4px; margin: 1rem 0; padding: 1rem; white-space: pre-wrap; 
 
 .toc { display: inline-block; font-size: 15px; padding: 5px 15px 15px 15px; margin: 3rem 0 0 1rem; text-align: left; }
 
-.toc:before { content: "Table of contents"; border-radius: 4px; font-size: 16px; font-weight: bold; line-height: 2rem; padding: 3px 8px; }
+.toc:before { content: "Table of contents"; border-radius: 4px; font-size: 16px; font-weight: bold; line-height: 2rem; padding: 3px 8px; margin-left: -0.5rem; }
 
 .toc-scroll { display: none; }
 
@@ -112,11 +112,13 @@ ul.toc li { list-style: none; margin-bottom: 0.25rem; }
 
 ul.toc li:before { content: "" counter(item,decimal) ""; counter-increment: item; padding: 3px; }
 
-.toc ul { counter-reset: item; margin-bottom: 0.5rem; }
+.toc ul { counter-reset: item; margin-bottom: 0.5rem; padding-left: 0.75rem; }
 
-.toc ul li { list-style: none; list-style-position: inside; }
+.toc ul li { list-style: none; list-style-position: outside; }
 
 .toc ul li:before { content: "(" counter(item,lower-latin) ")​"; counter-increment: item; }
+
+.toc ul ul { padding-left: 0.75rem; }
 
 .toc ul ul li { list-style: none; list-style-position: inside; }
 
@@ -155,10 +157,7 @@ Breakpoint 2 (Table of contents appears)
   .content-container { margin-left: 1.5rem; padding-bottom: 3rem; }
   .toc { clear: both; float: right; margin: 0 0.5rem 0 0; padding: 0; text-align: left; }
   .toc:before { content: "Table of contents"; border-radius: 4px; font-weight: bold; line-height: 2rem; }
-  .toc-content { margin: 0 1rem 0 1.5rem; }
-  .toc ul { padding-left: 0.75rem; }
-  .toc ul li { list-style-position: outside; }
-  .toc ul ul { padding-left: 0.5rem; } }
+  .toc-content { margin: 0 1rem 0 1.5rem; } }
 /*====================================================
 Breakpoint 3
 ====================================================*/
@@ -196,10 +195,10 @@ Breakpoint 3
 .highlight .cp { color: #75715e; }
 
 /* Comment.Preproc */
-/* .highlight .c1 { color: #75715e; background-color: #fff } Comment.Single */
-.highlight .c1 { color: #000; background-color: #fff; }
+.highlight .c1 { color: #75715e; }
 
-/* Comment.Single */
+                                   /* Comment.Single
+// .highlight .c1 { color: #000; background-color: #fff } /* Comment.Single */
 .highlight .cs { color: #75715e; }
 
 /* Comment.Special */

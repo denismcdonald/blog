@@ -186,7 +186,7 @@ aside {
 }
 
 .end {
-    color: #d6d6d6;
+    color: #cacaca;
     font-style: italic;
     letter-spacing: 15px;
     margin-top: 2.5rem;
@@ -271,11 +271,9 @@ p {
 }
 
 .post-date {
-    // background-color: #fff;
     border-radius: 4px;
-    // color: #000;
     font-style: italic;
-    margin: -2.5rem 0 3rem 0;
+    margin: -2rem 0 3rem 0;
 }
 
 .post-tags {
@@ -289,6 +287,7 @@ p {
 
 pre {
     border-radius: 4px;
+    font-size: 16px;
     margin: 1rem 0;
     padding: 1rem;
     white-space: pre-wrap;
@@ -334,7 +333,7 @@ pre {
     font-weight: bold;
     line-height: 2rem;
     padding: 3px 8px;
-    // margin-left: -0.25rem;
+    margin-left: -0.5rem;
 }
 
 // .toc-content {
@@ -363,16 +362,22 @@ ul.toc li:before {
 .toc ul {
     counter-reset: item;
     margin-bottom: 0.5rem;
+    padding-left: 0.75rem;
 }
 
 .toc ul li {
     list-style: none;
-    list-style-position: inside;
+    // list-style-position: inside;
+    list-style-position: outside;
 }
 
 .toc ul li:before {
     content: "("counter(item, lower-latin)")\200B";
     counter-increment: item;
+}
+
+.toc ul ul {
+    padding-left: 0.75rem;
 }
 
 .toc ul ul li {
@@ -399,7 +404,6 @@ ul {
 .wrapper {
     min-height: 86vh;
     display: block;
-    // overflow-x: hidden;
     margin-bottom: 2rem;
     position: relative;
 }
@@ -422,7 +426,6 @@ Breakpoint 1 (Dispense with critical mobile styles)
     }
 
     .content-container {
-        // margin: 0 auto;
         padding: 4rem 1.5rem 1rem 1rem;
     }
 
@@ -536,19 +539,6 @@ Breakpoint 2 (Table of contents appears)
     //     text-decoration: none; 
     // }  
 
-
-
-    .toc ul {
-        padding-left: 0.75rem;
-    }
-     
-    .toc ul li {
-        list-style-position: outside;
-    }
-   
-    .toc ul ul {
-        padding-left: 0.5rem;
-    } 
 }
 
 /*====================================================
