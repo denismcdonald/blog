@@ -146,14 +146,16 @@ a span {
 }
 
 aside {
-    margin: 1rem 0 0 0;
+    // margin: 1rem 0 0 0;
+    margin: 0;
+    margin-top: -1rem;
     padding: 0;
     text-align: center;
 }
 
-.aside-page {
-    margin-top: 1rem;
-}
+// .aside-page {
+//     margin-top: 1rem;
+// }
 
 .blog-list {
     list-style: disc;
@@ -246,7 +248,8 @@ li {
 }
 
 nav {
-    margin: 0.5rem 0.5rem 0 0.5rem;
+    // margin: 0.5rem 0.5rem 0 0.5rem;
+    margin: 0.5rem 0.5rem 3rem 0.5rem;
     padding: 0;
     text-align: center;
 }
@@ -273,7 +276,7 @@ p {
 .post-date {
     border-radius: 4px;
     font-style: italic;
-    margin: -2rem 0 3rem 0;
+    margin: -2rem 0 2.25rem 0;
 }
 
 .post-tags {
@@ -320,20 +323,24 @@ pre {
 
 .toc {
     display: inline-block;
-    font-size: 15px;
+    font-size: 16px;
     padding: 5px 15px 15px 15px;
-    margin: 3rem 0 0 1rem;
+    // margin: 3rem 0 0 1rem;
+    margin: 3rem 0 0 2rem;
     text-align: left;
+    max-width: 200px;
 }
 
 .toc:before {
-    content: "Table of contents";
-    border-radius: 4px;
-    font-size: 16px;
+    content: "Table of contents:";
+    font-size: 18px;
     font-weight: bold;
-    line-height: 2rem;
-    padding: 3px 8px;
-    margin-left: -0.5rem;
+    letter-spacing: 1px;
+    line-height: 2.5rem;
+    // padding: 3px 8px;
+    // margin-left: -1rem;
+    // margin: 0 auto;
+    margin-left: -1.15rem;
 }
 
 .toc-content {
@@ -351,13 +358,17 @@ ul.toc {
 
 ul.toc li {
     list-style: none;
-    margin-bottom: 0.25rem;
+    // margin-bottom: 0.25rem;
+}
+
+ul.toc li {
+    text-indent: -1rem;
 }
 
 ul.toc li:before {
     content: ""counter(item, decimal)"";  
     counter-increment: item;
-    padding: 3px;
+    padding-right: 6px;
 }
 
 .toc ul {
@@ -375,15 +386,20 @@ ul.toc li:before {
 .toc ul li:before {
     content: "("counter(item, lower-latin)")\200B";
     counter-increment: item;
+    padding-right: 6px;
 }
 
-.toc ul ul {
-    padding-left: 0.75rem;
-}
+// .toc ul ul {
+//     padding-left: 0.75rem;
+// }
 
 .toc ul ul li {
     list-style: none;
     list-style-position: inside;
+}
+
+ul.toc li ul li ul li:before {
+    padding-right: 4px;
 }
 
 .top-toc {
@@ -476,6 +492,10 @@ Breakpoint 1 (Dispense with critical mobile styles)
         float: right;
         margin: 4rem 1rem 0 0;
     }
+
+    .toc {
+        max-width: 200px;
+    }
 }
 
 /*================================================
@@ -491,7 +511,7 @@ Breakpoint 2 (Table of contents appears)
         position: sticky;
         top: 1rem;
         margin-right: 1rem;
-        margin-top: 13rem;
+        margin-top: 12.5rem;
     }
 
     .aside-page {
@@ -512,10 +532,10 @@ Breakpoint 2 (Table of contents appears)
     }
 
     .toc:before {
-        content: "Table of contents";
+        content: "Table of contents:";
         border-radius: 4px;
         font-weight: bold;
-        line-height: 2rem;
+        line-height: 2.5rem;
         // margin-left: -0.25rem;
         // padding: 3px 8px;
     }

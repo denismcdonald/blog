@@ -42,9 +42,7 @@ a span { text-decoration: none; display: inline-block; padding-right: 4px; }
 
 .archive-tags:first-of-type { margin-left: 3px; }
 
-aside { margin: 1rem 0 0 0; padding: 0; text-align: center; }
-
-.aside-page { margin-top: 1rem; }
+aside { margin: 0; margin-top: -1rem; padding: 0; text-align: center; }
 
 .blog-list { list-style: disc; }
 
@@ -74,7 +72,7 @@ li { padding-top: 0.25rem; }
 
 .logo { position: absolute; width: 266px; top: 45%; left: 50%; margin-left: -133px; /* margin is -0.5 * dimension */ }
 
-nav { margin: 0.5rem 0.5rem 0 0.5rem; padding: 0; text-align: center; }
+nav { margin: 0.5rem 0.5rem 3rem 0.5rem; padding: 0; text-align: center; }
 
 nav a { margin-left: 4px; padding: 2px 4px; }
 
@@ -82,7 +80,7 @@ nav p { background-color: #000; color: #fff; display: block; margin: 0 0 8px 0; 
 
 p { font-size: 17px; line-height: 2rem; }
 
-.post-date { border-radius: 4px; font-style: italic; margin: -2rem 0 3rem 0; }
+.post-date { border-radius: 4px; font-style: italic; margin: -2rem 0 2.25rem 0; }
 
 .post-tags { margin: 2rem 0 2rem 0; text-align: center; }
 
@@ -100,9 +98,9 @@ pre { border-radius: 4px; font-size: 16px; margin: 1rem 0; padding: 1rem; white-
 
 .scroll-container a span { display: inline-block; padding-left: 5px; text-decoration: none; }
 
-.toc { display: inline-block; font-size: 15px; padding: 5px 15px 15px 15px; margin: 3rem 0 0 1rem; text-align: left; }
+.toc { display: inline-block; font-size: 16px; padding: 5px 15px 15px 15px; margin: 3rem 0 0 2rem; text-align: left; max-width: 200px; }
 
-.toc:before { content: "Table of contents"; border-radius: 4px; font-size: 16px; font-weight: bold; line-height: 2rem; padding: 3px 8px; margin-left: -0.5rem; }
+.toc:before { content: "Table of contents:"; font-size: 18px; font-weight: bold; letter-spacing: 1px; line-height: 2.5rem; margin-left: -1.15rem; }
 
 .toc-content { margin: 1rem; }
 
@@ -110,19 +108,21 @@ pre { border-radius: 4px; font-size: 16px; margin: 1rem 0; padding: 1rem; white-
 
 ul.toc { counter-reset: item; }
 
-ul.toc li { list-style: none; margin-bottom: 0.25rem; }
+ul.toc li { list-style: none; }
 
-ul.toc li:before { content: "" counter(item,decimal) ""; counter-increment: item; padding: 3px; }
+ul.toc li { text-indent: -1rem; }
+
+ul.toc li:before { content: "" counter(item,decimal) ""; counter-increment: item; padding-right: 6px; }
 
 .toc ul { counter-reset: item; margin-bottom: 0.5rem; padding-left: 0.75rem; }
 
 .toc ul li { list-style: none; list-style-position: outside; }
 
-.toc ul li:before { content: "(" counter(item,lower-latin) ")​"; counter-increment: item; }
-
-.toc ul ul { padding-left: 0.75rem; }
+.toc ul li:before { content: "(" counter(item,lower-latin) ")​"; counter-increment: item; padding-right: 6px; }
 
 .toc ul ul li { list-style: none; list-style-position: inside; }
+
+ul.toc li ul li ul li:before { padding-right: 4px; }
 
 .top-toc { margin-left: 2rem; }
 
@@ -150,15 +150,16 @@ Breakpoint 1 (Dispense with critical mobile styles)
   nav a { margin-left: 2px; padding: 2px 4px; text-decoration: none; }
   .post-tags { text-align: left; }
   pre { margin: 1rem 0; }
-  .scroll { float: right; margin: 4rem 1rem 0 0; } }
+  .scroll { float: right; margin: 4rem 1rem 0 0; }
+  .toc { max-width: 200px; } }
 /*================================================
 Breakpoint 2 (Table of contents appears)
 =================================================*/
-@media (min-width: 1020px) { aside { clear: right; float: right; padding: 5px 0 10px 10px; position: -webkit-sticky; position: sticky; top: 1rem; margin-right: 1rem; margin-top: 13rem; }
+@media (min-width: 1020px) { aside { clear: right; float: right; padding: 5px 0 10px 10px; position: -webkit-sticky; position: sticky; top: 1rem; margin-right: 1rem; margin-top: 12.5rem; }
   .aside-page { margin-top: 10.5rem; }
   .content-container { margin-left: 1.5rem; padding-bottom: 3rem; }
   .toc { clear: both; float: right; margin: 0 0.5rem 0 0; padding: 0; text-align: left; }
-  .toc:before { content: "Table of contents"; border-radius: 4px; font-weight: bold; line-height: 2rem; }
+  .toc:before { content: "Table of contents:"; border-radius: 4px; font-weight: bold; line-height: 2.5rem; }
   .toc-content { margin: 0 1rem 0 1.5rem; } }
 /*====================================================
 Breakpoint 3
