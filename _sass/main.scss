@@ -146,7 +146,7 @@ a span {
 }
 
 aside {
-    margin: 3rem 0 0 0;
+    margin: 1rem 0 0 0;
     padding: 0;
     text-align: center;
 }
@@ -168,7 +168,7 @@ aside {
     margin: 1rem 1rem 2rem 1rem;
     max-width: 680px;
     // padding-top: 4rem;
-    padding-top: 0.5rem;
+    padding-top: 0.1rem;
 }
 
 .current {
@@ -336,9 +336,10 @@ pre {
     margin-left: -0.5rem;
 }
 
-// .toc-content {
-//     margin: -2rem 1rem 0 1.5rem;
-// }
+.toc-content {
+    // margin: -2rem 1rem 0 1.5rem;
+    margin: 1rem;
+}
 
 .toc-scroll {
     display: none;
