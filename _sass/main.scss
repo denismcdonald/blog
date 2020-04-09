@@ -23,7 +23,7 @@ body {
     height: 30px;
     top: 55%;
     left: 50%;
-    margin-left: -100px; /* margin is -0.5 * dimension */
+    margin-left: -100px;
     margin-top: -15px; 
 }
 
@@ -47,7 +47,6 @@ blockquote::before {
   
 blockquote span {
     display: block;
-    // color: #333333;
     font-style: normal;
     margin: 1rem;
     text-align: center;
@@ -72,7 +71,6 @@ h4 a,
 a.edit,
 a.scroll,
 li a {
-    // color: #3391ff;
     padding: 0 2px;
 }
 
@@ -137,7 +135,6 @@ a span {
 }
 
 .archive-tags {
-    // font-size: 14px;
     margin: 0 0.2rem 0 0;
 }
 
@@ -146,16 +143,11 @@ a span {
 }
 
 aside {
-    // margin: 1rem 0 0 0;
     margin: 0;
     margin-top: -1rem;
     padding: 0;
     text-align: center;
 }
-
-// .aside-page {
-//     margin-top: 1rem;
-// }
 
 .blog-list {
     list-style: disc;
@@ -169,7 +161,6 @@ aside {
 .content-container {
     margin: 1rem 1rem 2rem 1rem;
     max-width: 680px;
-    // padding-top: 4rem;
     padding-top: 0.1rem;
 }
 
@@ -240,15 +231,12 @@ li {
 .logo {
     position: absolute;
     width: 266px;
-    // height: 95px;
     top: 45%;
     left: 50%;
-    margin-left: -133px; /* margin is -0.5 * dimension */
-    // margin-top: -47px; 
+    margin-left: -133px;
 }
 
 nav {
-    // margin: 0.5rem 0.5rem 0 0.5rem;
     margin: 0.5rem 0.5rem 3rem 0.5rem;
     padding: 0;
     text-align: center;
@@ -325,7 +313,6 @@ pre {
     display: inline-block;
     font-size: 16px;
     padding: 5px 15px 15px 15px;
-    // margin: 3rem 0 0 1rem;
     margin: 3rem 0 0 2rem;
     text-align: left;
     max-width: 200px;
@@ -335,16 +322,11 @@ pre {
     content: "Table of contents:";
     font-size: 18px;
     font-weight: bold;
-    letter-spacing: 1px;
     line-height: 2.5rem;
-    // padding: 3px 8px;
-    // margin-left: -1rem;
-    // margin: 0 auto;
     margin-left: -1.15rem;
 }
 
 .toc-content {
-    // margin: -2rem 1rem 0 1.5rem;
     margin: 1rem;
 }
 
@@ -358,7 +340,6 @@ ul.toc {
 
 ul.toc li {
     list-style: none;
-    // margin-bottom: 0.25rem;
 }
 
 ul.toc li {
@@ -379,7 +360,6 @@ ul.toc li:before {
 
 .toc ul li {
     list-style: none;
-    // list-style-position: inside;
     list-style-position: outside;
 }
 
@@ -388,10 +368,6 @@ ul.toc li:before {
     counter-increment: item;
     padding-right: 6px;
 }
-
-// .toc ul ul {
-//     padding-left: 0.75rem;
-// }
 
 .toc ul ul li {
     list-style: none;
@@ -464,7 +440,6 @@ Breakpoint 1 (Dispense with critical mobile styles)
         top: 45%;
         left: 50%;
         margin-left: -200px;
-        // margin-top: -121px; 
     }
 
     nav {
@@ -536,29 +511,26 @@ Breakpoint 2 (Table of contents appears)
         border-radius: 4px;
         font-weight: bold;
         line-height: 2.5rem;
-        // margin-left: -0.25rem;
-        // padding: 3px 8px;
     }
 
     .toc-content {
         margin: 0 1rem 0 1.5rem;
     }
 
-    // .toc-scroll {
-        // bottom: -1.25rem;
-        // display: none;
-        // font-size: 0.8rem;
-        // font-weight: bold;
-        // position: absolute;
-        // right: -0.25rem;
-    // }
+    .toc-scroll {
+        bottom: -1.25rem;
+        display: none;
+        font-size: 14px;
+        font-weight: bold;
+        position: absolute;
+    }
 
-    // .toc-scroll span {
-    //     display: inline-block;
-    //     display: none;
-    //     padding-left: 5px;
-    //     text-decoration: none; 
-    // }  
+    .toc-scroll span {
+        display: inline-block;
+        display: none;
+        padding-left: 5px;
+        text-decoration: none; 
+    }  
 
 }
 
@@ -568,15 +540,15 @@ Breakpoint 3
 @media (min-width: 1400px) {
 
     aside {
-        margin-right: calc((100% - 1300px) / 2 + 32px);
+        margin-right: calc((100% - 1250px) / 2 + 32px);
     }
 
     .content-container {
         max-width: 700px;
-        margin-left: calc((100% - 1300px) / 2 + 32px);
+        margin-left: calc((100% - 1250px) / 2 + 32px);
     }
 
     .toc-content {
-        margin-left: calc((100% - 1300px) / 2 + 32px);
+        margin-left: calc((100% - 1250px) / 2 + 32px);
     }
 }

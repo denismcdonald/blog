@@ -6,7 +6,7 @@ MOBILE STYLES (See media queries below for desktop styles)
 
 body { color: #595959; font-family: Arial, Helvetica, sans-serif; font-family: Georgia, 'Times New Roman', Times, serif; height: 100%; line-height: 160%; margin: 0; }
 
-.banner { font-weight: bold; position: absolute; width: 200px; height: 30px; top: 55%; left: 50%; margin-left: -100px; /* margin is -0.5 * dimension */ margin-top: -15px; }
+.banner { font-weight: bold; position: absolute; width: 200px; height: 30px; top: 55%; left: 50%; margin-left: -100px; margin-top: -15px; }
 
 blockquote { border-radius: 4px; width: 70%; margin: 1rem auto; padding: 0.5rem 1rem 0.5rem 3rem; line-height: 1.6; position: relative; quotes: "“" "”" "‘" "’"; }
 
@@ -70,7 +70,7 @@ h1.h1-title { margin-bottom: 4rem; }
 
 li { padding-top: 0.25rem; }
 
-.logo { position: absolute; width: 266px; top: 45%; left: 50%; margin-left: -133px; /* margin is -0.5 * dimension */ }
+.logo { position: absolute; width: 266px; top: 45%; left: 50%; margin-left: -133px; }
 
 nav { margin: 0.5rem 0.5rem 3rem 0.5rem; padding: 0; text-align: center; }
 
@@ -100,7 +100,7 @@ pre { border-radius: 4px; font-size: 16px; margin: 1rem 0; padding: 1rem; white-
 
 .toc { display: inline-block; font-size: 16px; padding: 5px 15px 15px 15px; margin: 3rem 0 0 2rem; text-align: left; max-width: 200px; }
 
-.toc:before { content: "Table of contents:"; font-size: 18px; font-weight: bold; letter-spacing: 1px; line-height: 2.5rem; margin-left: -1.15rem; }
+.toc:before { content: "Table of contents:"; font-size: 18px; font-weight: bold; line-height: 2.5rem; margin-left: -1.15rem; }
 
 .toc-content { margin: 1rem; }
 
@@ -160,13 +160,15 @@ Breakpoint 2 (Table of contents appears)
   .content-container { margin-left: 1.5rem; padding-bottom: 3rem; }
   .toc { clear: both; float: right; margin: 0 0.5rem 0 0; padding: 0; text-align: left; }
   .toc:before { content: "Table of contents:"; border-radius: 4px; font-weight: bold; line-height: 2.5rem; }
-  .toc-content { margin: 0 1rem 0 1.5rem; } }
+  .toc-content { margin: 0 1rem 0 1.5rem; }
+  .toc-scroll { bottom: -1.25rem; display: none; font-size: 14px; font-weight: bold; position: absolute; }
+  .toc-scroll span { display: inline-block; display: none; padding-left: 5px; text-decoration: none; } }
 /*====================================================
 Breakpoint 3
 ====================================================*/
-@media (min-width: 1400px) { aside { margin-right: calc((100% - 1300px) / 2 + 32px); }
-  .content-container { max-width: 700px; margin-left: calc((100% - 1300px) / 2 + 32px); }
-  .toc-content { margin-left: calc((100% - 1300px) / 2 + 32px); } }
+@media (min-width: 1400px) { aside { margin-right: calc((100% - 1250px) / 2 + 32px); }
+  .content-container { max-width: 700px; margin-left: calc((100% - 1250px) / 2 + 32px); }
+  .toc-content { margin-left: calc((100% - 1250px) / 2 + 32px); } }
 .highlight pre { background-color: #272822; }
 
 .highlight .hll { background-color: #272822; }
