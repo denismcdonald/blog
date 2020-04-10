@@ -4,7 +4,7 @@ MOBILE STYLES (See media queries below for desktop styles)
 ===========================================================*/
 * { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
-body { color: #595959; font-family: Arial, Helvetica, sans-serif; font-family: Georgia, 'Times New Roman', Times, serif; height: 100%; line-height: 160%; margin: 0; }
+body { color: #595959; font-family: Georgia, 'Times New Roman', Times, serif; height: 100%; line-height: 160%; margin: 0; }
 
 .banner { font-weight: bold; position: absolute; width: 200px; height: 30px; top: 55%; left: 50%; margin-left: -100px; margin-top: -15px; }
 
@@ -84,8 +84,6 @@ p { font-size: 17px; line-height: 2rem; }
 
 .post-tags { margin: 2rem 0 2rem 0; text-align: center; }
 
-.post-tags span { font-weight: bold; }
-
 pre { border-radius: 4px; font-size: 16px; margin: 1rem 0; padding: 1rem; white-space: pre-wrap; }
 
 .quote { margin-top: 5rem; text-align: center; }
@@ -114,7 +112,7 @@ ul.toc li { text-indent: -1rem; }
 
 ul.toc li:before { content: "" counter(item,decimal) ""; counter-increment: item; padding-right: 6px; }
 
-.toc ul { counter-reset: item; margin-bottom: 0.5rem; padding-left: 0.75rem; }
+.toc ul { counter-reset: item; margin-bottom: 0.15rem; padding-left: 0.75rem; }
 
 .toc ul li { list-style: none; list-style-position: outside; }
 

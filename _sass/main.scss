@@ -9,7 +9,6 @@ MOBILE STYLES (See media queries below for desktop styles)
 
 body {
     color: #595959;
-    font-family: Arial, Helvetica, sans-serif;
     font-family: Georgia, 'Times New Roman', Times, serif;
     height: 100%;
     line-height: 160%;
@@ -272,10 +271,6 @@ p {
     text-align: center;
 }
 
-.post-tags span {
-    font-weight: bold;
-}
-
 pre {
     border-radius: 4px;
     font-size: 16px;
@@ -354,7 +349,7 @@ ul.toc li:before {
 
 .toc ul {
     counter-reset: item;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.15rem;
     padding-left: 0.75rem;
 }
 
