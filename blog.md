@@ -1,6 +1,6 @@
 ---
 title: Blog
-footer: true
+footer: false
 ---
 
 <div>

@@ -70,7 +70,7 @@ h1.h1-title { margin-bottom: 4rem; }
 
 li { padding-top: 0.25rem; }
 
-.logo { position: absolute; width: 266px; top: 45%; left: 50%; margin-left: -133px; }
+.logo { position: absolute; width: 266px; top: 35%; left: 50%; margin-left: -133px; }
 
 nav { margin: 0.5rem 0.5rem 3rem 0.5rem; padding: 0; text-align: center; }
 
@@ -131,7 +131,9 @@ NB:  The zero-width space ("\200B") addresses the following accessibility concer
 
 ul { list-style: decimal; }
 
-.wrapper { min-height: 86vh; display: block; margin-bottom: 2rem; position: relative; }
+.wrapper { min-height: 86vh; margin-bottom: 2rem; position: relative; }
+
+.wrapper-home { height: 100%; }
 
 /*====================================
 MEDIA QUERIES (x3) FOR DESKTOP STYLES
@@ -142,8 +144,8 @@ Breakpoint 1 (Dispense with critical mobile styles)
 @media (min-width: 540px) { .archive-list p { line-height: 1.7rem; }
   aside { margin: 1rem 0.25rem -4rem 0; }
   .content-container { padding: 4rem 1.5rem 1rem 1rem; }
-  footer { display: block; font-size: 14px; text-align: right; position: relative; padding: 2rem 0 1rem 0; bottom: 0; right: 1rem; width: 100%; }
-  .logo { position: absolute; width: 400px; height: 143px; top: 45%; left: 50%; margin-left: -200px; }
+  footer { display: block; font-size: 15px; text-align: right; position: relative; padding: 2rem 0 1rem 0; bottom: 0; right: 1rem; width: 100%; }
+  .logo { position: absolute; width: 400px; height: 143px; top: 35%; left: 50%; margin-left: -200px; }
   nav { display: block; margin: 0.75rem 1rem 0 1rem; padding: 0; text-align: right; }
   nav a { margin-left: 2px; padding: 2px 4px; text-decoration: none; }
   .post-tags { text-align: left; }

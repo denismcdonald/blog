@@ -230,7 +230,7 @@ li {
 .logo {
     position: absolute;
     width: 266px;
-    top: 45%;
+    top: 35%;
     left: 50%;
     margin-left: -133px;
 }
@@ -391,9 +391,13 @@ ul {
 
 .wrapper {
     min-height: 86vh;
-    display: block;
+    // display: block;
     margin-bottom: 2rem;
     position: relative;
+}
+
+.wrapper-home {
+       height: 100%;
 }
 
 /*====================================
@@ -419,7 +423,7 @@ Breakpoint 1 (Dispense with critical mobile styles)
 
     footer {
         display: block;
-        font-size: 14px;
+        font-size: 15px;
         text-align: right;
         position: relative;
         padding: 2rem 0 1rem 0;
@@ -432,7 +436,7 @@ Breakpoint 1 (Dispense with critical mobile styles)
         position: absolute;
         width: 400px;
         height: 143px;
-        top: 45%;
+        top: 35%;
         left: 50%;
         margin-left: -200px;
     }
