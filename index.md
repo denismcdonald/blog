@@ -1,10 +1,10 @@
 ---
 title: blog
-footer: false
+footer: true
 ---
 
 <div>
-  <h1 class="h1-title">Journal</h1>
+  <h1 class="h1-title">Blog</h1>
   <h2>Latest Entries</h2>
     {% for post in site.posts limit: 5 %}
       <a class="archive-list" href="{{ site.baseurl}}{{ post.url }}">
