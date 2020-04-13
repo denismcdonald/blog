@@ -4,7 +4,7 @@ footer: false
 ---
 
 <div>
-  <h1 class="h1-title">Blog</h1>
+  <h1 class="h1-title">Journal</h1>
   <h2>Latest Entries</h2>
     {% for post in site.posts limit: 5 %}
       <a class="archive-list" href="{{ site.baseurl}}{{ post.url }}">
@@ -15,7 +15,7 @@ footer: false
     {% endfor %}
 </div>
 
-<h2>Tags</h2>
+<h2>Topics</h2>
 
 <section class="archive-list">
 {% capture tags %}

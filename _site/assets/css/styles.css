@@ -72,7 +72,7 @@ li { padding-top: 0.25rem; }
 
 .logo { position: absolute; width: 266px; top: 35%; left: 50%; margin-left: -133px; }
 
-nav { margin: 0.5rem 0.5rem 3rem 0.5rem; padding: 0; text-align: center; }
+nav { margin: 1rem 0.5rem 3rem 0.5rem; padding: 0; text-align: center; }
 
 nav a { margin-left: 4px; padding: 2px 4px; }
 
@@ -82,7 +82,7 @@ p { font-size: 17px; line-height: 2rem; }
 
 .post-date { border-radius: 4px; font-style: italic; margin: -2rem 0 2.25rem 0; }
 
-.post-tags { margin: 2rem 0 2rem 0; text-align: center; }
+.post-tags { margin: 2rem 0 2rem 0; opacity: 0.5; text-align: center; }
 
 pre { border-radius: 4px; font-size: 16px; margin: 1rem 0; padding: 1rem; white-space: pre-wrap; }
 
@@ -146,9 +146,8 @@ Breakpoint 1 (Dispense with critical mobile styles)
   .content-container { padding: 4rem 1.5rem 1rem 1rem; }
   footer { display: block; font-size: 15px; text-align: right; position: relative; padding: 2rem 0 1rem 0; bottom: 0; right: 1rem; width: 100%; }
   .logo { position: absolute; width: 400px; height: 143px; top: 35%; left: 50%; margin-left: -200px; }
-  nav { display: block; margin: 0.75rem 1rem 0 1rem; padding: 0; text-align: right; }
+  nav { display: block; margin: 1rem 1rem 0 1rem; padding: 0; text-align: right; }
   nav a { margin-left: 2px; padding: 2px 4px; text-decoration: none; }
-  .post-tags { text-align: left; }
   pre { margin: 1rem 0; }
   .scroll { float: right; margin: 4rem 1rem 0 0; }
   .toc { max-width: 200px; } }
