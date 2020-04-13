@@ -30,7 +30,7 @@ a span { text-decoration: none; display: inline-block; padding-right: 4px; }
 
 .archive-list { align-items: baseline; display: flex; list-style: none; max-width: 32rem; padding: 0; -webkit-box-align: baseline; -webkit-align-items: baseline; }
 
-.archive-list p { line-height: 2rem; margin: 0 4px; }
+.archive-list p { line-height: 1.9rem; margin: 0 4px; }
 
 .archive-list span { display: inline-block; text-decoration: none; }
 
@@ -145,8 +145,7 @@ MEDIA QUERIES (x3) FOR DESKTOP STYLES
 ==================================================
 Breakpoint 1 (Dispense with critical mobile styles)
 ==================================================*/
-@media (min-width: 540px) { .archive-list p { line-height: 1.7rem; }
-  aside { margin: 1rem 0.25rem -4rem 0; }
+@media (min-width: 540px) { aside { margin: 1rem 0.25rem -4rem 0; }
   .content-container { padding: 4rem 1.5rem 1rem 1rem; }
   footer { display: block; text-align: right; position: relative; bottom: 0; right: 1rem; width: 100%; }
   .logo { position: absolute; width: 400px; height: 143px; top: 35%; left: 50%; margin-left: -200px; }
