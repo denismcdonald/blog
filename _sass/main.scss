@@ -12,8 +12,6 @@ html {
 }
 
 body {
-    // border-bottom: 5px solid lightblue;
-    // border-top: 5px solid lightblue;
     color: #595959;
     font-family: Georgia, 'Times New Roman', Times, serif;
     height: 100%;
@@ -170,12 +168,6 @@ aside {
     padding-top: 0.1rem;
 }
 
-// .current {
-//     border: 1px solid #3391ff;
-//     border-radius: 2px;
-//     text-decoration: none;
-// }
-
 .edit {
     display: inline-block;
     font-size: 14px;
@@ -205,15 +197,14 @@ footer {
 }
 
 footer a {
-    // margin-bottom: 1rem;
-    padding: 2px 6px;
+    padding: 2px 7px;
 }
 
 footer p {
     font-size: 13px;
     line-height: 20px;
     margin-top: 1rem;
-    padding-right: 6px;
+    padding-right: 3px;
 }
 
 h1,
@@ -257,9 +248,7 @@ nav {
 }
 
 nav a {
-    // margin-left: 4px;
     margin-top: 1rem;
-    // padding: 4px;
 }
 
 nav a:nth-of-type(2) {
@@ -267,11 +256,12 @@ nav a:nth-of-type(2) {
 }
 
 nav p {
+    color: rgb(71, 71, 71);
     font-size: 17px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     line-height: 20px;
     margin: 0;
-    padding: 0;
+    padding-right: 2px;
 }
 
 p {
@@ -327,7 +317,6 @@ pre {
 .toc {
     display: inline-block;
     font-size: 16px;
-    // padding: 5px 15px 15px 15px;
     padding: 5px 15px 25px 15px;
     margin: 3rem 0 0 2rem;
     text-align: left;
@@ -412,7 +401,6 @@ ul {
 
 .wrapper {
     min-height: 86vh;
-    // display: block;
     margin-bottom: 2rem;
     position: relative;
 }
@@ -430,10 +418,6 @@ Breakpoint 1 (Dispense with critical mobile styles)
 
 @media (min-width: 540px) {
        
-    // .archive-list p {
-    //     line-height: 2rem;
-    // }
-
     aside {
         margin: 1rem 0.25rem -4rem 0;
     }
@@ -444,10 +428,8 @@ Breakpoint 1 (Dispense with critical mobile styles)
 
     footer {
         display: block;
-        // font-size: 15px;
         text-align: right;
         position: relative;
-        // padding: 2rem 0 1rem 0;
         bottom: 0;
         right: 1rem;
         width: 100%;
@@ -468,12 +450,6 @@ Breakpoint 1 (Dispense with critical mobile styles)
         padding: 0;
         text-align: right;
     }
-
-    // nav a {
-        // margin-left: 2px;
-        // padding: 2px 4px;
-        // text-decoration: none;
-    // }
 
     .post-tags {
         text-align: left;
