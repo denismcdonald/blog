@@ -58,7 +58,7 @@ aside { margin: 0; margin-top: -1rem; padding: 0; text-align: center; }
 
 footer { line-height: 16px; margin-top: 3rem; padding-bottom: 0.5rem; padding-top: 2rem; text-align: center; position: relative; bottom: 0; width: 100%; }
 
-footer p { font-size: 14px; line-height: 20px; margin: 1rem 0 0 0; padding: 0 0 1rem 0; }
+footer p { font-size: 12px; line-height: 20px; margin: 1rem 0 0 0; padding: 0 0 1rem 0; }
 
 h1, h2, h3, h4 { margin-top: 3rem; font-weight: bold; }
 
@@ -76,7 +76,7 @@ nav { margin: 1rem 0.5rem 3rem 0.5rem; padding: 0; line-height: 20px; text-align
 
 nav a { margin-right: 0; }
 
-nav a:nth-of-type(1) { color: #525252; display: inline-block; font-size: 16px; letter-spacing: 1px; line-height: 20px; margin: 0 0 0.75rem 0; padding: 0; text-decoration: none; }
+nav a:nth-of-type(1) { color: #555555; display: inline-block; font-size: 16px; letter-spacing: 1px; line-height: 20px; margin: 0 0 0.75rem 0; padding: 0; text-decoration: none; }
 
 p { font-size: 17px; line-height: 2rem; }
 
