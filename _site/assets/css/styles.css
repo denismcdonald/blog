@@ -4,19 +4,11 @@ MOBILE STYLES (See media queries below for desktop styles)
 ===========================================================*/
 * { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
-<<<<<<< HEAD
-html { box-sizing: border-box; height: 100%; }
-
-body { background-color: #F2EEC9; color: #000; font-family: "Georgia", system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif; height: 100%; margin: 0; }
-
-blockquote { border-radius: 4px; width: 70%; margin: 1rem auto; color: #555555; padding: 0.5rem 1rem 0.5rem 3rem; border-left: 8px solid #78C0A8; line-height: 1.6; position: relative; quotes: "“" "”" "‘" "’"; background: #ece6c0; }
-=======
 html { -webkit-text-size-adjust: 100%; }
 
 body { color: #595959; font-family: Georgia, 'Times New Roman', Times, serif; height: 100%; line-height: 160%; margin: 0; }
 
 .banner { font-weight: bold; position: absolute; width: 200px; height: 30px; top: 55%; left: 50%; margin-left: -100px; margin-top: -15px; }
->>>>>>> plain
 
 blockquote { border-radius: 4px; width: 70%; margin: 1rem auto; padding: 0.5rem 1rem 0.5rem 3rem; line-height: 1.6; position: relative; quotes: "“" "”" "‘" "’"; }
 
@@ -30,17 +22,11 @@ a:hover { text-decoration: none; }
 
 a, p a, h1 a, h2 a, h3 a, h4 a, a.edit, a.scroll, li a { padding: 0 2px; }
 
-<<<<<<< HEAD
-.archive-titles { margin-top: 4rem; }
-
-.archive-hr { margin: 0 0.5rem 0 0.5rem; height: 1px; border: none; border-bottom: 1px dotted #000; -webkit-box-flex: 1; -webkit-flex: 1 0 1rem; flex: 1 0 1rem; opacity: 0.25; }
-=======
 a span { text-decoration: none; display: inline-block; padding-right: 4px; }
 
 .archive-dates { margin-top: 4rem; }
 
 .archive-hr { margin-top: 0; margin-bottom: 0; margin-right: .5rem; margin-left: .5rem; height: 1px; border: none; border-bottom: 1px dotted #000; -webkit-box-flex: 1; -webkit-flex: 1 0 1rem; flex: 1 0 1rem; opacity: 0.25; }
->>>>>>> plain
 
 .archive-list { align-items: baseline; display: flex; list-style: none; max-width: 32rem; padding: 0; -webkit-box-align: baseline; -webkit-align-items: baseline; }
 
@@ -50,55 +36,12 @@ a span { text-decoration: none; display: inline-block; padding-right: 4px; }
 
 .archive-post-date { -webkit-box-flex: 0; -webkit-flex: 0 1 auto; flex: 0 1 auto; }
 
-.archive-post-list { margin-top: 5.5rem; }
-
 .archive-post-list ul li { list-style: none; }
 
 .archive-post-title { -webkit-box-flex: 0; -webkit-flex: 0 1 auto; flex: 0 1 auto; }
 
 .archive-tags { font-size: 17px; margin: 0 0.2rem 0 0; }
 
-<<<<<<< HEAD
-aside { margin: 2rem 0 0 0; padding: 0; text-align: center; }
-
-.content-container { margin: 0 1rem 1rem 1rem; max-width: 680px; }
-
-.current { text-decoration: underline; }
-
-.edit { background-color: rgba(255, 255, 255, 0.5); border-radius: 4px; color: #000; display: block; font-size: 0.9rem; margin: 2rem auto; padding: 1rem; text-align: center; text-decoration: none; }
-
-#edit-text { text-decoration: underline; }
-
-.edit:hover #edit-text { text-decoration: none; }
-
-a.edit { padding: 0.25rem 0.75rem 0.25rem 0.25rem; }
-
-footer { background-color: #000; border-radius: 6px 6px 0 0; clear: both; color: #fff; font-size: 1rem; margin: 6rem 1.5rem 0 1rem; margin: 0; padding: 0.4rem 0.75rem; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); position: absolute; bottom: 0; }
-
-footer a { color: #fff; font-weight: 600; margin: 0 0.1rem; padding: 3px 8px; text-decoration: none; }
-
-footer a:hover { text-decoration: underline; }
-
-.footer-logo { display: block; margin: 1rem auto 1.5rem; padding: 0; width: 2rem; }
-
-h1, h2, h3, h4 { margin-top: 3rem; font-weight: 600; text-shadow: -1px 1px 1px #fff; }
-
-.h1-title { background-color: #000; border-radius: 4px; color: #fff; display: block; margin-left: -0.5rem; margin-right: -0.5rem; padding: 4px 10px; text-align: center; text-shadow: none; }
-
-.highlight { margin: 0; width: 100%; }
-
-.image-center { display: block; margin: 0 auto; width: 90%; }
-
-li { padding-top: 0.25rem; }
-
-.logo { display: block; margin: 2.5rem auto -1.5rem; width: 10rem; }
-
-nav { background-color: #000; border-radius: 0 0 6px 6px; display: inline-block; font-size: 0.9rem; margin: 0; padding: 0.4rem 0.75rem; }
-
-nav a { color: #fff; font-size: 1.25rem; font-weight: 600; margin: 0 0.25rem 0 0.25rem; padding: 2px 8px; text-decoration: none; }
-
-nav a:hover { text-decoration: underline; text-shadow: none; }
-=======
 .archive-tags:first-of-type { margin-left: 3px; }
 
 aside { margin: 0; margin-top: -1rem; padding: 0; text-align: center; }
@@ -130,39 +73,23 @@ li { padding-top: 0.25rem; }
 .logo { position: absolute; width: 266px; top: 35%; left: 50%; margin-left: -133px; }
 
 nav { margin: 1rem 0.5rem 3rem 0.5rem; line-height: 20px; text-align: center; }
->>>>>>> plain
 
 nav a { padding: 0 1.5px; }
 
-<<<<<<< HEAD
-.post-date { background-color: rgba(255, 255, 255, 0.5); border-radius: 4px; color: #000; font-size: 0.9rem; font-style: italic; margin: -1rem 0 2rem 0; text-align: center; display: block; }
-=======
 nav a:nth-of-type(1) { color: #000; display: inline-block; letter-spacing: 1px; line-height: 20px; margin: 0 0 0.6rem 0; padding: 0; text-decoration: none; }
->>>>>>> plain
 
 p { font-size: 17px; line-height: 2rem; }
 
 .post-date { border-radius: 4px; font-style: italic; margin: -2rem 0 2.25rem 0; }
 
-<<<<<<< HEAD
-pre { background-color: #000; border-radius: 8px; color: #fff; margin: 1rem -0.25rem; padding: 1rem; white-space: pre-wrap; }
-=======
 .post-tags { margin: 2rem 0 2rem 0; opacity: 0.5; text-align: center; }
 
 pre { border-radius: 4px; font-size: 16px; margin: 1rem 0; padding: 1rem; white-space: pre-wrap; }
->>>>>>> plain
 
 .quote { margin-top: 5rem; text-align: center; }
 
 .quote span { font-style: italic; }
 
-<<<<<<< HEAD
-.scroll { display: none; }
-
-.toc { display: inline-block; margin-bottom: -1rem; padding: 5px 15px 15px 15px; text-align: left; }
-
-.toc:before { content: "Table of Contents"; background-color: #000; border-radius: 4px; color: #fff; font-size: 1.15rem; font-weight: 600; line-height: 2rem; padding: 0.1rem 1.2rem; }
-=======
 .scroll { display: inline-block; font-size: 14px; margin: 4rem 0 0; }
 
 .scroll-container { text-align: center; }
@@ -174,7 +101,6 @@ pre { border-radius: 4px; font-size: 16px; margin: 1rem 0; padding: 1rem; white-
 .toc:before { content: "Table of contents:"; font-size: 18px; font-weight: bold; line-height: 2.5rem; margin-left: -1.15rem; }
 
 .toc-content { margin: 1rem; }
->>>>>>> plain
 
 .toc-scroll { display: none; }
 
@@ -182,25 +108,15 @@ ul.toc { counter-reset: item; }
 
 ul.toc li { list-style: none; }
 
-<<<<<<< HEAD
-ul.toc li:before { content: "" counter(item,decimal) "."; counter-increment: item; font-size: 1rem; padding: 3px; }
-
-.toc ul { counter-reset: item; margin-bottom: 0.5rem; padding-left: 0.75rem; }
-=======
 ul.toc li { text-indent: -1rem; }
 
 ul.toc li:before { content: "" counter(item,decimal) ""; counter-increment: item; padding-right: 6px; }
->>>>>>> plain
 
 .toc ul { counter-reset: item; margin-bottom: 0.15rem; padding-left: 0.75rem; }
 
-<<<<<<< HEAD
-.toc ul li:before { content: "(" counter(item,lower-latin) ")​"; counter-increment: item; font-size: 1rem; }
-=======
 .toc ul li { list-style: none; list-style-position: outside; }
 
 .toc ul li:before { content: "(" counter(item,lower-latin) ")​"; counter-increment: item; padding-right: 6px; }
->>>>>>> plain
 
 .toc ul ul li { list-style: none; list-style-position: inside; }
 
@@ -213,11 +129,7 @@ NB:  The zero-width space ("\200B") addresses the following accessibility concer
 */
 .toc ul ul li:before { content: "(" counter(item,lower-roman) ")​ "; counter-increment: item; }
 
-.outer-wrapper { min-height: 100vh; display: block; position: relative; }
-
-.footer-wrapper { padding-top: 7rem; text-align: center; }
-
-.nav-wrapper { text-align: center; }
+ul { list-style: decimal; }
 
 .wrapper { min-height: 86vh; margin-bottom: 2rem; position: relative; }
 
@@ -229,39 +141,6 @@ MEDIA QUERIES (x3) FOR DESKTOP STYLES
 ==================================================
 Breakpoint 1 (Dispense with critical mobile styles)
 ==================================================*/
-<<<<<<< HEAD
-@media (min-width: 540px) { :root { font-size: calc(0.6em + 1vw); }
-  aside { margin: 0 0.25rem -4rem 0; }
-  .content-container { margin: 0 auto; padding: 0 1rem 1rem 1rem; }
-  .logo { width: 10rem; visibility: visible; margin-top: 2.5rem; }
-  pre { margin: 1rem -1rem; }
-  .scroll { float: right; margin: 1rem 2rem 2rem 0; }
-  .tag-page-content { max-width: 25rem; margin: 0 auto; }
-  .toc { margin: 3rem 0 1rem 1rem; padding-bottom: 3rem; }
-  .toggle-theme { display: inline; } }
-/*================================================
-Breakpoint 2 (Table of contents appears)
-=================================================*/
-@media (min-width: 1020px) { aside { clear: right; float: right; padding: 5px 0 10px 10px; position: -webkit-sticky; position: sticky; top: 1rem; margin-right: 1rem; margin-top: 2.75rem; }
-  .aside-page { margin-top: 3rem; }
-  .content-container { margin: 0 auto; padding-top: 0; }
-  .toc { clear: both; float: right; margin: 0 0.5rem 0 0; padding: 0; text-align: left; }
-  .toc:before { content: "Table of Contents"; background-color: #000; border-radius: 4px; color: #fff; font-size: 1rem; font-weight: 600; line-height: 2rem; padding: 0.1rem 1.4rem; }
-  .toc-content { margin: 0 1rem 1rem 1rem; }
-  .toc-scroll { bottom: -1rem; font-size: 0.8rem; font-weight: 600; position: absolute; }
-  .toc-scroll span { display: inline-block; display: none; padding-left: 5px; text-decoration: none; }
-  .toc ul li { list-style-position: outside; }
-  .toc ul ul { padding-left: 0.25rem; } }
-/*====================================================
-Breakpoint 3
-====================================================*/
-@media (min-width: 1100px) { .toc-content { margin: 3rem; } }
-/*====================================================
-Breakpoint 4
-====================================================*/
-@media (min-width: 1400px) { .content-container { max-width: 900px; }
-  .toc-content { margin-left: calc((100% - 1800px) / 2 + 232px); } }
-=======
 @media (min-width: 540px) { aside { margin: 1rem 0.25rem -4rem 0; }
   .content-container { padding: 4rem 1.5rem 1rem 1rem; }
   footer { display: block; text-align: right; position: relative; bottom: 0; right: 1rem; width: 100%; }
@@ -288,193 +167,3 @@ Breakpoint 3
 @media (min-width: 1400px) { aside { margin-right: calc((100% - 1250px) / 2 + 32px); }
   .content-container { max-width: 700px; margin-left: calc((100% - 1250px) / 2 + 32px); }
   .toc-content { margin-left: calc((100% - 1250px) / 2 + 32px); } }
-.highlight pre { background-color: #272822; }
-
-.highlight .hll { background-color: #272822; }
-
-.highlight .c { color: #75715e; }
-
-/* Comment */
-.highlight .err { color: #960050; background-color: #1e0010; }
-
-/* Error */
-.highlight .k { color: #66d9ef; }
-
-/* Keyword */
-.highlight .l { color: #ae81ff; }
-
-/* Literal */
-.highlight .n { color: #f8f8f2; }
-
-/* Name */
-.highlight .o { color: #f92672; }
-
-/* Operator */
-.highlight .p { color: #f8f8f2; }
-
-/* Punctuation */
-.highlight .cm { color: #75715e; }
-
-/* Comment.Multiline */
-.highlight .cp { color: #75715e; }
-
-/* Comment.Preproc */
-.highlight .c1 { color: #75715e; }
-
-                                   /* Comment.Single
-// .highlight .c1 { color: #000; background-color: #fff } /* Comment.Single */
-.highlight .cs { color: #75715e; }
-
-/* Comment.Special */
-.highlight .ge { font-style: italic; }
-
-/* Generic.Emph */
-.highlight .gs { font-weight: bold; }
-
-/* Generic.Strong */
-.highlight .kc { color: #66d9ef; }
-
-/* Keyword.Constant */
-.highlight .kd { color: #66d9ef; }
-
-/* Keyword.Declaration */
-.highlight .kn { color: #f92672; }
-
-/* Keyword.Namespace */
-.highlight .kp { color: #66d9ef; }
-
-/* Keyword.Pseudo */
-.highlight .kr { color: #66d9ef; }
-
-/* Keyword.Reserved */
-.highlight .kt { color: #66d9ef; }
-
-/* Keyword.Type */
-.highlight .ld { color: #e6db74; }
-
-/* Literal.Date */
-.highlight .m { color: #ae81ff; }
-
-/* Literal.Number */
-.highlight .s { color: #e6db74; }
-
-/* Literal.String */
-.highlight .na { color: #a6e22e; }
-
-/* Name.Attribute */
-.highlight .nb { color: #f8f8f2; }
-
-/* Name.Builtin */
-.highlight .nc { color: #a6e22e; }
-
-/* Name.Class */
-.highlight .no { color: #66d9ef; }
-
-/* Name.Constant */
-.highlight .nd { color: #a6e22e; }
-
-/* Name.Decorator */
-.highlight .ni { color: #f8f8f2; }
-
-/* Name.Entity */
-.highlight .ne { color: #a6e22e; }
-
-/* Name.Exception */
-.highlight .nf { color: #a6e22e; }
-
-/* Name.Function */
-.highlight .nl { color: #f8f8f2; }
-
-/* Name.Label */
-.highlight .nn { color: #f8f8f2; }
-
-/* Name.Namespace */
-.highlight .nx { color: #a6e22e; }
-
-/* Name.Other */
-.highlight .py { color: #f8f8f2; }
-
-/* Name.Property */
-.highlight .nt { color: #66d9ef; }
-
-/* Name.Tag */
-.highlight .nv { color: #f8f8f2; }
-
-/* Name.Variable */
-.highlight .ow { color: #f92672; }
-
-/* Operator.Word */
-.highlight .w { color: #f8f8f2; }
-
-/* Text.Whitespace */
-.highlight .mf { color: #ae81ff; }
-
-/* Literal.Number.Float */
-.highlight .mh { color: #ae81ff; }
-
-/* Literal.Number.Hex */
-.highlight .mi { color: #ae81ff; }
-
-/* Literal.Number.Integer */
-.highlight .mo { color: #ae81ff; }
-
-/* Literal.Number.Oct */
-.highlight .sb { color: #e6db74; }
-
-/* Literal.String.Backtick */
-.highlight .sc { color: #e6db74; }
-
-/* Literal.String.Char */
-.highlight .sd { color: #e6db74; }
-
-/* Literal.String.Doc */
-.highlight .s2 { color: #e6db74; }
-
-/* Literal.String.Double */
-.highlight .se { color: #ae81ff; }
-
-/* Literal.String.Escape */
-.highlight .sh { color: #e6db74; }
-
-/* Literal.String.Heredoc */
-.highlight .si { color: #e6db74; }
-
-/* Literal.String.Interpol */
-.highlight .sx { color: #e6db74; }
-
-/* Literal.String.Other */
-.highlight .sr { color: #e6db74; }
-
-/* Literal.String.Regex */
-.highlight .s1 { color: #e6db74; }
-
-/* Literal.String.Single */
-.highlight .ss { color: #e6db74; }
-
-/* Literal.String.Symbol */
-.highlight .bp { color: #f8f8f2; }
-
-/* Name.Builtin.Pseudo */
-.highlight .vc { color: #f8f8f2; }
-
-/* Name.Variable.Class */
-.highlight .vg { color: #f8f8f2; }
-
-/* Name.Variable.Global */
-.highlight .vi { color: #f8f8f2; }
-
-/* Name.Variable.Instance */
-.highlight .il { color: #ae81ff; }
-
-/* Literal.Number.Integer.Long */
-/* Generic Heading & Diff Header */
-.highlight .gu { color: #75715e; }
-
-/* Generic.Subheading & Diff Unified/Comment? */
-.highlight .gd { color: #f92672; }
-
-/* Generic.Deleted & Diff Deleted */
-.highlight .gi { color: #a6e22e; }
-
-/* Generic.Inserted & Diff Inserted */
->>>>>>> plain
