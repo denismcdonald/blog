@@ -1,12 +1,10 @@
 ---
-layout: about
-title: Contact
+title: About
+footer: false
+overflow: true
 ---
 
-<h1 class="h1-title">About</h1>
-  <!-- <p class="post-date">The purpose of this portfolio</p> -->
+<h1>About</h1>
 
-
-Just some text here blah blah blah, and some more text here, blah blah blah, and some more text here, blah blah blah, and on and on it goes, blah blah blah.
-
-<img alt="Map of Oceania" class="image-center" src="{{ site.baseurl}}/assets/images/australia.jpg">
+The quick brown fox jumped over the lazy dog. The quick brown fox jumped over the lazy dog. The quick brown fox jumped over the lazy dog. The quick brown fox jumped over the lazy dog. The quick brown fox jumped over the lazy dog. The quick brown fox jumped over the lazy dog. The quick brown fox jumped over the lazy dog. The quick brown fox jumped over the lazy dog. The quick brown fox jumped over the lazy dog. The quick brown fox jumped over the lazy dog. The quick brown fox jumped over the lazy dog.
+<br>

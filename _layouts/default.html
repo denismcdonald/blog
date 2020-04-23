@@ -23,15 +23,15 @@
     
   </head>
   <body>
-   
-    <div class="outer-wrapper">
-      <div class="nav-wrapper">       
-        
-        {% include navigation.html %}
-        
-      </div>
-      <img alt="Drawing of a person writing" class="logo" src="{{ site.baseurl }}/assets/images/writer.jpg">
-      
+
+    {%- if page.overflow == true -%}
+    <div class="wrapper" style="overflow-x: hidden">
+      {%- else -%}    
+    <div class="wrapper">
+      {%- endif -%}
+
+      {% include navigation.html %}
+
       {%- if page.toc == true -%}
       <aside>
         {% include toc.html html=content class="toc" %}
@@ -51,7 +51,6 @@
       {%- else -%}
       <div class="content-container">
         {{ content }}
-        
         {%- if page.edit == true -%}
         {% include edit.html %}
         {%- endif -%}
@@ -61,12 +60,12 @@
       {%- if page.scroll == true -%}
       {% include scroll.html %}
       {%- endif -%}
-      
-      {%- if page.footer -%}
-      <div class="footer-wrapper">
-        {% include footer.html %}
-      </div>
-      {%- endif -%}
-  </div>
+
+    </div>
+
+    {%- if page.footer -%}
+    {% include footer.html %}
+    {%- endif -%}
+
   </body>
   </html>

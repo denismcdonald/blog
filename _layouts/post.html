@@ -2,14 +2,22 @@
 layout: default
 ---
 
-<style>
-    /* .logo { */
-        /* visibility: hidden; */
-        /* margin-top: -9rem; */
-    /* }  */
-</style>
+<h1>{{ page.title }}</h1>
+<p class="post-date">&mdash; {{ page.date | date: "%-d %B %Y" }}</p>
 
 <h1 class="h1-title">{{ page.title }}</h1>
 <p class="post-date">Last updated:&nbsp; {{ page.date | date: "%d %B %Y" }}</p>
 
-{{ content }}
+<div class="end">###</div>
+
+{%- if page.related == true -%}
+{%- if page.tags[0] == null -%}
+{%- else %}
+<p class="post-tags">[ Filed under: 
+  {% for tag in page.tags %}
+    {% capture tag_name %}{{ tag }}{% endcapture %}
+    <a href="{{ site.baseurl}}/tag/{{ tag_name }}">{{ tag_name }}</a>
+  {% endfor %}
+]</p>
+{%- endif -%}
+{%- endif -%}

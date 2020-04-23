@@ -23,43 +23,13 @@
     
   </head>
   <body>
-    <div class="wrapper">       
+    <div class="wrapper-home" style="overflow-x: hidden">       
       
       {% include navigation.html %}
 
-      <img alt="Drawing of handshake" class="logo" src="{{ site.baseurl }}/assets/images/handshake.jpg">
-
-      {%- if page.toc == true -%}
-      <aside>
-        {% include toc.html html=content class="toc" %}
-      </aside>
+      <img alt="Illustration of a handshake" class="logo" src="/assets/images/handshake.jpg">
       
-      <div class="content-container toc-content">
         {{ content }}
-        
-        {%- if page.edit == true -%}
-        <div class="edit-toc">
-          {% include edit.html %}
-        </div>
-        {%- endif -%}
-        
-      </div> 
-      
-      {%- else -%}
-      <div class="content-container">
-        {{ content }}
-        
-        {%- if page.edit == true -%}
-        {% include edit.html %}
-        {%- endif -%}
-      </div> 
-      {%- endif -%}
-      
-      {%- if page.scroll == true -%}
-      {% include scroll.html %}
-      {%- endif -%}
-
-    </div>
-
+      </div>
   </body>
   </html>

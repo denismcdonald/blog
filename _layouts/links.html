@@ -26,12 +26,9 @@
   </head>
   <body>
     <div class="wrapper">       
-
       
       {% include navigation.html %}
 
-      <img alt="Drawing of person writing" class="logo" src="{{ site.baseurl }}/assets/images/writer8.jpg">
-      
       {%- if page.toc == true -%}
       <aside class="aside-page">
         {% include toc.html html=content class="toc" %}
@@ -39,7 +36,7 @@
       
       <div class="content-container toc-content">
         {{ content }}
-        
+        <div class="end">###</div>
         {%- if page.edit == true -%}
         <div class="edit-toc">
           {% include edit.html %}
@@ -51,7 +48,7 @@
       {%- else -%}
       <div class="content-container">
         {{ content }}
-        
+        <div class="end">###</div>
         {%- if page.edit == true -%}
         {% include edit.html %}
         {%- endif -%}
