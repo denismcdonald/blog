@@ -1,5 +1,5 @@
 ---
-title: blog
+title: Blog
 footer: true
 ---
 
@@ -35,7 +35,8 @@ footer: true
       {% assign currentDate = post.date | date: "%Y" %}
       {% if currentDate != myDate %}
           {% unless forloop.first %}</a>{% endunless %}
-          <h2 class="archive-dates">{{ currentDate }} Archive</h2>
+          <!-- <h2 class="archive-dates">{{ currentDate }} Archive</h2> -->
+          <h2 class="archive-dates">Archive</h2>
           {% assign myDate = currentDate %}
       {% endif %}
       <a class="archive-list" href="{{ site.baseurl}}{{ post.url }}">
