@@ -12,7 +12,9 @@ html {
 }
 
 body {
-    color: #595959;
+    background-color: #4a525a;
+    // color: #595959;
+    color: #eee;
     font-family: Georgia, 'Times New Roman', Times, serif;
     height: 100%;
     line-height: 160%;
@@ -61,8 +63,15 @@ a:focus {
     text-decoration: none;
 }
 
-a:hover {
+a {
+    color: #eee;
     text-decoration: none;
+    border-bottom: 1px solid #888; 
+}
+
+a:hover {
+    background-color: #7A8287;
+    border-bottom: 1px solid transparent;
 }
 
 a,
@@ -94,11 +103,16 @@ a span {
     margin-left: .5rem;
     height: 1px;
     border: none;
-    border-bottom: 1px dotted #000;
+    // border-bottom: 1px dotted #000;
+    border-bottom: 1px dotted #eee;
     -webkit-box-flex: 1;
     -webkit-flex: 1 0 1rem;
     flex: 1 0 1rem;
     opacity: 0.25;
+}
+
+a.archive-list {
+    border: none;
 }
 
 .archive-list {
@@ -242,16 +256,16 @@ nav {
 }
 
 nav a {
+    // padding: 0 1.5px;
+    margin: 2px;
     padding: 0 1.5px;
 }
 
-
-nav a:nth-of-type(1) {
-    color: #000;
+#name {
     display: inline-block;
     letter-spacing: 1px;
     line-height: 20px;
-    margin: 0 0 0.6rem 0;
+    margin: 0 0 0.8rem 0;
     padding: 0;
     text-decoration: none;
 }
@@ -441,6 +455,10 @@ Breakpoint 1 (Dispense with critical mobile styles)
         margin: 1rem 1rem 0 1rem;
         padding: 0;
         text-align: right;
+    }
+
+    nav a {
+        margin: 0;
     }
 
     .post-tags {
