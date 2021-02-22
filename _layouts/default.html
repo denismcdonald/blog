@@ -30,14 +30,15 @@
     <div class="wrapper">
       {%- endif -%}
 
-      {% include navigation.html %}
-
+      
+      
       {%- if page.toc == true -%}
       <aside>
         {% include toc.html html=content class="toc" %}
       </aside>
       
       <div class="content-container toc-content">
+        {% include navigation.html %}
         {{ content }}
         
         {%- if page.edit == true -%}
@@ -50,6 +51,7 @@
       
       {%- else -%}
       <div class="content-container">
+        {% include navigation.html %}
         {{ content }}
         {%- if page.edit == true -%}
         {% include edit.html %}

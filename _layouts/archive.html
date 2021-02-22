@@ -1,0 +1,41 @@
+---
+footer: false
+layout: default
+---
+<style>
+  .logo {
+      visibility: hidden;
+      margin-top: -9rem;
+  } 
+</style>
+
+<div class="tag-page-content">
+<h1 class="h1-title">Of {{ page.tag }}</h1>
+{% for post in site.tags[page.tag] %}
+
+  <a class="archive-list" href="{{ site.baseurl }}{{ post.url }}">
+    <p class="archive-post-title">{{ post.title }}</p>
+    <hr class="archive-hr">
+    <p class="archive-post-date">{{ post.date | date: "%d %B %Y" }}</p>
+  </a>
+
+{% endfor %}
+</div>
+
+<section class="archive-post-list">
+    {% for post in site.posts %}
+        {% assign currentDate = post.date | date: "%Y" %}
+        {% if currentDate != myDate %}
+            {% unless forloop.first %}</a>{% endunless %}
+            <!-- <h2 class="archive-dates">{{ currentDate }} Archive</h2> -->
+            <h2 class="archive-dates">Archive</h2>
+            {% assign myDate = currentDate %}
+        {% endif %}
+        <a class="archive-list" href="{{ site.baseurl}}{{ post.url }}">
+          <p class="archive-post-title">{{ post.title }}</p>
+          <hr class="archive-hr">
+          <p class="archive-post-date">{{ post.date | date: "%-d %B %Y" }}</p>
+        {%- if forloop.last -%}</a><br>{%- endif -%}
+    {%- endfor -%}
+        </a>
+  <!-- </section> -->
