@@ -246,30 +246,20 @@ li {
 }
 
 nav {
-    // margin: 1rem 0.5rem 3rem 0.5rem;
     margin: 0 0 6rem 0;
     line-height: 10px;
-    // text-align: center;
-}
-
-nav a {
-    // padding: 0 1.5px;
-    // margin: 2px;
-    // padding: 0 1.5px;
 }
 
 #name {
     display: inline-block;
     letter-spacing: 1px;
     line-height: 20px;
-    // margin: 0 0 0.8rem 0;
     margin: 0 0 1.25rem 0;
     padding: 0;
     text-decoration: none;
 }
 
 p {
-    // font-size: 17px;
     font-size: 15px;
     line-height: 1.4rem;
 }
@@ -358,7 +348,7 @@ ul.toc li {
 }
 
 ul.toc li:before {
-    content: ""counter(item, decimal)"";  
+    content: ""counter(item, decimal)".";  
     counter-increment: item;
     padding-right: 6px;
 }

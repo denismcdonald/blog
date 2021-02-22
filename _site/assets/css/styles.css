@@ -114,7 +114,7 @@ ul.toc li { list-style: none; }
 
 ul.toc li { text-indent: -1rem; }
 
-ul.toc li:before { content: "" counter(item,decimal) ""; counter-increment: item; padding-right: 6px; }
+ul.toc li:before { content: "" counter(item,decimal) "."; counter-increment: item; padding-right: 6px; }
 
 .toc ul { counter-reset: item; margin-bottom: 0.15rem; padding-left: 0.75rem; }
 
