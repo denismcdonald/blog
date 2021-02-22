@@ -4,10 +4,7 @@ footer: true
 ---
 
 <div>
-  <!-- <h1 class="h1-title">Notes on Libraries (<em>"Ook!"</em>) <br> and Information Architecture (<em>"Ook?"</em>)</h1> -->
   <h1 class="h1-titled">Ook.</h1>
-  <!-- <h3 class="h3-titled">L-space engineering.</h3> -->
-    <!-- <h2>Latest Entries</h2> -->
     {% for post in site.posts limit: 5 %}
       <a class="archive-list" href="{{ site.baseurl}}{{ post.url }}">
             <p class="archive-post-title">{{ post.title }}</p>
