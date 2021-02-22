@@ -12,14 +12,10 @@ html {
 }
 
 body {
-    // background-color: #4a525a;
     background-color: rgb(2, 90, 108);
-    // color: #595959;
     color: #eee;
-    // font-family: Georgia, 'Times New Roman', Times, serif;
     font-family: Arial, Helvetica, sans-serif;
     height: 100%;
-    // line-height: 160%;
     margin: 0;
 }
 
@@ -72,7 +68,6 @@ a {
 }
 
 a:hover {
-    // background-color: #7A8287;
     background-color: #44484b;
     border-bottom: 1px solid transparent;
 }
@@ -80,18 +75,6 @@ a:hover {
 a:hover > .archive-post-title {
     text-decoration: none;
 }
-
-// a,
-// p a,
-// h1 a,
-// h2 a,
-// h3 a,
-// h4 a,
-// a.edit,
-// a.scroll,
-// li a {
-//     padding: 0 2px;
-// }
 
 a span {
     text-decoration: none; 
@@ -104,14 +87,12 @@ a span {
 }
 
 .archive-hr {
-    // display: none;
     margin-top: 0;
     margin-bottom: 0;
     margin-right: .5rem;
     margin-left: .5rem;
     height: 1px;
     border: none;
-    // border-bottom: 1px dotted #000;
     border-bottom: 1px dotted #eee;
     -webkit-box-flex: 1;
     -webkit-flex: 1 0 1rem;
@@ -126,9 +107,7 @@ a.archive-list {
 .archive-list {
     align-items: baseline;
     display: flex;
-    // flex-direction: row-reverse;
     list-style: none;
-    // max-width: 32rem;
     padding: 0;
     -webkit-box-align: baseline;
     -webkit-align-items: baseline;
@@ -145,7 +124,6 @@ a.archive-list {
 }
 
 .archive-post-date {
-    // display: none;
     font-size: 12px;
     -webkit-box-flex: 0;
     -webkit-flex: 0 1 auto;
@@ -206,7 +184,6 @@ aside {
 .end {
     color: #cacaca;
     font-style: italic;
-    // letter-spacing: 10px;
     margin-top: 2.5rem;
     text-align: center;
 }
@@ -241,13 +218,6 @@ h1 {
     margin-bottom: 2.5rem;
 }
 
-// .h1-title {
-//     font-family:Georgia, 'Times New Roman', Times, serif;
-//     font-size: 1rem;
-//     font-weight: normal;
-//     text-align: center;
-// }
-
 .h1-titled {
     font-size: 4rem;
     margin-bottom: 0.5rem;
@@ -257,10 +227,6 @@ h1 {
     font-size: 2rem;
     margin-top: 0;
 }
-
-// h1.h1-title {
-//     margin-bottom: 4rem;
-// }
 
 .highlight {
     margin: 0;
@@ -466,22 +432,16 @@ Breakpoint 1 (Dispense with critical mobile styles)
         flex-direction: row;
     }
 
-    // .archive-list p {
-    //     line-height: 2rem;
-    // }
-
     .archive-post-date {
         display: flex;
         font-size: 0.9rem;
     }
 
     aside {
-        // display: block;
         margin: 1rem 0.25rem -4rem 0;
     }
 
     .content-container {
-        // padding: 4rem 1.5rem 1rem 1rem;
         padding: 1rem 1.5rem 1rem 1rem;
     }
 
@@ -510,7 +470,6 @@ Breakpoint 1 (Dispense with critical mobile styles)
     nav {
         display: block;
         margin: 0 0 8rem 0;
-        // padding: 0;
         text-align: left;
     }
 
@@ -554,7 +513,6 @@ Breakpoint 2 (Table of contents appears)
         position: sticky;
         top: 1rem;
         margin-right: 1rem;
-        // margin-top: 12.5rem;
         margin-top: 17.5rem;
     }
 
@@ -583,7 +541,6 @@ Breakpoint 2 (Table of contents appears)
     }
 
     .toc-content {
-        // margin: 0 1rem 0 1.5rem;
         margin: 1rem 1rem 0 1.5rem;
     }
 
