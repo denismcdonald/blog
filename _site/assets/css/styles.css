@@ -128,14 +128,11 @@ ul.toc li ul li ul li:before { padding-right: 4px; }
 
 .top-toc { margin-left: 2rem; }
 
-/*
-NB:  The zero-width space ("\200B") addresses the following accessibility concern: https://developer.mozilla.org/en-US/docs/Web/CSS/list-style#Accessibility_concerns
-*/
 .toc ul ul li:before { content: "(" counter(item,lower-roman) ")​ "; counter-increment: item; }
 
 ul { list-style: decimal; }
 
-.wrapper { min-height: 86vh; margin-bottom: 2rem; position: relative; }
+.wrapper { min-height: 100vh; margin-bottom: 2rem; position: relative; }
 
 .wrapper-home { height: 100%; }
 

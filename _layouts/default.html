@@ -7,7 +7,7 @@
     <meta name="description" content="Personal website of Denis McDonald">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Spectral:400,400i,600&display=swap" rel="stylesheet"> -->
+
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/favicon-32x32.png">
@@ -16,11 +16,7 @@
     <meta name="msapplication-TileColor" content="#4b525a">
     <meta name="theme-color" content="#ffffff">
     <!-- End favicons -->
-    
-    {% if site.tags != "" %}
-    {% include tags.html %}
-    {% endif %}
-    
+       
   </head>
   <body>
 
@@ -29,8 +25,6 @@
       {%- else -%}    
     <div class="wrapper">
       {%- endif -%}
-
-      
       
       {%- if page.toc == true -%}
       <aside>
@@ -39,14 +33,7 @@
       
       <div class="content-container toc-content">
         {% include navigation.html %}
-        {{ content }}
-        
-        {%- if page.edit == true -%}
-        <div class="edit-toc">
-          {% include edit.html %}
-        </div>
-        {%- endif -%}
-        
+        {{ content }}        
       </div> 
       
       {%- else -%}
@@ -59,12 +46,7 @@
       </div> 
       {%- endif -%}
       
-      {%- if page.scroll == true -%}
-      {% include scroll.html %}
-      {%- endif -%}
-
     </div>
-
 
   </body>
   </html>
